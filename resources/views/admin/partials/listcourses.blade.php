@@ -8,9 +8,9 @@
             {{ $course->aim }}
         </div>
         <div class="panel-footer">
-            <button class="btn btn-info">View</button>
+            <button class="btn btn-success">View</button>
             <a href="/admin/courses/edit/{{ $course->id }}" class="btn btn-info">Edit</a>
-            <button type="button" class="btn btn-primary pull-right" data-usersname="{{ $course->name }}" data-action="/admin/courses/{{ $course->id }}" data-toggle="modal" data-target="#confirm-delete-modal">
+            <button type="button" class="btn btn-danger pull-right" data-usersname="{{ $course->name }}" data-action="/admin/courses/{{ $course->id }}" data-toggle="modal" data-target="#confirm-delete-modal">
                 <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Delete
             </button>
         </div>

@@ -26,10 +26,10 @@
                                 Limited
                             @endif
                         </p>
-                        <a href="/admin/users/edit/{{ $user->id }}" class="btn btn-primary pull-right edit-button">
+                        <a href="/admin/users/edit/{{ $user->id }}" class="btn btn-info pull-right edit-button">
                             <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Edit
                         </a>
-                        <button type="button" class="btn btn-primary pull-right" data-usersname="{{ $user->name }}" data-action="/admin/users/{{ $user->id }}" data-toggle="modal" data-target="#confirm-delete-modal">
+                        <button type="button" class="btn btn-danger pull-right" data-usersname="{{ $user->name }}" data-action="/admin/users/{{ $user->id }}" data-toggle="modal" data-target="#confirm-delete-modal">
                             <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Delete
                         </button>
                     </div>

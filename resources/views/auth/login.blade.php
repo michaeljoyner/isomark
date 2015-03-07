@@ -1,5 +1,7 @@
 @extends('app')
-
+@section('bodyclasshook')
+<body class="loginbody">
+@stop
 @section('content')
 <div class="container-fluid">
 	<div class="row">

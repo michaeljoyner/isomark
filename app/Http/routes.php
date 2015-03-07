@@ -1,8 +1,11 @@
 <?php
 
 
-
-Route::get('/', 'WelcomeController@index');
+/**
+ * public/guest routes
+ */
+Route::get('/', 'PagesController@home');
+Route::get('other', 'PagesController@other');
 
 Route::get('home', 'HomeController@index');
 /**

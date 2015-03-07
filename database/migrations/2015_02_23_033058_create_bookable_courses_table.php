@@ -16,6 +16,7 @@ class CreateBookableCoursesTable extends Migration {
 		{
 			$table->increments('id');
             $table->integer('course_id')->unsigned();
+			$table->foreign('course_id')->references('id')->on('courses')->onDelete('cascade');
             $table->date('start_date');
             $table->date('end_date');
             $table->date('bookings_open');

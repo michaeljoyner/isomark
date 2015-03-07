@@ -13,7 +13,7 @@
                 <form method="POST" action="" class="delete-form">
                     <input type="hidden" name="_method" value="DELETE"/>
                     <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
-                    <input type="submit" class="btn btn-primary btn-large" value="Delete"/>
+                    <input type="submit" class="btn btn-danger btn-large" value="Delete"/>
                 </form>
             </div>
         </div><!-- /.modal-content -->

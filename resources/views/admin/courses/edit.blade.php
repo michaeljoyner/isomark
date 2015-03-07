@@ -26,3 +26,23 @@
     </div>
     </div>
 @endsection
+
+@section('bodyscripts')
+<script>
+        var bookingManager = {
+            switcher: document.querySelector('#toggle_booking_info'),
+
+            toggle: function() {
+                if(bookingManager.switcher.checked) {
+                    $('#booking-dates').show('slow');
+                } else {
+                    $('#booking-dates').hide('slow');
+                }
+            }
+        }
+        bookingManager.toggle();
+        $('#toggle_booking_info').on('change', function() {
+           bookingManager.toggle();
+        });
+    </script>
+@endsection

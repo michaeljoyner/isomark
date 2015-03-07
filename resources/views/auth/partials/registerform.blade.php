@@ -57,8 +57,8 @@
 
                     <div class="form-group">
                         <div class="col-md-9 col-md-offset-3">
-                            <button type="submit" class="btn btn-primary">
-                                Register
+                            <button type="submit" class="btn btn-success form-control">
+                                Register User
                             </button>
                         </div>
                     </div>
