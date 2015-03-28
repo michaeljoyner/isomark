@@ -9,7 +9,7 @@ class PagesController extends Controller {
 
 	public function home()
 	{
-		return view('front.pages.home');
+		return view('front.pages.homepage');
 	}
 
 	public function other()

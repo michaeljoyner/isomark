@@ -1,0 +1,27 @@
+.homepage-banner {
+  width: 100%;
+  padding: 4em 0;
+
+  img {
+    width: 80%;
+    max-width: 700px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .tagline {
+    color: $primary_orange;
+    font-family: $lead_italic;
+    text-align: center;
+    padding: 1em;
+  }
+}
+
+.intro {
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: $lead_italic;
+  color: $primary_blue;
+  font-size: 150%;
+  text-align: center;
+}
