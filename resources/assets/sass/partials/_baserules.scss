@@ -5,3 +5,8 @@ html {
 body {
   min-height: 100%;
 }
+
+a, a:visited, a:active, a:hover {
+  text-decoration: none;
+  color: inherit;
+}

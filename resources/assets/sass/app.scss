@@ -1,7 +1,11 @@
+@import "front/variables/colours";
+@import "front/variables/typography";
 @import "partials/baserules";
 @import "partials/usersdeleteform";
 @import "partials/slick";
+@import "front/partials/searchbar";
+@import "front/partials/navbar";
 
 @import "pages/manageusers";
 @import "pages/login";
-@import "pages/homefront";
+@import "front/pages/homepage";

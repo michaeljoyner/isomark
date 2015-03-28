@@ -1,0 +1,25 @@
+.main-navbar {
+  height: 50px;
+  ul {
+    height: 100%;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background: $primary_blue;
+  }
+
+  li {
+    display: inline-block;
+    height: 100%;
+    width: 19.5%;
+    color: $white;
+    text-transform: uppercase;
+    line-height: 50px;
+    font-family: $body_text;
+    font-size: 120%;
+
+    &:hover {
+      background: $secondary_blue;
+    }
+  }
+}
