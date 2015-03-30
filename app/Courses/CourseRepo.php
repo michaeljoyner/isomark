@@ -30,6 +30,11 @@ class CourseRepo {
         return $this->model->with('category', 'bookingDates')->latest()->get();
     }
 
+    public function allByName()
+    {
+        return $this->model->with('category', 'bookingDates')->orderBy('name', 'asc')->get();
+    }
+
     public function getCoursesByCategoryId($id)
     {
         return $this->model->where('course_category_id', $id)->with('category', 'bookingDates')->latest()->get();
@@ -85,6 +90,11 @@ class CourseRepo {
     {
         $course = $this->model->findOrFail($id);
         $course->delete();
+    }
+
+    public function getListOfCourses()
+    {
+        return $this->model->orderBy('name', 'asc')->get()->lists('name', 'slug');
     }
 
 }

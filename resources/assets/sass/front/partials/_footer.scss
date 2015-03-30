@@ -1,0 +1,39 @@
+.main-footer {
+  background: $primary_blue;
+  color: $white;
+  text-align: center;
+  padding-bottom: 70px;
+  padding-top: 50px;
+  font-family: $body_text;
+
+  .row {
+    margin: 0;
+  }
+}
+
+.footer-col {
+  padding: 30px;
+  padding-top: 0;
+  min-height: 350px;
+
+  h1 {
+    font-family: $body_text;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 170%;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  p {
+    text-align: left;
+    font-weight: 300;
+  }
+
+  &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+    border-right: 1px solid $white;
+  }
+}

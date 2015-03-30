@@ -1,11 +1,18 @@
 @import "front/variables/colours";
 @import "front/variables/typography";
+
 @import "partials/baserules";
 @import "partials/usersdeleteform";
 @import "partials/slick";
 @import "front/partials/searchbar";
 @import "front/partials/navbar";
+@import "front/partials/carousel";
+@import "front/partials/contentsections";
+@import "front/partials/buttons";
+@import "front/partials/footer";
 
 @import "pages/manageusers";
 @import "pages/login";
 @import "front/pages/homepage";
+@import "front/pages/services";
+@import "front/pages/courses";

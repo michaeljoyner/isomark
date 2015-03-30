@@ -12,4 +12,38 @@
     <section class="intro">
         <p>Isomark prides itself on not only providing the best possible services to our clients, but also realise that each client has special requirements. Therefore at Isomark we do our utmost to identify with your individual needs and address them to your complete satisfaction</p>
     </section>
+    @include('front.partials.carousel')
+    <section class="section-container" id="services">
+       @include('front.partials.services')
+    </section>
+    <section class="section-container" id="courses">
+        @include('front.partials.courses')
+    </section>
+    <section class="section-container" id="courses">
+        <h1><span class="section-title">our clients</span></h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 client-box"></div>
+                <div class="col-md-3 client-box"></div>
+                <div class="col-md-3 client-box"></div>
+                <div class="col-md-3 client-box"></div>
+            </div>
+        </div>
+    </section>
+    @include('front.partials.footer')
+@endsection
+
+@section('bodyscripts')
+    <script>
+        $(function(){
+            $("#slides").slick({
+                accessibility: true,
+                autoplay: true,
+                autoplaySpeed: 7000,
+                arrows: false
+            });
+        });
+
+
+    </script>
 @endsection

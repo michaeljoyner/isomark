@@ -1,0 +1,23 @@
+.course-detailed {
+  font-family: $body_text;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid $grey_text;
+
+  h1.course-name {
+    color: $primary_blue;
+    font-size: 150%;
+    text-align: left;
+    margin-top: 0;
+  }
+
+  .course-detail-name {
+    color: $primary_orange;
+    text-transform: uppercase;
+  }
+
+  .course-info {
+    color: $grey_text;
+    font-weight: 300;
+  }
+}

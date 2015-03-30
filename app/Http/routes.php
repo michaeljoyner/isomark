@@ -6,8 +6,13 @@
  */
 Route::get('/', 'PagesController@home');
 Route::get('other', 'PagesController@other');
+Route::get('services', 'PagesController@services');
+Route::get('courses', 'PagesController@courses');
+
 
 Route::get('home', 'HomeController@index');
+Route::get('admin', 'HomeController@index');
+
 /**
  * user routes
  */
