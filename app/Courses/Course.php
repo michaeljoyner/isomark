@@ -1,6 +1,7 @@
 <?php namespace App\Courses;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class Course extends Model {
 
@@ -19,6 +20,12 @@ class Course extends Model {
         'venue',
         'fee'
     ];
+
+    public function setNameAttribute($name)
+    {
+        $this->attributes['name'] = $name;
+        $this->attributes['slug'] = Str::slug($name);
+    }
 
     public function category()
     {

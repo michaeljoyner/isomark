@@ -22,9 +22,8 @@ class CreateCoursesTable extends Migration {
             $table->text('aim');
             $table->text('certification');
             $table->text('description');
-            $table->integer('people_per_course')->unsigned();
-            $table->string('duration');
-            $table->string('venue');
+            $table->text('people_per_course');
+            $table->text('duration');
             $table->string('fee');
 			$table->timestamps();
 		});
