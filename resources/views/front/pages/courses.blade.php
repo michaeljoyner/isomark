@@ -34,14 +34,8 @@
                             <p class="course-info">{{ $course->people_per_course }}</p>
                             <p class="course-detail-name">Course duration</p>
                             <p class="course-info">{{ $course->duration }}</p>
-                            <p class="course-detail-name">Venue</p>
-                            <p class="course-info">{{ $course->venue }}</p>
                             <p class="course-detail-name">Fee</p>
                             <p class="course-info">{{ $course->fee }}</p>
-                            @if($course->bookingDates)
-                                <p class="course-detail-name">Dates</p>
-                                <p class="course-info">{{ $course->bookingDates->start_date }} - {{ $course->bookingDates->end_date }}</p>
-                            @endif
                         </div>
                     </div>
                 </section>

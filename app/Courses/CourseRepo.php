@@ -27,22 +27,22 @@ class CourseRepo {
 
     public function all()
     {
-        return $this->model->with('category', 'bookingDates')->latest()->get();
+        return $this->model->with('category')->latest()->get();
     }
 
     public function allByName()
     {
-        return $this->model->with('category', 'bookingDates')->orderBy('name', 'asc')->get();
+        return $this->model->with('category')->orderBy('name', 'asc')->get();
     }
 
     public function getCoursesByCategoryId($id)
     {
-        return $this->model->where('course_category_id', $id)->with('category', 'bookingDates')->latest()->get();
+        return $this->model->where('course_category_id', $id)->with('category')->latest()->get();
     }
 
     public function getCourseById($id)
     {
-        return $this->model->with('category', 'bookingDates')->findOrFail($id);
+        return $this->model->with('category')->findOrFail($id);
     }
 
     public function store(CreateCourseCommand $dto)
@@ -57,7 +57,6 @@ class CourseRepo {
             'description'       => $dto->getDescription(),
             'people_per_course' => $dto->getPeoplePerCourse(),
             'duration'          => $dto->getDuration(),
-            'venue'             => $dto->getVenue(),
             'fee'               => $dto->getFee()
         ]);
 
@@ -81,7 +80,6 @@ class CourseRepo {
         $course->description = $dto->getDescription();
         $course->people_per_course = $dto->getPeoplePerCourse();
         $course->duration = $dto->getDuration();
-        $course->venue = $dto->getVenue();
         $course->fee = $dto->getFee();
         $course->save();
     }

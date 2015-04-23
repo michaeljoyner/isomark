@@ -55,10 +55,7 @@ class CoursesController extends Controller {
     public function store(CourseFormRequest $request)
     {
         $course = $this->dispatch(new CreateCourseCommand($request->all()));
-        if($request->has('toggle_booking_info'))
-        {
-            $this->dispatch(new SetCourseAsBookableCommand(array_merge(['course_id' => $course->id], $request->only('start_date', 'end_date', 'open_date', 'close_date'))));
-        }
+
         flash()->message('New course added!');
         return redirect('admin/courses');
     }
