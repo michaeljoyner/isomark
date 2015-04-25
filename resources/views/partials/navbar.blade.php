@@ -18,9 +18,19 @@
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="/admin/courses">Search/View All</a></li>
                         <li role="presentation" class="divider"></li>
-                        @foreach($categoryList as $categoryId => $category)
+                        <li><a href="/admin/courses/create">Create New Course</a></li>
+                        <li role="presentation" class="divider"></li>
+                    @foreach($categoryList as $categoryId => $category)
                             <li><a href="/admin/courses/category/{{ $categoryId }}">{{ $category }}</a></li>
                         @endforeach
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="/admin/workshops" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Workshops <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/admin/workshops">View All</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li><a href="/admin/workshops/create">Create New Workshop</a></li>
                     </ul>
                 </li>
             </ul>

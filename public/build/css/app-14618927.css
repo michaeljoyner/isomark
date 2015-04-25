@@ -12,6 +12,19 @@ a, a:visited, a:active, a:hover {
   text-decoration: none;
   color: inherit; }
 
+.page-title {
+  color: #1A2840;
+  text-align: center;
+  margin-bottom: 2em;
+  font-family: 'Agenda Italic', Ariel, sans-serif; }
+  .page-title:after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #F05A28;
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto; }
+
 .delete-form {
   display: inline-block; }
 
@@ -118,7 +131,7 @@ a, a:visited, a:active, a:hover {
     padding: 0;
     text-align: center;
     background: #1A2840; }
-  .main-navbar li {
+  .main-navbar > ul > li {
     display: inline-block;
     height: 100%;
     width: 19.5%;
@@ -126,9 +139,24 @@ a, a:visited, a:active, a:hover {
     text-transform: uppercase;
     line-height: 50px;
     font-family: 'Open Sans', Helvetica, Ariel, sans-serif;
-    font-size: 120%; }
-    .main-navbar li:hover {
+    font-size: 120%;
+    position: relative; }
+    .main-navbar > ul > li:hover {
       background: #2D456E; }
+  .main-navbar .submenu {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    height: 0;
+    max-height: 0;
+    width: 100%;
+    transition: max-height .75s; }
+  .main-navbar > ul > li:hover .submenu {
+    height: auto;
+    max-height: 400px;
+    z-index: 100; }
+  .main-navbar .submenu > li:hover {
+    background-color: #2D456E; }
 
 #slides {
   height: 400px;
@@ -229,6 +257,15 @@ a, a:visited, a:active, a:hover {
     font-weight: 300; }
   .footer-col:nth-child(1), .footer-col:nth-child(2), .footer-col:nth-child(3) {
     border-right: 1px solid #FFFFFF; }
+
+.isomark-form label {
+  color: #F05A28;
+  font-family: 'Open Sans', Helvetica, Ariel, sans-serif; }
+.isomark-form input[type=text], .isomark-form input[type=email], .isomark-form textarea, .isomark-form select {
+  border: 1px solid #1A2840;
+  border-radius: 0; }
+.isomark-form input[type=text]:focus, .isomark-form input[type=email]:focus {
+  border-color: #e5e5e5; }
 
 .alert-info {
   position: absolute;
@@ -362,3 +399,33 @@ a, a:visited, a:active, a:hover {
   .course-detailed .course-info {
     color: #a7a7a7;
     font-weight: 300; }
+
+.workshop-list-table {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Open Sans', Helvetica, Ariel, sans-serif; }
+  .workshop-list-table .table-header {
+    background-color: #1A2840;
+    color: #F05A28;
+    height: 4em;
+    line-height: 4;
+    font-size: 120%; }
+    .workshop-list-table .table-header td:nth-child(4) {
+      text-align: center; }
+  .workshop-list-table tbody tr td:nth-child(1) {
+    text-transform: capitalize; }
+  .workshop-list-table tbody tr {
+    height: 3em;
+    line-height: 3; }
+  .workshop-list-table td {
+    padding-left: 1em; }
+  .workshop-list-table tbody tr:nth-child(odd) {
+    background-color: #e5e5e5; }
+  .workshop-list-table .action-center {
+    text-align: center; }
+    .workshop-list-table .action-center .btn {
+      margin: 0 10px; }
+  .workshop-list-table a, .workshop-list-table a:visited {
+    color: #FFFFFF;
+    text-decoration: none; }

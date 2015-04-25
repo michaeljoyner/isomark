@@ -18,7 +18,7 @@
                             </div>
                         @endif
                         <p class="users-email">{{ $user->email }}</p>
-                        <form class="form-horizontal" role="form" method="POST" action="/admin/users/changepassword/{{ $user->id }}">
+                        <form class="form-horizontal isomark-form" role="form" method="POST" action="/admin/users/changepassword/{{ $user->id }}">
                             <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                             <div class="form-group">

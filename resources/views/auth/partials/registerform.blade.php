@@ -14,7 +14,7 @@
                     </div>
                 @endif
 
-                <form class="form-horizontal" role="form" method="POST" action="/admin/users/register">
+                <form class="form-horizontal isomark-form" role="form" method="POST" action="/admin/users/register">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                     <div class="form-group">

@@ -18,7 +18,7 @@
                             </div>
                         @endif
 
-                        <form class="form-horizontal" role="form" method="POST" action="/admin/users/edit/{{ $user->id }}">
+                        <form class="form-horizontal isomark-form" role="form" method="POST" action="/admin/users/edit/{{ $user->id }}">
                             <input type="hidden" name="_token" value="{{ csrf_token() }}">
                             <input type="hidden" name="user_id" value="{{ $user->id }}"/>
                             <div class="form-group">

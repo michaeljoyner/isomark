@@ -40,3 +40,13 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+/*
+ * Workshops routes
+ */
+Route::get('admin/workshops', 'Courses\WorkshopsController@index');
+Route::get('admin/workshops/create', 'Courses\WorkshopsController@create');
+Route::get('admin/workshops/edit/{id}', 'Courses\WorkshopsController@edit');
+Route::post('admin/workshops', 'Courses\WorkshopsController@store');
+Route::post('admin/workshops/{id}', 'Courses\WorkshopsController@update');
+Route::delete('admin/workshops/{id}', 'Courses\WorkshopsController@deleteById');

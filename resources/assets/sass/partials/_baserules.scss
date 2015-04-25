@@ -10,3 +10,19 @@ a, a:visited, a:active, a:hover {
   text-decoration: none;
   color: inherit;
 }
+
+.page-title {
+  color: $primary_blue;
+  text-align: center;
+  margin-bottom: 2em;
+  font-family: $lead_italic;
+
+  &:after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid $primary_orange;
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}

@@ -12,7 +12,6 @@ class CreateCourseCommand extends Command {
     private $description;
     private $people_per_course;
     private $duration;
-    private $venue;
     private $fee;
 
     /**
@@ -29,7 +28,6 @@ class CreateCourseCommand extends Command {
         $this->description = $data['description'];
         $this->people_per_course = $data['people_per_course'];
         $this->duration = $data['duration'];
-        $this->venue = $data['venue'];
         $this->fee = $data['fee'];
 	}
 
@@ -99,13 +97,7 @@ class CreateCourseCommand extends Command {
         return $this->duration;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getVenue()
-    {
-        return $this->venue;
-    }
+
 
     /**
      * @return mixed

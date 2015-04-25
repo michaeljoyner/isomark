@@ -22,3 +22,9 @@ $factory('App\Users\User', [
 $factory('App\Courses\Category', [
     'name' => $faker->words(2)
 ]);
+
+$factory('App\Courses\Workshop', [
+    'name' => $faker->unique()->words(3),
+    'duration' => 'Half a day',
+    'fee' => 'R450.00'
+]);

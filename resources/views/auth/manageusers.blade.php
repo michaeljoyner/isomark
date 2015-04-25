@@ -3,6 +3,7 @@
 @section('content')
     @include('flash::message')
     <div class="col-md-6">
+        <h1 class="page-title">Authorised Users</h1>
         @if(Session::has('deleteError'))
             <div class="alert alert-warning alert-dismissible" role="alert">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>

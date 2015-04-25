@@ -1,7 +1,17 @@
 @extends('app')
 
+@section('head')
+    <script src="{{ asset('js/tinymce.min.js') }}"></script>
+    <script>
+        tinymce.init({
+            selector: "textarea.wysig",
+            menubar: false
+        });
+    </script>
+@endsection
+
 @section('content')
-    <h1>Add a New Course</h1>
+    <h1 class="page-title">Add a New Course</h1>
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
@@ -17,7 +27,7 @@
                             </ul>
                         </div>
                     @endif
-                    {!! Form::model($course, ['url' => '/admin/courses', 'class' => 'form-horizontal']) !!}
+                    {!! Form::model($course, ['url' => '/admin/courses', 'class' => 'form-horizontal isomark-form']) !!}
                     @include('admin.partials.coursesform', ['submitText' => 'Add Course'])
                     {!! Form::close() !!}
                 </div>
@@ -26,22 +36,3 @@
     </div>
 @endsection
 
-@section('bodyscripts')
-    <script>
-        var bookingManager = {
-            switcher: document.querySelector('#toggle_booking_info'),
-
-            toggle: function() {
-                if(bookingManager.switcher.checked) {
-                    $('#booking-dates').show('slow');
-                } else {
-                    $('#booking-dates').hide('slow');
-                }
-            }
-        }
-        bookingManager.toggle();
-        $('#toggle_booking_info').on('change', function() {
-           bookingManager.toggle();
-        });
-    </script>
-@endsection

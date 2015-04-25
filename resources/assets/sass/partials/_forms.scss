@@ -1,0 +1,15 @@
+.isomark-form {
+  label {
+    color: $primary_orange;
+    font-family: $body_text;
+  }
+
+  input[type=text], input[type=email], textarea, select {
+    border: 1px solid $primary_blue;
+    border-radius: 0;
+  }
+
+  input[type=text]:focus, input[type=email]:focus {
+    border-color: $light_grey;
+  }
+}

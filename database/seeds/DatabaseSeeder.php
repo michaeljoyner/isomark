@@ -23,6 +23,7 @@ class DatabaseSeeder extends Seeder {
         $this->call('UserTableSeeder');
         $this->call('CourseCategorySeeder');
         $this->call('CourseTableSeeder');
+        $this->call('WorkshopTableSeeder');
     }
 
 }
@@ -56,5 +57,14 @@ class CourseCategorySeeder extends Seeder {
     {
         DB::table('course_categories')->truncate();
         TestDummy::times(4)->create('App\Courses\Category');
+    }
+}
+
+class WorkshopTableSeeder extends Seeder {
+
+    public function run()
+    {
+        DB::table('workshops')->truncate();
+        TestDummy::times(10)->create('App\Courses\Workshop');
     }
 }

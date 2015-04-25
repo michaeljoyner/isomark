@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <h1>Isomark Training Courses</h1>
+        <h1 class="page-title">Isomark Training Courses</h1>
         <div class="row">
             <div class="col-md-5">
                 <div class="panel panel-default">

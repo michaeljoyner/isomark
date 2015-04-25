@@ -21,7 +21,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <h1 class="course-name">{{ $course->name }}</h1>
-                            <p class="course-info">{{ $course->description }}</p>
+                            <div class="course-info">{!! $course->description !!}</div>
                         </div>
                         <div class="col-md-6">
                             <p class="course-detail-name">Unit Standard ID</p>

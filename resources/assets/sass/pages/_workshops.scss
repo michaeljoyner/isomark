@@ -1,0 +1,50 @@
+.workshop-list-table {
+  width:100%;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: $body_text;
+
+  .table-header {
+    background-color: $primary_blue;
+    color: $primary_orange;
+    height: 4em;
+    line-height: 4;
+    font-size: 120%;
+
+    td:nth-child(4) {
+      text-align: center;
+    }
+  }
+
+  tbody tr td:nth-child(1) {
+    text-transform: capitalize;
+  }
+
+  tbody tr {
+    height: 3em;
+    line-height: 3;
+  }
+
+
+
+  td {
+    padding-left: 1em;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: $light_grey;
+  }
+
+  .action-center {
+    text-align: center;
+
+    .btn {
+      margin: 0 10px;
+    }
+  }
+
+  a, a:visited {
+    color: $white;
+    text-decoration: none;
+  }
+}

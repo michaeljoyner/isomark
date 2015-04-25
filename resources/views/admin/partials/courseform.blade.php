@@ -13,7 +13,7 @@
                         </ul>
                     </div>
                 @endif
-                {!! Form::model($course, ['url' => '/admin/courses', 'class' => 'form-horizontal']) !!}
+                {!! Form::model($course, ['url' => '/admin/courses', 'class' => 'form-horizontal isomark-form']) !!}
 
                 {!! Form::close() !!}
             </div>
