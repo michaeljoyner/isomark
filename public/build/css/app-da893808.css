@@ -317,6 +317,11 @@ a, a:visited, a:active, a:hover {
     background: #eeeeee; }
   .workshop-row .workshop-detail {
     text-transform: capitalize; }
+    .workshop-row .workshop-detail > .prompt-button {
+      margin: 0;
+      padding: 5px 10px; }
+    .workshop-row .workshop-detail:not(:last-child) {
+      padding-top: 5px; }
 
 .workshop-list-head {
   font-weight: 600;
