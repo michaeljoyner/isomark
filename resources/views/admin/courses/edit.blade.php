@@ -1,5 +1,15 @@
 @extends('app')
 
+@section('head')
+    <script src="{{ asset('js/tinymce.min.js') }}"></script>
+    <script>
+        tinymce.init({
+            selector: "textarea.wysig",
+            menubar: false
+        });
+    </script>
+@endsection
+
 @section('content')
     <h1 class="page-title">Edit a Course</h1>
     <div class="row">

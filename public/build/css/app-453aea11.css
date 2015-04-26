@@ -25,6 +25,18 @@ a, a:visited, a:active, a:hover {
     max-width: 300px;
     margin: 0 auto; }
 
+.page-subtitle {
+  color: #1A2840;
+  margin-bottom: 2em;
+  font-family: 'Agenda Italic', Ariel, sans-serif; }
+  .page-subtitle:after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #F05A28;
+    width: 80%;
+    max-width: 300px;
+    margin: 0; }
+
 .delete-form {
   display: inline-block; }
 
@@ -266,6 +278,52 @@ a, a:visited, a:active, a:hover {
   border-radius: 0; }
 .isomark-form input[type=text]:focus, .isomark-form input[type=email]:focus {
   border-color: #e5e5e5; }
+
+.enquiry-box {
+  width: 85%;
+  height: 4em;
+  max-height: 4em;
+  margin: 1em auto;
+  background-color: #1A2840;
+  padding: 1em;
+  font-family: 'Open Sans', Helvetica, Ariel, sans-serif;
+  color: #FFFFFF;
+  transition: 1s;
+  overflow: hidden; }
+  .enquiry-box:hover {
+    max-height: 400px;
+    height: auto; }
+  .enquiry-box header {
+    color: #FFFFFF; }
+    .enquiry-box header .contact-person {
+      font-size: 2em; }
+  .enquiry-box .glyphicon {
+    color: #F05A28;
+    padding-right: 10px; }
+  .enquiry-box .enquiry-details {
+    padding: 16px 0 0; }
+  .enquiry-box .enquiry-detail {
+    display: inline-block;
+    width: 30%; }
+  .enquiry-box .enquiry-body strong {
+    color: #F05A28; }
+  .enquiry-box hr {
+    border-color: #1A2840; }
+
+.workshop-row {
+  font-family: 'Open Sans', Helvetica, Ariel, sans-serif;
+  margin-bottom: 1em; }
+  .workshop-row:hover {
+    background: #eeeeee; }
+  .workshop-row .workshop-detail {
+    text-transform: capitalize; }
+
+.workshop-list-head {
+  font-weight: 600;
+  color: #1A2840; }
+
+.workshop-list-head.workshop-row .workshop-detail {
+  text-decoration: underline; }
 
 .alert-info {
   position: absolute;

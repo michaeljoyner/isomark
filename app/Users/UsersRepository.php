@@ -72,7 +72,7 @@ class UsersRepository {
     public function updatePassword($id, $newPassord)
     {
         $user = $this->model->findOrFail($id);
-        $user->password = bcrypt($newPassord);
+        $user->password = $newPassord;
         $user->save();
 
         $this->dispatcher->fire(new PasswordWasChanged($user));

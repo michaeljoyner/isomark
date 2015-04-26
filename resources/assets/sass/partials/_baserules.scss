@@ -26,3 +26,18 @@ a, a:visited, a:active, a:hover {
     margin: 0 auto;
   }
 }
+
+.page-subtitle {
+  color: $primary_blue;
+  margin-bottom: 2em;
+  font-family: $lead_italic;
+
+  &:after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid $primary_orange;
+    width: 80%;
+    max-width: 300px;
+    margin: 0;
+  }
+}

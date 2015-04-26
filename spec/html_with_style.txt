@@ -1,0 +1,5 @@
+<div style="margin: 0 auto;" class="divy" id="myId">
+    <p>This is a paragraph in a div</p>
+    <img src="image.jpg" with="150" height="150" alt="my pic" style="float: left; position: absolute;">
+    <p style="background-color: #000000; color: red;">A styled p tag</p>
+</div>

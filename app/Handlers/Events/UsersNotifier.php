@@ -2,19 +2,25 @@
 
 use App\Events\PasswordWasChanged;
 
+use App\Mailing\AdminMailer;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldBeQueued;
 
 class UsersNotifier extends EventHandler {
 
     /**
+     * @var AdminMailer
+     */
+    private $mailer;
+
+    /**
      * Create the event handler.
      *
      */
-	public function __construct()
+	public function __construct(AdminMailer $mailer)
 	{
-		//
-	}
+        $this->mailer = $mailer;
+    }
 
 	/**
 	 * Handle the event.
@@ -24,7 +30,8 @@ class UsersNotifier extends EventHandler {
 	 */
 	public function whenPasswordWasChanged(PasswordWasChanged $event)
 	{
-		\Log::info($event->getUser()->name.'\'s has changed.');
+        $this->mailer->notifyOfPasswordChange($event->getUser());
+		\Log::info($event->getUser()->name.'\'s password has changed.');
 	}
 
 }

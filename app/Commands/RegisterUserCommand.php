@@ -51,7 +51,7 @@ class RegisterUserCommand extends Command {
      */
     public function getPassword()
     {
-        return bcrypt($this->password);
+        return $this->password;
     }
 
 

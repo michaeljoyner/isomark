@@ -15,13 +15,14 @@
             </ul>
         </div>
         <div class="details-col">
-            <h1>courses</h1>
+            <h1 class="page-title">courses</h1>
             @foreach($courses as $course)
                 <section class="course-detailed" id="{{$course->slug}}">
                     <div class="row">
                         <div class="col-md-6">
                             <h1 class="course-name">{{ $course->name }}</h1>
                             <div class="course-info">{!! $course->description !!}</div>
+                            <a class="btn prompt-button" href="/bookings/{{ $course->slug }}">Make Booking</a>
                         </div>
                         <div class="col-md-6">
                             <p class="course-detail-name">Unit Standard ID</p>
@@ -43,4 +44,15 @@
         </div>
     </div>
     @include('front.partials.footer')
+@endsection
+
+@section('bodyscripts')
+    <script>
+        $(".contents-col a").click(function(ev) {
+            ev.preventDefault();
+            $('html, body').animate({
+                scrollTop: $(this.getAttribute('href')).offset().top - 50
+            }, 1000);
+        });
+    </script>
 @endsection

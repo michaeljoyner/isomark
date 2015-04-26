@@ -1,0 +1,50 @@
+.enquiry-box {
+  width: 85%;
+  height: 4em;
+  max-height: 4em;
+  margin: 1em auto;
+  background-color: $primary_blue;
+  padding: 1em;
+  font-family: $body_text;
+  color: $white;
+  transition: 1s;
+  overflow: hidden;
+
+  &:hover {
+    max-height: 400px;
+    height: auto;
+  }
+
+  header {
+    color: $white;
+
+    .contact-person {
+      font-size: 2em;
+    }
+
+  }
+
+  .glyphicon {
+    color: $primary_orange;
+    padding-right: 10px;
+  }
+
+  .enquiry-details {
+    padding: 16px 0 0;
+  }
+
+  .enquiry-detail {
+    display: inline-block;
+    width: 30%;
+  }
+
+  .enquiry-body {
+    strong {
+      color: $primary_orange;
+    }
+  }
+
+  hr {
+    border-color: $primary_blue;
+  }
+}

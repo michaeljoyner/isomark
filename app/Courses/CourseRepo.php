@@ -35,9 +35,22 @@ class CourseRepo {
         return $this->model->with('category')->orderBy('name', 'asc')->get();
     }
 
+    public function getBySlug($slug)
+    {
+        return $this->model->where('slug', $slug)->firstOrFail();
+    }
+
     public function getCoursesByCategoryId($id)
     {
         return $this->model->where('course_category_id', $id)->with('category')->latest()->get();
+    }
+
+    public function getByCategorySlug($slug)
+    {
+        return $this->model->whereHas('category', function($query) use ($slug)
+        {
+            $query->where('slug', $slug);
+        })->get();
     }
 
     public function getCourseById($id)

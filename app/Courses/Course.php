@@ -1,9 +1,11 @@
 <?php namespace App\Courses;
 
+use App\Services\StyleStripper;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 
 class Course extends Model {
+
 
 	protected $table = 'courses';
 
@@ -25,6 +27,12 @@ class Course extends Model {
     {
         $this->attributes['name'] = $name;
         $this->attributes['slug'] = Str::slug($name);
+    }
+
+    public function setDescriptionAttribute($description)
+    {
+        $stipper = new StyleStripper();
+        $this->attributes['description'] = $stipper->strip($description);
     }
 
     public function category()

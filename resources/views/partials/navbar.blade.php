@@ -33,6 +33,7 @@
                         <li><a href="/admin/workshops/create">Create New Workshop</a></li>
                     </ul>
                 </li>
+                <li><a href="/admin/bookings">Booking Enquiries</a></li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right">

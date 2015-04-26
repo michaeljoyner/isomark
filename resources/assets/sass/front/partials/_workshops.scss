@@ -1,0 +1,21 @@
+.workshop-row {
+  font-family: $body_text;
+  margin-bottom: 1em;
+
+  &:hover {
+    background: $eggshell;
+  }
+
+  .workshop-detail {
+    text-transform: capitalize;
+  }
+}
+
+.workshop-list-head {
+  font-weight: 600;
+  color: $primary_blue;
+}
+
+.workshop-list-head.workshop-row .workshop-detail {
+  text-decoration: underline;
+}

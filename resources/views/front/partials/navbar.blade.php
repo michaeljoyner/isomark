@@ -6,11 +6,10 @@
         <li>
             <a href="/courses">Courses</a>
             <ul class="submenu">
-                <li><a href="#">Lifting Equipment</a></li>
-                <li><a href="#">SHEQ</a></li>
-                <li><a href="#">Skills Bundles</a></li>
-                <li><a href="#">Soft Skills</a></li>
-                <li><a href="#">Workshops</a></li>
+                @foreach($categoryList as $slug => $category)
+                <li><a href="/courses/{{ $slug }}">{{ $category }}</a></li>
+                @endforeach
+                <li><a href="/workshops">Workshops</a></li>
             </ul>
         </li>
         <li><a href="#">Contact Us</a></li>

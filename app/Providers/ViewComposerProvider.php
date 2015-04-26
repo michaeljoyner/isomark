@@ -33,6 +33,12 @@ class ViewComposerProvider extends ServiceProvider {
             $categoryList = $this->getCourseCategoyList();
             $view->with(compact('categoryList'));
         });
+
+        view()->composer('front.partials.navbar', function($view)
+        {
+            $categoryList = $this->getCategoryListWithSlug();
+            $view->with(compact('categoryList'));
+        });
 	}
 
 	/**
@@ -52,6 +58,11 @@ class ViewComposerProvider extends ServiceProvider {
     {
         $categoryList = Category::lists('name', 'id');
         return $categoryList;
+    }
+
+    private function getCategoryListWithSlug()
+    {
+        return Category::lists('name', 'slug');
     }
 
 }

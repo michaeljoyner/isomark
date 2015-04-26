@@ -8,10 +8,24 @@ Route::get('/', 'PagesController@home');
 Route::get('other', 'PagesController@other');
 Route::get('services', 'PagesController@services');
 Route::get('courses', 'PagesController@courses');
+Route::get('courses/{categorySlug}', 'PagesController@courses');
+Route::get('workshops', 'PagesController@workshops');
 
+/*
+ * Course Bookings
+ */
+Route::get('bookings', 'Courses\BookingsController@create');
+Route::get('bookings/{courseSlug}', 'Courses\BookingsController@create');
+Route::get('workshops/bookings/{workshopSlug}', 'Courses\BookingsController@createWorkshopBooking');
+Route::post('booking', 'Courses\BookingsController@store');
+Route::get('admin/bookings', 'Courses\BookingsController@index');
 
 Route::get('home', 'HomeController@index');
 Route::get('admin', 'HomeController@index');
+
+Route::get('info', function() {
+   return phpinfo();
+});
 
 /**
  * user routes
