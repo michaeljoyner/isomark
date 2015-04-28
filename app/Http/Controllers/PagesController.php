@@ -27,7 +27,7 @@ class PagesController extends Controller {
     public function courses(CourseRepo $courseRepo, $categorySlug = null)
     {
         if(!$categorySlug) {
-            $courses = $courseRepo->allByName();
+            return view('front.pages.coursepage');
         } else {
             $courses = $courseRepo->getByCategorySlug($categorySlug);
         }

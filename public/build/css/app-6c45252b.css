@@ -329,6 +329,9 @@ a, a:visited, a:active, a:hover {
   .enquiry-box hr {
     border-color: #1A2840; }
 
+.workshop-container {
+  margin: 3em auto; }
+
 .workshop-row {
   font-family: 'Open Sans', Helvetica, Ariel, sans-serif;
   margin-bottom: 1em; }
@@ -352,7 +355,8 @@ a, a:visited, a:active, a:hover {
 .page-title-banner {
   background: #333B4D;
   padding: 50px 0;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 50px; }
   .page-title-banner span {
     display: inline-block;
     border-bottom: 2px solid #F05A28;
@@ -380,7 +384,7 @@ a, a:visited, a:active, a:hover {
 
 .homepage-banner {
   width: 100%;
-  padding: 4em 0;
+  padding: 4em 0 2em;
   background: #1A2840; }
   .homepage-banner img {
     width: 80%;
@@ -420,7 +424,8 @@ a, a:visited, a:active, a:hover {
   background: #1A2840;
   color: #FFFFFF;
   font-size: 150%;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 2em; }
   .intro p {
     max-width: 700px;
     margin: 0 auto; }
@@ -501,10 +506,30 @@ a, a:visited, a:active, a:hover {
     color: #a7a7a7;
     font-weight: 300; }
 
+.course-icons-container {
+  text-align: center; }
+  .course-icons-container .course-icon-box {
+    width: 35%;
+    margin: 2em 4em;
+    min-height: 250px;
+    display: inline-block; }
+    .course-icons-container .course-icon-box h4 {
+      font-family: 'Open Sans', Helvetica, Ariel, sans-serif;
+      text-transform: uppercase;
+      color: #1A2840; }
+    .course-icons-container .course-icon-box:hover h4 {
+      color: #F05A28; }
+    .course-icons-container .course-icon-box:hover svg .svg-blue {
+      stroke: #1A2840; }
+    .course-icons-container .course-icon-box:hover svg .svg-orange {
+      stroke: #F05A28; }
+    .course-icons-container .course-icon-box:hover svg .svg-orange-fill {
+      fill: #F05A28; }
+
 .workshop-list-table {
   width: 100%;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 3em auto;
   font-family: 'Open Sans', Helvetica, Ariel, sans-serif; }
   .workshop-list-table .table-header {
     background-color: #1A2840;

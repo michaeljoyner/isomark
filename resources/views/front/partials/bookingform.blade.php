@@ -43,7 +43,7 @@
 </div>
 <div class="form-group">
     <div class="col-md-offset-3 col-md-6">
-        <button type="submit" class="btn btn-success form-control">Make Booking Enquiry</button>
+        <button type="submit" class="btn prompt-button form-control">Make Booking Enquiry</button>
     </div>
 </div>
 {!! Form::close() !!}

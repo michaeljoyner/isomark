@@ -1,10 +1,14 @@
 @extends('front.base')
 
 @section('content')
-    @include('front.partials.searchbar')
-    @include('front.partials.navbar')
-    <div class="container">
-        <h1 class="page-title">Isomark Training Workshops</h1>
+    <header>
+        @include('front.partials.searchbar')
+        @include('front.partials.navbar')
+        <div class="page-title-banner">
+            <span>Isomark Workshops</span>
+        </div>
+    </header>
+    <div class="container workshop-container">
         <div class="row workshop-list-head workshop-row">
             <div class="col-md-6 workshop-detail">
                 Workshop

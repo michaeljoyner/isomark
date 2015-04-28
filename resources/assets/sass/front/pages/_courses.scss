@@ -21,3 +21,37 @@
     font-weight: 300;
   }
 }
+
+.course-icons-container {
+  text-align: center;
+
+  .course-icon-box {
+    width: 35%;
+    margin: 2em 4em;
+    min-height: 250px;
+    display: inline-block;
+
+    h4 {
+      font-family: $body_text;
+      text-transform: uppercase;
+      color: $primary_blue;
+    }
+
+    &:hover h4 {
+      color: $primary_orange;
+    }
+
+
+    &:hover svg .svg-blue {
+      stroke: $primary_blue;
+    }
+
+    &:hover svg .svg-orange {
+      stroke: $primary_orange;
+    }
+
+    &:hover svg .svg-orange-fill {
+      fill: $primary_orange;
+    }
+  }
+}
