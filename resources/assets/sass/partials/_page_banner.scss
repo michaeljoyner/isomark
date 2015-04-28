@@ -1,0 +1,16 @@
+.page-title-banner {
+  background: $washed_blue;
+  padding: 50px 0;
+  text-align: center;
+
+  span {
+    display: inline-block;
+    border-bottom: 2px solid $primary_orange;
+    border-top: 2px solid $primary_orange;
+    text-transform: uppercase;
+    font-family: $body_text;
+    font-weight: 600;
+    font-size: 3em;
+    color: $white;
+  }
+}

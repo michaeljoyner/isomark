@@ -1,6 +1,6 @@
 .contents-col.affix {
   position: fixed;
-  padding-top: 40px;
+  top: 0;
 }
 
 .contents-col {
@@ -8,7 +8,7 @@
   float: left;
   width: 20%;
   font-family: $body_text;
-  padding-top: 100px;
+  margin-top: 100px;
 
   h2 {
     text-transform: uppercase;

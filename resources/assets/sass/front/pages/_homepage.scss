@@ -1,6 +1,7 @@
 .homepage-banner {
   width: 100%;
   padding: 4em 0;
+  background: $primary_blue;
 
   img {
     width: 80%;
@@ -28,12 +29,18 @@
   to {top: 0; opacity: 1;}
 }
 .intro {
-  max-width: 700px;
+  width: 100%;
   margin: 0 auto;
   font-family: $lead_italic;
-  color: $primary_blue;
+  background: $primary_blue;
+  color: $white;
   font-size: 150%;
   text-align: center;
+
+  p {
+    max-width: 700px;
+    margin: 0 auto;
+  }
 }
 
 .service-box, .course-box {

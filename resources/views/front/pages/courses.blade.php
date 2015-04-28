@@ -5,8 +5,11 @@
         @include('front.partials.searchbar')
         @include('front.partials.navbar')
     </header>
+    <div class="page-title-banner">
+        <span>Isomark Courses</span>
+    </div>
     <div class="content-wrapper clearfix">
-        <div class="contents-col" data-spy="affix" data-offset-top="100" data-offset-bottom="1000">
+        <div class="contents-col" data-spy="affix" data-offset-top="250" data-offset-bottom="1000">
             <h2>contents</h2>
             <ul>
                 @foreach($list as $key => $value)
@@ -15,7 +18,6 @@
             </ul>
         </div>
         <div class="details-col">
-            <h1 class="page-title">courses</h1>
             @foreach($courses as $course)
                 <section class="course-detailed" id="{{$course->slug}}">
                     <div class="row">

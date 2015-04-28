@@ -4,11 +4,27 @@ html {
 
 body {
   min-height: 100%;
+  position: relative;
+//  overflow: hidden;
 }
 
 a, a:visited, a:active, a:hover {
   text-decoration: none;
   color: inherit;
+}
+
+.slide-nav-menu {
+  position: absolute;
+  transition: 1s;
+  width: 300px;
+  min-height: 100%;
+  transform: translate3d(-300px,0,0);
+  background: $primary_blue;
+  z-index: 100;
+}
+
+.slide-nav-menu.show {
+  transform: translate3d(0,0,0);
 }
 
 .page-title {

@@ -5,7 +5,7 @@
         @include('front.partials.searchbar')
         @include('front.partials.navbar')
         <div class="homepage-banner">
-            <img src="{{ asset('images/isomark_logo.svg') }}" alt="logo"/>
+            <img src="{{ asset('images/isomark_website.png') }}" alt="logo"/>
             <h1 class="tagline">facilitating global standards</h1>
         </div>
     </header>

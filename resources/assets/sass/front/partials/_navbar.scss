@@ -8,6 +8,10 @@
     background: $primary_blue;
   }
 
+  &>ul {
+    border-bottom: 2px solid $white;
+  }
+
   &>ul>li {
     display: inline-block;
     height: 100%;
@@ -27,11 +31,13 @@
   .submenu {
     display: block;
     position: absolute;
+    top: 48px;
     overflow: hidden;
     height: 0;
     max-height: 0;
     width: 100%;
     transition: max-height .75s;
+    background: $secondary_blue;
   }
 
   &>ul>li:hover .submenu {
@@ -41,6 +47,6 @@
   }
 
   .submenu>li:hover {
-    background-color: $secondary_blue;
+    background-color: $primary_blue;
   }
 }

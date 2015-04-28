@@ -5,6 +5,9 @@
         @include('front.partials.searchbar')
         @include('front.partials.navbar')
     </header>
+    <div class="page-title-banner">
+        <span>Isomark Services</span>
+    </div>
     <div class="content-wrapper clearfix">
     <div class="contents-col" data-spy="affix" data-offset-top="100" data-offset-bottom="1000">
         <h2>contents</h2>
@@ -20,7 +23,6 @@
         </ul>
     </div>
     <div class="details-col">
-        <h1 class="page-title">services</h1>
         @foreach(range(1,9) as $index)
             <section class="service-detail clearfix" id="service{{$index}}">
                 <h1 class="service-title">Service {{$index}}</h1>
