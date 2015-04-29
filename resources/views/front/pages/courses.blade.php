@@ -6,7 +6,7 @@
         @include('front.partials.navbar')
     </header>
     <div class="page-title-banner">
-        <span>Isomark Courses</span>
+        <span>{{ $courses->first()->category->name }}</span>
     </div>
     <div class="content-wrapper clearfix">
         <div class="contents-col" data-spy="affix" data-offset-top="250" data-offset-bottom="1000">

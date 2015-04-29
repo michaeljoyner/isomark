@@ -1,8 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="129.1px"
-	 height="124.4px" viewBox="0 0 129.1 124.4" enable-background="new 0 0 129.1 124.4" xml:space="preserve">
+<svg version="1.1" viewBox="0 0 129.1 124.4" preserveAspectRatio="xMidYMin meet">
 <g id="Layer_1">
 	<g>
 		
@@ -56,7 +52,5 @@
 			<line class="svg-blue" fill="none" stroke="#808080" stroke-width="4.4444" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="113" y1="103.8" x2="113" y2="103.8"/>
 	</g>
 	<rect class="svg-blue" x="-98" y="-86.1" fill="none" stroke="#E4E4E4" stroke-miterlimit="10" width="325" height="363.6"/>
-</g>
-<g id="Layer_2" display="none">
 </g>
 </svg>

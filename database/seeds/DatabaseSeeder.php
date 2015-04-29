@@ -56,7 +56,11 @@ class CourseCategorySeeder extends Seeder {
     public function run()
     {
         DB::table('course_categories')->truncate();
-        TestDummy::times(4)->create('App\Courses\Category');
+        TestDummy::create('App\Courses\Category', ['name' => 'Safety, Health and Environment']);
+        TestDummy::create('App\Courses\Category', ['name' => 'Lifting Equipment Training']);
+        TestDummy::create('App\Courses\Category', ['name' => 'Skills Bundles']);
+        TestDummy::create('App\Courses\Category', ['name' => 'Soft Skills Programmes']);
+
     }
 }
 

@@ -1,0 +1,60 @@
+.contents-col.affix {
+  position: fixed;
+  top: 0;
+}
+
+.contents-col {
+  position: relative;
+  float: left;
+  width: 20%;
+  font-family: $body_text;
+  margin-top: 100px;
+
+  h2 {
+    text-transform: uppercase;
+    color: $grey_text;
+    text-align: center;
+  }
+
+  ul {
+    list-style-type: none;
+    color: $primary_orange;
+  }
+  
+  li {
+    text-transform: capitalize;
+  }
+}
+
+.details-col {
+  margin-top: 100px;
+  width: 78%;
+  float: right;
+  font-family: $body_text;
+  padding: 50px;
+  padding-top: 0;
+  padding-left: 100px;
+  border-left: 1px solid $grey_text;
+
+  h1 {
+    color: $primary_blue;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+
+  .service-detail {
+    border-bottom: 1px solid $grey_text;
+    margin-top: 40px;
+  }
+
+  .service-title {
+    color: $primary_orange;
+    text-align: left;
+  }
+
+  .service-description {
+    color: $grey_text;
+    font-weight: 300;
+  }
+}

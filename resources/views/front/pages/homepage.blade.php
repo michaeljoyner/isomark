@@ -10,7 +10,7 @@
         </div>
     </header>
     <section class="intro">
-        <p>Isomark prides itself on not only providing the best possible services to our clients, but also realise that each client has special requirements. Therefore at Isomark we do our utmost to identify with your individual needs and address them to your complete satisfaction</p>
+        <p>Isomark prides itself on providing the best possible services to our clients, and we also realise that each client has special requirements. Therefore at Isomark we do our utmost to identify with your individual needs and address them to your absolute satisfaction</p>
     </section>
     @include('front.partials.carousel')
     <section class="section-container" id="services">

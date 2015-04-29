@@ -1,60 +1,77 @@
-.contents-col.affix {
-  position: fixed;
-  top: 0;
+.service-container {
+  font-family: $body_text;
+
+  p {
+    max-width: 800px;
+    margin: 1em auto;
+    color: $grey_text;
+  }
 }
 
-.contents-col {
+.service-icon-container {
+  text-align: center;
+
+
+  .service-icon-box {
+    width: 28%;
+    max-width: 250px;
+    max-height: 320px;
+    margin: 1%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    border: 1px solid $grey_text;
+    padding: 50px 1em;
+
+    &:hover {
+      border-color: $primary_orange;
+    }
+
+    &:hover svg .svg-blue {
+      stroke: $primary_blue;
+    }
+
+    &:hover svg .svg-orange {
+      stroke: $primary_orange;
+    }
+    svg {
+      max-width: 150px;
+      width: 100%;
+      max-height: 150px;
+    }
+
+    h4 {
+      font-family: $body_text;
+      text-transform: uppercase;
+      color: $primary_blue;
+      padding-top: 50px;
+    }
+
+    &:hover h4 {
+      color: $primary_orange;
+    }
+
+  }
+
+}
+
+.service-content-area {
+  font-family: $body_text;
+  color: $grey_text;
   position: relative;
-  float: left;
-  width: 20%;
-  font-family: $body_text;
-  margin-top: 100px;
+  min-height: 400px;
 
-  h2 {
+
+  section {
+    max-width: 800px;
+    margin: 1em auto;
+//    position: absolute;
+//    top: 0;
+//    left: 0;
+    display: none;
+  }
+  h2, h3, h4 {
     text-transform: uppercase;
-    color: $grey_text;
-    text-align: center;
-  }
-
-  ul {
-    list-style-type: none;
     color: $primary_orange;
-  }
-  
-  li {
-    text-transform: capitalize;
-  }
-}
-
-.details-col {
-  margin-top: 100px;
-  width: 78%;
-  float: right;
-  font-family: $body_text;
-  padding: 50px;
-  padding-top: 0;
-  padding-left: 100px;
-  border-left: 1px solid $grey_text;
-
-  h1 {
-    color: $primary_blue;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 50px;
-  }
-
-  .service-detail {
-    border-bottom: 1px solid $grey_text;
-    margin-top: 40px;
-  }
-
-  .service-title {
-    color: $primary_orange;
-    text-align: left;
-  }
-
-  .service-description {
-    color: $grey_text;
-    font-weight: 300;
   }
 }
