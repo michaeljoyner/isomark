@@ -28,3 +28,13 @@ $factory('App\Courses\Workshop', [
     'duration' => 'Half a day',
     'fee' => 'R450.00'
 ]);
+
+$factory('App\Courses\BookingEnquiry', [
+    'name' => $faker->name,
+    'email' => $faker->email,
+    'phone' => $faker->randomNumber(5),
+    'company' => $faker->words(2),
+    'course_names' => $faker->words(3),
+    'course_usids' => $faker->randomNumber(5),
+    'enquiry' => $faker->paragraph()
+]);

@@ -4,17 +4,26 @@
 
     <div class="row">
         <div class="col-md-4 service-box">
-            <h1 class="item-name">service name</h1>
+            <div class="service-icon-holder">
+                @include('svg.isomark_website-20')
+            </div>
+            <h4 class="service-title">Consulting</h4>
             <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, aut beatae cupiditate debitis deserunt et eveniet excepturi exercitationem, inventore molestiae nulla officia pariatur provident repellendus sit sunt tenetur totam ut.</p>
         </div>
         <div class="col-md-4 service-box">
-            <h1 class="item-name">service name</h1>
+            <div class="service-icon-holder">
+                @include('svg.isomark_website-21')
+            </div>
+            <h4 class="service-title">Placement</h4>
             <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, aut beatae cupiditate debitis deserunt et eveniet excepturi exercitationem, inventore molestiae nulla officia pariatur provident repellendus sit sunt tenetur totam ut.</p>
         </div>
         <div class="col-md-4 service-box">
-            <h1 class="item-name">service name</h1>
+            <div class="service-icon-holder">
+                @include('svg.isomark_website-22')
+            </div>
+            <h4 class="service-title">Training</h4>
             <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, aut beatae cupiditate debitis deserunt et eveniet excepturi exercitationem, inventore molestiae nulla officia pariatur provident repellendus sit sunt tenetur totam ut.</p>
         </div>
     </div>
-    <a href="/services"><button class="btn prompt-button">more services</button></a>
+    <a href="/services"><button class="btn prompt-button">learn more</button></a>
 </div>

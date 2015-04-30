@@ -61,6 +61,10 @@
   position: relative;
   min-height: 400px;
 
+  ul li {
+    list-style-image: url(../../images/isomark_bullet.png);
+  }
+
 
   section {
     max-width: 800px;
@@ -74,4 +78,21 @@
     text-transform: uppercase;
     color: $primary_orange;
   }
+}
+
+.service-icon-holder {
+  max-width: 80px;
+  max-height: 80px;
+  margin: 0 auto;
+
+  svg {
+    width: 100%;
+  }
+}
+
+.service-title {
+  font-family: $body_text;
+  text-transform: uppercase;
+  color: $primary_orange;
+  margin-top: 40px;
 }
