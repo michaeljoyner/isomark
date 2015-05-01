@@ -508,12 +508,18 @@ a, a:visited, a:active, a:hover {
     vertical-align: top;
     text-align: center;
     border: 1px solid #808080;
-    padding: 50px 1em; }
-    .service-icon-container .service-icon-box:hover {
+    padding: 50px 1em;
+    transition: .75s; }
+    .service-icon-container .service-icon-box.dim {
+      opacity: 0.5;
+      -webkit-transform: scale(.8, .8);
+          -ms-transform: scale(.8, .8);
+              transform: scale(.8, .8); }
+    .service-icon-container .service-icon-box:hover, .service-icon-container .service-icon-box.current {
       border-color: #F05A28; }
-    .service-icon-container .service-icon-box:hover svg .svg-blue {
+    .service-icon-container .service-icon-box:hover svg .svg-blue, .service-icon-container .service-icon-box.current svg .svg-blue {
       stroke: #1A2840; }
-    .service-icon-container .service-icon-box:hover svg .svg-orange {
+    .service-icon-container .service-icon-box:hover svg .svg-orange, .service-icon-container .service-icon-box.current svg .svg-orange {
       stroke: #F05A28; }
     .service-icon-container .service-icon-box svg {
       max-width: 150px;

@@ -22,16 +22,22 @@
     text-align: center;
     border: 1px solid $grey_text;
     padding: 50px 1em;
+    transition: .75s;
 
-    &:hover {
+    &.dim {
+      opacity: 0.5;
+      transform: scale(.8,.8);
+    }
+
+    &:hover, &.current {
       border-color: $primary_orange;
     }
 
-    &:hover svg .svg-blue {
+    &:hover svg .svg-blue, &.current svg .svg-blue {
       stroke: $primary_blue;
     }
 
-    &:hover svg .svg-orange {
+    &:hover svg .svg-orange, &.current svg .svg-orange {
       stroke: $primary_orange;
     }
     svg {
