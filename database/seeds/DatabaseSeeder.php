@@ -24,6 +24,7 @@ class DatabaseSeeder extends Seeder {
         $this->call('CourseCategorySeeder');
         $this->call('CourseTableSeeder');
         $this->call('WorkshopTableSeeder');
+        $this->call('BookingEnquiriesSeeder');
     }
 
 }
@@ -70,5 +71,13 @@ class WorkshopTableSeeder extends Seeder {
     {
         DB::table('workshops')->truncate();
         TestDummy::times(10)->create('App\Courses\Workshop');
+    }
+}
+
+class BookingEnquiriesSeeder extends  Seeder {
+    public function run()
+    {
+        DB::table('booking_enquiries')->truncate();
+        TestDummy::times(10)->create('App\Courses\BookingEnquiry');
     }
 }
