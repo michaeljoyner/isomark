@@ -33,6 +33,8 @@
             <p>The above option allows an ISOMARK Consultant to implement a Risk Management Program for a pre-determined period, e.g. 6 months or as per client requirements. Should a client wish to ensure legal compliance with the OHS Act only or implement a total Risk Management program, then the client should choose this option.</p>
             <h3 class="service-section-title">Baseline Assessments/Gap Assessments</h3>
             <p>Assessments can be conducted to assess the compliance level of existing Safety, Health and Environment System, be it an ISO System or any other. All Safety, Health and Environment aspects will be assessed according to the Occupational Health and Safety Act 85 of 1993 or company legal register. A detailed report will be supplied to Senior Management detailing improvement and corrective recommendations.</p>
+            <h3 class="service-section-title">Isomark Consulting Option</h3>
+            <p>This option allows for an Isomark Consultant to visit the site at pre-determined intervals, e.g. one day per week, to monitor, evaluate and advise on the existing SHE system or full time Isomark safety officer to ensure day-to-day risk management is met.  This option is determined on client needs and risk profile.</p>
             <button class="btn prompt-button service-clear-button">Clear</button>
         </section>
         <section id="placement-service">
@@ -136,7 +138,7 @@
             },
 
             showService: function(ev) {
-//                console.log(ev.currentTarget);
+                var triggers = serviceManager.elems.triggers;
                 if(serviceManager.elems[ev.currentTarget.id] == serviceManager.elems.current) {
                     return;
                 }
@@ -144,14 +146,13 @@
                 if(serviceManager.elems.triggers.current) {
                     serviceManager.elems.triggers.current.classList.remove('current');
                 }
-                serviceManager.elems.triggers.current = ev.currentTarget;
-                serviceManager.elems.triggers.current.classList.remove('dim');
-                serviceManager.elems.triggers.current.classList.add('current');
-                for(var el in serviceManager.elems.triggers) {
-                    if(serviceManager.elems.triggers.hasOwnProperty(el)) {
-                        if(serviceManager.elems.triggers[el] !== serviceManager.elems.triggers.current) {
-                            serviceManager.elems.triggers[el].classList.add("dim");
-                            console.log(el);
+                triggers.current = ev.currentTarget;
+                triggers.current.classList.remove('dim');
+                triggers.current.classList.add('current');
+                for(var el in triggers) {
+                    if(triggers.hasOwnProperty(el)) {
+                        if(triggers[el] !== triggers.current) {
+                            triggers[el].classList.add("dim");
                         }
                     }
                 }
