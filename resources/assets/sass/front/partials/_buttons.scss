@@ -4,6 +4,12 @@
   border-radius: 0;
   text-transform: uppercase;
   font-family: $body_text;
-  margin-bottom: 50px;
-  margin-top: 50px;
+
+  &:hover {
+    color: $primary_blue;
+  }
+
+  &:visited, &:focus, &:active {
+    color: $white;
+  }
 }

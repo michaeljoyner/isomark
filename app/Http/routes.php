@@ -64,3 +64,27 @@ Route::get('admin/workshops/edit/{id}', 'Courses\WorkshopsController@edit');
 Route::post('admin/workshops', 'Courses\WorkshopsController@store');
 Route::post('admin/workshops/{id}', 'Courses\WorkshopsController@update');
 Route::delete('admin/workshops/{id}', 'Courses\WorkshopsController@deleteById');
+
+/*
+ * Contacts
+ */
+Route::get('admin/contacts/show', 'Admin\ContactsController@index');
+
+Route::get('admin/contacts/address/create', 'Admin\ContactsController@createAddress');
+Route::post('admin/contacts/address', 'Admin\ContactsController@storeAddress');
+Route::get('admin/contacts/address/{id}', 'Admin\ContactsController@editAddress');
+Route::post('admin/contacts/address/{id}', 'Admin\ContactsController@updateAddress');
+
+Route::get('admin/contacts/person/create', 'Admin\ContactsController@createPerson');
+Route::post('admin/contacts/person', 'Admin\ContactsController@storePerson');
+Route::get('admin/contacts/person/{id}', 'Admin\ContactsController@editPerson');
+Route::post('admin/contacts/person/{id}', 'Admin\ContactsController@updatePerson');
+
+Route::get('admin/contacts/phonenumber/create', 'Admin\ContactsController@createPhoneNumber');
+Route::post('admin/contacts/phonenumber', 'Admin\ContactsController@storePhoneNumber');
+Route::get('admin/contacts/phonenumber/{id}', 'Admin\ContactsController@editPhoneNumber');
+Route::post('admin/contacts/phonenumber/{id}', 'Admin\ContactsController@updatePhoneNumber');
+
+Route::delete('admin/contacts/address/{id}', 'Admin\ContactsController@deleteAddress');
+Route::delete('admin/contacts/person/{id}', 'Admin\ContactsController@deletePerson');
+Route::delete('admin/contacts/phonenumber/{id}', 'Admin\ContactsController@deletePhoneNumber');

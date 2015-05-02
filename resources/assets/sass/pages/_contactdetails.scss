@@ -1,0 +1,27 @@
+.contacts-box {
+  font-family: $body_text;
+  color: $grey_text;
+  width: 40%;
+  display: inline-block;
+  margin: 1em;
+  padding: 1em;
+
+  &>p:first-child {
+    color: $primary_orange;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+}
+
+.contacts-section {
+  position: relative;
+  margin-bottom: 50px;
+  border: 1px solid $light_grey;
+  padding-left: 1em;
+  .create-button.prompt-button {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  }
+}
+

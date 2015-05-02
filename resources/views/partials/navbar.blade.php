@@ -34,6 +34,7 @@
                     </ul>
                 </li>
                 <li><a href="/admin/bookings">Booking Enquiries</a></li>
+                <li><a href="/admin/contacts/show">Contact Info</a></li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
