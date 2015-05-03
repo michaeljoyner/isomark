@@ -263,6 +263,10 @@ a, a:visited, a:active, a:hover {
   .prompt-button:visited, .prompt-button:focus, .prompt-button:active {
     color: #FFFFFF; }
 
+.prompt-button.spaced {
+  margin-bottom: 50px;
+  margin-top: 50px; }
+
 .main-footer {
   background: #1A2840;
   color: #FFFFFF;
@@ -295,7 +299,7 @@ a, a:visited, a:active, a:hover {
   color: #F05A28;
   font-family: 'Open Sans', Helvetica, Ariel, sans-serif; }
 .isomark-form input[type=text], .isomark-form input[type=email], .isomark-form textarea, .isomark-form select {
-  border: 1px solid #1A2840;
+  border: 1px solid #2D456E;
   border-radius: 0; }
 .isomark-form input[type=text]:focus, .isomark-form input[type=email]:focus {
   border-color: #e5e5e5; }
@@ -369,6 +373,44 @@ a, a:visited, a:active, a:hover {
     font-size: 3em;
     color: #FFFFFF; }
 
+.home-contact-form {
+  max-width: 800px;
+  text-align: left;
+  position: relative; }
+  .home-contact-form .row {
+    margin-bottom: 25px; }
+  .home-contact-form textarea {
+    height: 150px;
+    resize: none; }
+  .home-contact-form .covering {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #EF7A54;
+    z-index: 1000;
+    transition: 1s;
+    overflow: hidden; }
+    .home-contact-form .covering .thanks {
+      font-size: 1.5em;
+      font-family: 'Open Sans', Helvetica, Ariel, sans-serif;
+      font-weight: 300;
+      color: #FFFFFF;
+      margin-top: 150px;
+      text-align: center;
+      transition: 1s;
+      transition-delay: 1s;
+      opacity: 0; }
+  .home-contact-form.used .covering {
+    width: 100%; }
+    .home-contact-form.used .covering .thanks {
+      opacity: 1; }
+  .home-contact-form #error-box {
+    text-align: center;
+    font-size: 120%;
+    color: #F05A28; }
+
 .alert-info {
   position: absolute;
   width: 300px;
@@ -438,8 +480,8 @@ a, a:visited, a:active, a:hover {
   margin-top: 2em; }
 
 .service-box:nth-child(2), .course-box:nth-child(2) {
-  border-left: 1px solid #808080;
-  border-right: 1px solid #808080; }
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5; }
 
 .client-box {
   padding: 50px;

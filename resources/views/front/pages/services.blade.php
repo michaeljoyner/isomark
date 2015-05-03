@@ -176,6 +176,7 @@
                 }
                 triggers.current = null;
                 $(serviceManager.elems.current).hide();
+                serviceManager.elems.current = null;
             }
         }
         serviceManager.init();

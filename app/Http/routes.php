@@ -88,3 +88,9 @@ Route::post('admin/contacts/phonenumber/{id}', 'Admin\ContactsController@updateP
 Route::delete('admin/contacts/address/{id}', 'Admin\ContactsController@deleteAddress');
 Route::delete('admin/contacts/person/{id}', 'Admin\ContactsController@deletePerson');
 Route::delete('admin/contacts/phonenumber/{id}', 'Admin\ContactsController@deletePhoneNumber');
+
+/*
+ * Contact form
+ */
+
+Route::post('ajax/contact', 'PagesController@contactMessage');

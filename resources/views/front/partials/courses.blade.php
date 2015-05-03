@@ -30,5 +30,5 @@
             <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, aut beatae cupiditate debitis deserunt et eveniet excepturi exercitationem, inventore molestiae nulla officia pariatur provident repellendus sit sunt tenetur totam ut.</p>
         </div>
     </div>
-    <a href="/courses"><button class="btn prompt-button">more courses</button></a>
+    <a href="/courses"><button class="btn prompt-button spaced">more courses</button></a>
 </div>

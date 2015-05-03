@@ -38,4 +38,14 @@ class AdminMailer extends Mailer {
         $this->sendTo($to, $from, $subject, $view, $data);
 
     }
+
+    public function sendSiteMessage($sender_name, $sender_email, $enquiry)
+    {
+        $to = ['joyner.michael@gmail' => 'Michael Joyner'];
+        $from = $sender_email;
+        $data = compact('enquiry', 'sender_name');
+        $view = 'emails.admin.sitemessage';
+        $subject = 'Isomark Site message from '.$sender_name;
+        $this->sendTo($to, $from, $subject, $view, $data);
+    }
 }

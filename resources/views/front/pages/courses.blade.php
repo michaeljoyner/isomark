@@ -24,7 +24,7 @@
                         <div class="col-md-6">
                             <h1 class="course-name">{{ $course->name }}</h1>
                             <div class="course-info">{!! $course->description !!}</div>
-                            <a class="btn prompt-button" href="/bookings/{{ $course->slug }}">Make Booking</a>
+                            <a class="btn prompt-button spaced" href="/bookings/{{ $course->slug }}">Make Booking</a>
                         </div>
                         <div class="col-md-6">
                             <p class="course-detail-name">Unit Standard ID</p>

@@ -1,0 +1,52 @@
+.home-contact-form {
+  max-width: 800px;
+  text-align: left;
+  position: relative;
+
+  .row {
+    margin-bottom: 25px;
+  }
+
+  textarea {
+    height: 150px;
+    resize: none;
+  }
+
+  .covering {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: $secondary_orange;
+    z-index: 1000;
+    transition: 1s;
+    overflow: hidden;
+
+    .thanks {
+      font-size: 1.5em;
+      font-family: $body_text;
+      font-weight: 300;
+      color: $white;
+      margin-top: 150px;
+      text-align: center;
+      transition: 1s;
+      transition-delay: 1s;
+      opacity: 0;
+    }
+  }
+
+  &.used .covering {
+    width: 100%;
+
+    .thanks {
+      opacity: 1;
+    }
+  }
+
+  #error-box {
+    text-align: center;
+    font-size: 120%;
+    color: $primary_orange;
+  }
+}

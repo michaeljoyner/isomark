@@ -1,10 +1,12 @@
 <?php namespace App\Http\Controllers;
 
+use App\Commands\SendContactMessageCommand;
 use App\Courses\CourseRepo;
 use App\Courses\WorkshopRepository;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use App\Http\Requests\ContactFormRequest;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller {
@@ -40,6 +42,13 @@ class PagesController extends Controller {
         $workshops = $workshopRepository->all();
 
         return view('front.pages.workshops')->with(compact('workshops'));
+    }
+
+    public function contactMessage(ContactFormRequest $request)
+    {
+        $this->dispatch(new SendContactMessageCommand($request->all()));
+
+        return response()->json('okay');
     }
 
 }

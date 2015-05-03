@@ -25,5 +25,5 @@
             <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, aut beatae cupiditate debitis deserunt et eveniet excepturi exercitationem, inventore molestiae nulla officia pariatur provident repellendus sit sunt tenetur totam ut.</p>
         </div>
     </div>
-    <a href="/services"><button class="btn prompt-button">learn more</button></a>
+    <a href="/services"><button class="btn prompt-button spaced">learn more</button></a>
 </div>
