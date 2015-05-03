@@ -75,4 +75,28 @@ class BookingsController extends Controller {
         return redirect('courses');
     }
 
+    public function toggleRead($id)
+    {
+        if($this->enquiriesRepository->toggleReadStatus($id))
+        {
+            return response()->json('okay');
+        }
+        return response()->json('failed', 400);
+    }
+
+    public function archive($id)
+    {
+        if($this->enquiriesRepository->archiveEnquiry($id))
+        {
+            return response()->json('okay');
+        }
+        return response()->json('failed', 400);
+    }
+
+    public function archivedIndex()
+    {
+        $enquiries = $this->enquiriesRepository->allArchived();
+        return view('admin.bookings.archives')->with(compact('enquiries'));
+    }
+
 }

@@ -10,16 +10,29 @@
   transition: 1s;
   overflow: hidden;
 
+
+  &.been-read {
+    background-color: $grey_text;
+  }
+
+  &.archived {
+    background-color: $secondary_blue;
+  }
+
   &:hover {
     max-height: 400px;
     height: auto;
+  }
+
+  .toggle-read, .archive {
+    margin: 0 1em;
   }
 
   header {
     color: $white;
 
     .contact-person {
-      font-size: 2em;
+      font-size: 1.5em;
     }
 
   }
@@ -47,4 +60,18 @@
   hr {
     border-color: $primary_blue;
   }
+}
+
+.bookings-container {
+  position: relative;
+
+  .archive-button {
+    position: absolute;
+    top: 3em;
+    right: 1em;
+  }
+}
+
+.error-alert {
+  display: none;
 }

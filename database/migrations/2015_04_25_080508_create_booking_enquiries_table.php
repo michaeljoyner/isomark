@@ -22,6 +22,8 @@ class CreateBookingEnquiriesTable extends Migration {
             $table->text('course_names');
             $table->text('course_usids');
             $table->text('enquiry');
+            $table->boolean('been_read')->default(false);
+            $table->boolean('archived')->default(false);
 			$table->timestamps();
 		});
 	}

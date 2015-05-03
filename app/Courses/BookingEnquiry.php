@@ -13,6 +13,8 @@ class BookingEnquiry extends Model {
         'company',
         'course_names',
         'course_usids',
-        'enquiry'
+        'enquiry',
+        'been_read',
+        'archived'
     ];
 }

@@ -19,6 +19,9 @@ Route::get('bookings/{courseSlug}', 'Courses\BookingsController@create');
 Route::get('workshops/bookings/{workshopSlug}', 'Courses\BookingsController@createWorkshopBooking');
 Route::post('booking', 'Courses\BookingsController@store');
 Route::get('admin/bookings', 'Courses\BookingsController@index');
+Route::post('admin/bookings/toggleread/{id}', 'Courses\BookingsController@toggleRead');
+Route::post('admin/bookings/archive/{id}', 'Courses\BookingsController@archive');
+Route::get('admin/bookings/archived', 'Courses\BookingsController@archivedIndex');
 
 Route::get('home', 'HomeController@index');
 Route::get('admin', 'HomeController@index');

@@ -23,12 +23,17 @@ class BookingEnquiriesRepository {
 
     public function all()
     {
-        return $this->model->latest()->get();
+        return $this->model->where('archived', false)->latest()->get();
+    }
+
+    public function allArchived()
+    {
+        return $this->model->where('archived', true)->latest()->get();
     }
 
     public function allFromLastWeek()
     {
-        return $this->model->where('created_at', '>=', time() - (7*24*60*60))->get();
+        return $this->model->where('archived', false)->where('created_at', '>=', time() - (7*24*60*60))->get();
     }
 
     public function allFromLastMonth()
@@ -39,6 +44,21 @@ class BookingEnquiriesRepository {
     public function store(array $data)
     {
         return $this->model->create($data);
+    }
+
+    public function toggleReadStatus($id)
+    {
+        $enquiry = $this->model->findOrFail($id);
+        $current_status = $enquiry->been_read;
+        $enquiry->been_read = ! $current_status;
+        return $enquiry->save();
+    }
+
+    public function archiveEnquiry($id)
+    {
+        $enquiry = $this->model->findOrFail($id);
+        $enquiry->archived = true;
+        return $enquiry->save();
     }
 
 }
