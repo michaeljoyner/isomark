@@ -1,14 +1,12 @@
 <?php namespace App\Http\Controllers\Admin;
 
-use App\Commands\CreateAddressCommand;
-use App\Commands\CreateOfficeCommand;
-use App\Commands\CreatePersonCommand;
-use App\Commands\CreatePhoneNumberCommand;
-use App\Commands\EditAddressCommand;
-use App\Commands\EditPersonCommand;
-use App\Commands\EditPhoneNumberCommand;
+use App\Commands\Contacts\CreateAddressCommand;
+use App\Commands\Contacts\CreatePersonCommand;
+use App\Commands\Contacts\CreatePhoneNumberCommand;
+use App\Commands\Contacts\EditAddressCommand;
+use App\Commands\Contacts\EditPersonCommand;
+use App\Commands\Contacts\EditPhoneNumberCommand;
 use App\Contacts\Address;
-use App\Contacts\Office;
 use App\Contacts\Person;
 use App\Contacts\PhoneNumber;
 use App\Http\Requests;
@@ -18,10 +16,6 @@ use Illuminate\Http\Request;
 
 class ContactsController extends Controller {
 
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
 
     public function index()
     {

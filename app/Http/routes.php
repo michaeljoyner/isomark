@@ -1,11 +1,14 @@
 <?php
 
 
+Route::controllers([
+	'auth' => 'Auth\AuthController',
+	'password' => 'Auth\PasswordController',
+]);
 /**
  * public/guest routes
  */
 Route::get('/', 'PagesController@home');
-Route::get('other', 'PagesController@other');
 Route::get('services', 'PagesController@services');
 Route::get('courses', 'PagesController@courses');
 Route::get('courses/{categorySlug}', 'PagesController@courses');
@@ -18,82 +21,78 @@ Route::get('bookings', 'Courses\BookingsController@create');
 Route::get('bookings/{courseSlug}', 'Courses\BookingsController@create');
 Route::get('workshops/bookings/{workshopSlug}', 'Courses\BookingsController@createWorkshopBooking');
 Route::post('booking', 'Courses\BookingsController@store');
-Route::get('admin/bookings', 'Courses\BookingsController@index');
-Route::post('admin/bookings/toggleread/{id}', 'Courses\BookingsController@toggleRead');
-Route::post('admin/bookings/archive/{id}', 'Courses\BookingsController@archive');
-Route::get('admin/bookings/archived', 'Courses\BookingsController@archivedIndex');
-
-Route::get('home', 'HomeController@index');
-Route::get('admin', 'HomeController@index');
-
-Route::get('info', function() {
-   return phpinfo();
-});
-
-/**
- * user routes
- */
-Route::get('admin/users', 'UsersController@index');
-Route::get('admin/users/edit/{id}', 'UsersController@showEdit');
-Route::post('admin/users/edit/{id}', 'UsersController@edit');
-Route::get('admin/users/changepassword/{id}', 'Auth\PasswordController@showPasswordChange');
-Route::post('admin/users/changepassword/{id}', 'Auth\PasswordController@changePassword');
-Route::post('admin/users/register', 'UsersController@registerUser');
-Route::delete('admin/users/{id}', 'UsersController@deleteUser');
-
-/**
- * course routes
- */
-Route::get('admin/courses', 'CoursesController@index');
-Route::get('admin/courses/category/{id}', 'CoursesController@showCategory');
-Route::post('admin/courses', 'CoursesController@store');
-Route::post('admin/courses/search', 'CoursesController@search');
-Route::get('admin/courses/create', 'CoursesController@create');
-Route::get('admin/courses/edit/{id}', 'CoursesController@edit');
-Route::post('admin/courses/edit/{id}', 'CoursesController@update');
-Route::delete('admin/courses/{id}', 'CoursesController@delete');
-
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-]);
-
-/*
- * Workshops routes
- */
-Route::get('admin/workshops', 'Courses\WorkshopsController@index');
-Route::get('admin/workshops/create', 'Courses\WorkshopsController@create');
-Route::get('admin/workshops/edit/{id}', 'Courses\WorkshopsController@edit');
-Route::post('admin/workshops', 'Courses\WorkshopsController@store');
-Route::post('admin/workshops/{id}', 'Courses\WorkshopsController@update');
-Route::delete('admin/workshops/{id}', 'Courses\WorkshopsController@deleteById');
-
-/*
- * Contacts
- */
-Route::get('admin/contacts/show', 'Admin\ContactsController@index');
-
-Route::get('admin/contacts/address/create', 'Admin\ContactsController@createAddress');
-Route::post('admin/contacts/address', 'Admin\ContactsController@storeAddress');
-Route::get('admin/contacts/address/{id}', 'Admin\ContactsController@editAddress');
-Route::post('admin/contacts/address/{id}', 'Admin\ContactsController@updateAddress');
-
-Route::get('admin/contacts/person/create', 'Admin\ContactsController@createPerson');
-Route::post('admin/contacts/person', 'Admin\ContactsController@storePerson');
-Route::get('admin/contacts/person/{id}', 'Admin\ContactsController@editPerson');
-Route::post('admin/contacts/person/{id}', 'Admin\ContactsController@updatePerson');
-
-Route::get('admin/contacts/phonenumber/create', 'Admin\ContactsController@createPhoneNumber');
-Route::post('admin/contacts/phonenumber', 'Admin\ContactsController@storePhoneNumber');
-Route::get('admin/contacts/phonenumber/{id}', 'Admin\ContactsController@editPhoneNumber');
-Route::post('admin/contacts/phonenumber/{id}', 'Admin\ContactsController@updatePhoneNumber');
-
-Route::delete('admin/contacts/address/{id}', 'Admin\ContactsController@deleteAddress');
-Route::delete('admin/contacts/person/{id}', 'Admin\ContactsController@deletePerson');
-Route::delete('admin/contacts/phonenumber/{id}', 'Admin\ContactsController@deletePhoneNumber');
 
 /*
  * Contact form
  */
 
 Route::post('ajax/contact', 'PagesController@contactMessage');
+
+Route::get('home', 'HomeController@index');
+Route::get('admin', 'HomeController@index');
+
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function()
+{
+    /*
+     * Course bookings admin
+     */
+    Route::get('bookings', 'Courses\BookingsController@index');
+    Route::post('bookings/toggleread/{id}', 'Courses\BookingsController@toggleRead');
+    Route::post('bookings/archive/{id}', 'Courses\BookingsController@archive');
+    Route::get('bookings/archived', 'Courses\BookingsController@archivedIndex');
+    /**
+     * user routes
+     */
+    Route::get('users', 'UsersController@index');
+    Route::get('users/edit/{id}', 'UsersController@showEdit');
+    Route::post('users/edit/{id}', 'UsersController@edit');
+    Route::get('users/changepassword/{id}', 'Auth\PasswordController@showPasswordChange');
+    Route::post('users/changepassword/{id}', 'Auth\PasswordController@changePassword');
+    Route::post('users/register', 'UsersController@registerUser');
+    Route::delete('users/{id}', 'UsersController@deleteUser');
+
+    /**
+     * course routes
+     */
+    Route::get('courses', 'Courses\CoursesController@index');
+    Route::get('courses/category/{id}', 'Courses\CoursesController@showCategory');
+    Route::post('courses', 'Courses\CoursesController@store');
+    Route::post('courses/search', 'Courses\CoursesController@search');
+    Route::get('courses/create', 'Courses\CoursesController@create');
+    Route::get('courses/edit/{id}', 'Courses\CoursesController@edit');
+    Route::post('courses/edit/{id}', 'Courses\CoursesController@update');
+    Route::delete('courses/{id}', 'Courses\CoursesController@delete');
+
+
+    /*
+     * Workshops routes
+     */
+    Route::get('workshops', 'Courses\WorkshopsController@index');
+    Route::get('workshops/create', 'Courses\WorkshopsController@create');
+    Route::get('workshops/edit/{id}', 'Courses\WorkshopsController@edit');
+    Route::post('workshops', 'Courses\WorkshopsController@store');
+    Route::post('workshops/{id}', 'Courses\WorkshopsController@update');
+    Route::delete('workshops/{id}', 'Courses\WorkshopsController@deleteById');
+    /*
+     * Contacts
+     */
+    Route::get('contacts/show', 'Admin\ContactsController@index');
+    Route::get('contacts/address/create', 'Admin\ContactsController@createAddress');
+    Route::post('contacts/address', 'Admin\ContactsController@storeAddress');
+    Route::get('contacts/address/{id}', 'Admin\ContactsController@editAddress');
+    Route::post('contacts/address/{id}', 'Admin\ContactsController@updateAddress');
+    Route::get('contacts/person/create', 'Admin\ContactsController@createPerson');
+    Route::post('contacts/person', 'Admin\ContactsController@storePerson');
+    Route::get('contacts/person/{id}', 'Admin\ContactsController@editPerson');
+    Route::post('contacts/person/{id}', 'Admin\ContactsController@updatePerson');
+    Route::get('contacts/phonenumber/create', 'Admin\ContactsController@createPhoneNumber');
+    Route::post('contacts/phonenumber', 'Admin\ContactsController@storePhoneNumber');
+    Route::get('contacts/phonenumber/{id}', 'Admin\ContactsController@editPhoneNumber');
+    Route::post('contacts/phonenumber/{id}', 'Admin\ContactsController@updatePhoneNumber');
+    Route::delete('contacts/address/{id}', 'Admin\ContactsController@deleteAddress');
+    Route::delete('contacts/person/{id}', 'Admin\ContactsController@deletePerson');
+    Route::delete('contacts/phonenumber/{id}', 'Admin\ContactsController@deletePhoneNumber');
+});
+
+
+

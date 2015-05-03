@@ -1,6 +1,6 @@
 <?php namespace App\Http\Controllers\Auth;
 
-use App\Commands\ChangePasswordCommand;
+use App\Commands\Users\ChangePasswordCommand;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ChangePasswordFormRequest;
 use App\Users\UsersRepository;

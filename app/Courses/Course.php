@@ -39,15 +39,4 @@ class Course extends Model {
     {
         return $this->belongsTo('\App\Courses\Category', 'course_category_id');
     }
-
-    public function bookingDates()
-    {
-        return $this->hasOne('\App\Courses\BookableCourse', 'course_id');
-    }
-
-    public function mustBeBooked()
-    {
-        return count($this->bookingDates()->get()) === 1;
-    }
-
 }

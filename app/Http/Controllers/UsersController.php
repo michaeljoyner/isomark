@@ -1,8 +1,8 @@
 <?php namespace App\Http\Controllers;
 
-use App\Commands\DeleteUserCommand;
-use App\Commands\EditUserCommand;
-use App\Commands\RegisterUserCommand;
+use App\Commands\Users\DeleteUserCommand;
+use App\Commands\Users\EditUserCommand;
+use App\Commands\Users\RegisterUserCommand;
 use App\Events\UserWasRegistered;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;

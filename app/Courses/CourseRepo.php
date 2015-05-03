@@ -10,6 +10,7 @@ namespace App\Courses;
 
 
 use App\Commands\Courses\CreateCourseCommand;
+use App\Commands\Courses\EditCourseCommand;
 use Illuminate\Support\Str;
 
 class CourseRepo {
@@ -61,39 +62,37 @@ class CourseRepo {
     public function store(CreateCourseCommand $dto)
     {
         $course = $this->model->create([
-            'course_category_id' => $dto->getCourseCategoryId(),
-            'name'              => $dto->getName(),
-            'slug'              => Str::slug($dto->getName()),
-            'usid'              => $dto->getUsid(),
-            'aim'               => $dto->getAim(),
-            'certification'     => $dto->getCertification(),
-            'description'       => $dto->getDescription(),
-            'people_per_course' => $dto->getPeoplePerCourse(),
-            'duration'          => $dto->getDuration(),
-            'fee'               => $dto->getFee()
+            'course_category_id' => $dto->course_category_id,
+            'name'              => $dto->name,
+            'usid'              => $dto->usid,
+            'aim'               => $dto->aim,
+            'certification'     => $dto->certification,
+            'description'       => $dto->description,
+            'people_per_course' => $dto->people_per_course,
+            'duration'          => $dto->duration,
+            'fee'               => $dto->fee
         ]);
 
         return $course;
     }
 
-    public function getCoursesByQuery($query)
+    public function getCoursesBySearchQuery($query)
     {
         return $this->model->where('name','LIKE', "%$query%")->with('category')->latest()->get();
     }
 
-    public function update($dto)
+    public function update(EditCourseCommand $dto)
     {
-        $course = $this->model->findOrFail($dto->getId());
-        $course->course_category_id = $dto->getCourseCategoryId();
-        $course->name = $dto->getName();
-        $course->slug = Str::slug($dto->getName());
-        $course->usid = $dto->getUsid();
-        $course->aim = $dto->getAim();
-        $course->certification = $dto->getCertification();
-        $course->description = $dto->getDescription();
-        $course->people_per_course = $dto->getPeoplePerCourse();
-        $course->duration = $dto->getDuration();
-        $course->fee = $dto->getFee();
+        $course = $this->model->findOrFail($dto->id);
+        $course->course_category_id = $dto->course_category_id;
+        $course->name = $dto->name;
+        $course->usid = $dto->usid;
+        $course->aim = $dto->aim;
+        $course->certification = $dto->certification;
+        $course->description = $dto->description;
+        $course->people_per_course = $dto->people_per_course;
+        $course->duration = $dto->duration;
+        $course->fee = $dto->fee;
         $course->save();
     }
 

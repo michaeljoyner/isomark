@@ -31,16 +31,6 @@ class BookingEnquiriesRepository {
         return $this->model->where('archived', true)->latest()->get();
     }
 
-    public function allFromLastWeek()
-    {
-        return $this->model->where('archived', false)->where('created_at', '>=', time() - (7*24*60*60))->get();
-    }
-
-    public function allFromLastMonth()
-    {
-        return $this->model->where('created_at', '>=', time() - (7*24*60*60))->get();
-    }
-
     public function store(array $data)
     {
         return $this->model->create($data);
