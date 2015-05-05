@@ -1,13 +1,7 @@
 @extends('app')
 
 @section('head')
-    <script src="{{ asset('js/tinymce.min.js') }}"></script>
-    <script>
-        tinymce.init({
-            selector: "textarea.wysig",
-            menubar: false
-        });
-    </script>
+    @include('admin.partials.tinymicesetup')
 @endsection
 
 @section('content')

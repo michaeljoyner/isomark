@@ -22,21 +22,19 @@ class ContactsController extends Controller {
         $addresses = Address::all();
         $phoneNumbers = PhoneNumber::all();
         $people = Person::all();
-
         return view('admin.contacts.index')->with(compact('addresses', 'phoneNumbers', 'people'));
     }
 
     public function createAddress()
     {
         $address = new Address();
-
         return view('admin.contacts.createaddress')->with(compact('address'));
 	}
 
     public function storeAddress(Request $request)
     {
-        $address = $this->dispatch(new CreateAddressCommand($request->all()));
-
+        $this->dispatch(new CreateAddressCommand($request->all()));
+        flash()->message('Address created successfully!');
         return redirect('admin/contacts/show');
     }
 
@@ -48,8 +46,8 @@ class ContactsController extends Controller {
 
     public function updateAddress($id, Request $request)
     {
-        $address = $this->dispatch(new EditAddressCommand($id, $request->all()));
-
+        $this->dispatch(new EditAddressCommand($id, $request->all()));
+        flash()->message('Address updated successfully');
         return redirect('admin/contacts/show');
     }
 
@@ -57,6 +55,7 @@ class ContactsController extends Controller {
     {
         $address = Address::findOrFail($id);
         $address->delete();
+        flash()->message('Address deleted.');
         return redirect('admin/contacts/show');
     }
 
@@ -68,7 +67,8 @@ class ContactsController extends Controller {
 
     public function storePerson(Request $request)
     {
-        $person = $this->dispatch(new CreatePersonCommand($request->all()));
+        $this->dispatch(new CreatePersonCommand($request->all()));
+        flash()->message('Contact person added!');
         return redirect('admin/contacts/show');
     }
 
@@ -80,7 +80,8 @@ class ContactsController extends Controller {
 
     public function updatePerson($id, Request $request)
     {
-        $person = $this->dispatch(new EditPersonCommand($id, $request->all()));
+        $this->dispatch(new EditPersonCommand($id, $request->all()));
+        flash()->message('Changes have been saved!');
         return redirect('admin/contacts/show');
     }
 
@@ -88,6 +89,7 @@ class ContactsController extends Controller {
     {
         $person = Person::findOrFail($id);
         $person->delete();
+        flash()->message('Contact person removed!');
         return redirect('admin/contacts/show');
     }
 
@@ -99,7 +101,8 @@ class ContactsController extends Controller {
 
     public function storePhoneNumber(Request $request)
     {
-        $phonenumber = $this->dispatch(new CreatePhoneNumberCommand($request->all()));
+        $this->dispatch(new CreatePhoneNumberCommand($request->all()));
+        flash()->message('Contact number added!');
         return redirect('admin/contacts/show');
     }
 
@@ -111,7 +114,8 @@ class ContactsController extends Controller {
 
     public function updatePhoneNumber($id, Request $request)
     {
-        $phonenumber = $this->dispatch(new EditPhoneNumberCommand($id, $request->all()));
+        $this->dispatch(new EditPhoneNumberCommand($id, $request->all()));
+        flash()->message('Contact number updated');
         return redirect('admin/contacts/show');
     }
 
@@ -119,6 +123,7 @@ class ContactsController extends Controller {
     {
         $phoneNumber = PhoneNumber::findOrFail($id);
         $phoneNumber->delete();
+        flash()->message('Contact number removed!');
         return redirect('admin/contacts/show');
     }
 

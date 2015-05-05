@@ -8,7 +8,6 @@
 	<title>Isomark</title>
 	@show
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<link href="{{ elixir("css/app.css") }}" rel="stylesheet">
 
 
@@ -34,28 +33,8 @@
     </div>
 
 	<!-- Scripts -->
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
-	<script src="{{ asset("js/slick.min.js") }}"></script>
+	<script src="{{ elixir("js/app.js") }}"></script>
     <script>
-        var contactScroller = {
-            items: document.querySelectorAll('.scroller-item'),
-
-            tick: function() {
-                for(var i = 0;i < contactScroller.items.length; i++) {
-                    if(contactScroller.items[i].classList.contains('current')) {
-                        contactScroller.items[i].classList.remove('current');
-                    } else {
-                        contactScroller.items[i].classList.add('current');
-                    }
-                }
-            },
-
-            init: function() {
-                setInterval(contactScroller.tick, 5000);
-            }
-        }
-
         contactScroller.init();
     </script>
     @yield('bodyscripts')

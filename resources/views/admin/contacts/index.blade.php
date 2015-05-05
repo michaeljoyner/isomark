@@ -51,6 +51,7 @@
             @endforeach
         </section>
         @include('auth.partials.deletemodal')
+        @include('flash::message')
     </div>
 @endsection
 

@@ -35,7 +35,7 @@
             <p>Assessments can be conducted to assess the compliance level of existing Safety, Health and Environment System, be it an ISO System or any other. All Safety, Health and Environment aspects will be assessed according to the Occupational Health and Safety Act 85 of 1993 or company legal register. A detailed report will be supplied to Senior Management detailing improvement and corrective recommendations.</p>
             <h3 class="service-section-title">Isomark Consulting Option</h3>
             <p>This option allows for an Isomark Consultant to visit the site at pre-determined intervals, e.g. one day per week, to monitor, evaluate and advise on the existing SHE system or full time Isomark safety officer to ensure day-to-day risk management is met.  This option is determined on client needs and risk profile.</p>
-            <button class="btn prompt-button service-clear-button">Clear</button>
+            <button class="btn prompt-button spaced service-clear-button">Clear</button>
         </section>
         <section id="placement-service">
             <h2 class="service-title">Placement Options</h2>
@@ -85,13 +85,13 @@
                 <li>Liaison with ISOMARK regarding new training material, if required</li>
                 <li>Collection of certificates from ISOMARK Offices and maintain copies/records on site</li>
             </ul>
-            <button class="btn prompt-button service-clear-button">Clear</button>
+            <button class="btn prompt-button spaced service-clear-button">Clear</button>
         </section>
         <section id="training-services">
             <h2 class="service-title">Training and Coordination</h2>
             <p>ISOMARK is able to supply training on a number of Safety courses to suit your needs. We will evaluate your site risks and conduct site -specific training at your premises. ISOMARK offers co-ordination of all client safety training needs as well as tailored courses/workshops. Site specific training on procedures that are linked to our courses is recommended so as to ensure greater understanding of roles and responsibility post training.
                 We also offer a placement function of one of our qualified Facilitators on site to facilitate all SHEQ related training on an ongoing basis as a set monthly fee, irrespective of amount of training conducted each month.</p>
-            <button class="btn prompt-button service-clear-button">Clear</button>
+            <button class="btn prompt-button spaced service-clear-button">Clear</button>
         </section>
     </div>
 
@@ -100,85 +100,7 @@
 
 @section('bodyscripts')
     <script>
-        var serviceManager = {
-            elems: {
-                consulting: null,
-                placement: null,
-                training: null,
-                current: null,
-                triggers: {
-                    consulting: null,
-                    placement: null,
-                    training: null
-                }
-            },
 
-            init: function() {
-                serviceManager.elems.consulting = document.querySelector('#consulting-service');
-                serviceManager.elems.placement = document.querySelector('#placement-service');
-                serviceManager.elems.training = document.querySelector('#training-services');
-                serviceManager.elems.triggers.consulting = document.querySelector('#consulting');
-                serviceManager.elems.triggers.placement = document.querySelector('#placement');
-                serviceManager.elems.triggers.training = document.querySelector('#training');
-
-                serviceManager.attachListeners();
-            },
-
-            attachListeners: function() {
-                var elems = document.querySelectorAll(".service-icon-box");
-                var btns = document.querySelectorAll(".service-clear-button");
-                var j = 0, k = btns.length;
-                var i = 0, l = elems.length;
-                for(i;i<l;i++) {
-                    elems[i].addEventListener('click', serviceManager.showService, false);
-                }
-                for(j;j<k;j++) {
-                    btns[j].addEventListener('click', serviceManager.resetAll, false);
-                }
-            },
-
-            showService: function(ev) {
-                var triggers = serviceManager.elems.triggers;
-                if(serviceManager.elems[ev.currentTarget.id] == serviceManager.elems.current) {
-                    return;
-                }
-
-                if(serviceManager.elems.triggers.current) {
-                    serviceManager.elems.triggers.current.classList.remove('current');
-                }
-                triggers.current = ev.currentTarget;
-                triggers.current.classList.remove('dim');
-                triggers.current.classList.add('current');
-                for(var el in triggers) {
-                    if(triggers.hasOwnProperty(el)) {
-                        if(triggers[el] !== triggers.current) {
-                            triggers[el].classList.add("dim");
-                        }
-                    }
-                }
-                var selection = ev.currentTarget.id;
-                if(serviceManager.elems.current) {
-                    $(serviceManager.elems.current).hide();
-                }
-                var next = serviceManager.elems[selection];
-                $(next).show('slow');
-                serviceManager.elems.current = next;
-            },
-
-            resetAll: function() {
-                var key;
-                var triggers = serviceManager.elems.triggers;
-                for(key in triggers) {
-                    if(triggers.hasOwnProperty(key)) {
-                        triggers[key].classList.remove('current');
-                        triggers[key].classList.remove('dim');
-                    }
-                }
-                triggers.current = null;
-                $(serviceManager.elems.current).hide();
-                serviceManager.elems.current = null;
-            }
-        }
         serviceManager.init();
     </script>
 @endsection

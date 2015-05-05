@@ -1,6 +1,9 @@
 <h1><span class="section-title">contact us</span></h1>
 <div id="contact-form-box" class="container home-contact-form isomark-form">
-    <div class="covering"><p id="thanks" class="thanks">Thanks!</p></div>
+    <div class="covering">
+        <p id="thanks" class="thanks">Thanks!</p>
+        <span class="thanks reset-prompt">Send another message</span>
+    </div>
     <div class="row" id="error-box">
 
     </div>

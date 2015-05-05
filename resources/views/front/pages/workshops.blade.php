@@ -33,8 +33,8 @@
                 <div class="col-md-2 workshop-detail">
                     {{ $workshop->fee }}
                 </div>
-                <div class="col-md-2 workshop-detail">
-                    <a href="/workshops/bookings/{{ $workshop->slug }}" class="btn prompt-button btn-xs">Make Booking</a>
+                <div class="col-md-2 workshop-detail clearfix">
+                    <a href="/workshops/bookings/{{ $workshop->slug }}" class="btn prompt-button btn-xs pull-right">Make Booking</a>
                 </div>
             </div>
         @endforeach

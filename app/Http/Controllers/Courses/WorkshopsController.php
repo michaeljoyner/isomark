@@ -41,21 +41,21 @@ class WorkshopsController extends Controller {
     public function update(WorkshopRequest $request, $id)
     {
         $this->workshopRepository->update($id, $request->all());
-        flash()->message('Course updated successfully!');
+        flash()->message('Workshop updated successfully!');
         return redirect('admin/workshops');
     }
 
     public function store(WorkshopRequest $request)
     {
         $this->workshopRepository->store($request->all());
-        flash()->message('New course created!');
+        flash()->message('New workshop created!');
         return redirect('admin/workshops');
     }
 
     public function deleteById($id)
     {
         $this->workshopRepository->deleteById($id);
-        flash()->message('Course deleted!');
+        flash()->message('Workshop deleted!');
         return redirect('admin/workshops');
     }
 

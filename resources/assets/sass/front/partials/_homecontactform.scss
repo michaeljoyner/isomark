@@ -34,6 +34,17 @@
       transition-delay: 1s;
       opacity: 0;
     }
+
+    .thanks.reset-prompt {
+      font-size: 1em;
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 
   &.used .covering {
