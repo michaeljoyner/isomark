@@ -41,7 +41,7 @@ class AdminMailer extends Mailer {
 
     public function sendSiteMessage($sender_name, $sender_email, $enquiry)
     {
-        $to = ['joyner.michael@gmail' => 'Michael Joyner'];
+        $to = ['joyner.michael@gmail.com' => 'Michael Joyner'];
         $from = $sender_email;
         $data = compact('enquiry', 'sender_name');
         $view = 'emails.admin.sitemessage';
