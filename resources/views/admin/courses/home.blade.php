@@ -5,7 +5,7 @@
         <h1 class="page-title">Isomark Training Courses</h1>
         <div class="row">
             <div class="col-md-5">
-                <div class="panel panel-default">
+                <div class="isomark-panel panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">Search Courses</h3>
                     </div>

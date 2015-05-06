@@ -5471,6 +5471,9 @@ a, a:visited, a:active, a:hover {
   margin-bottom: 50px;
   margin-top: 50px; }
 
+.btn {
+  border-radius: 0; }
+
 .main-footer {
   background: #1A2840;
   color: #FFFFFF;
@@ -5507,6 +5510,15 @@ a, a:visited, a:active, a:hover {
   border-radius: 0; }
 .isomark-form input[type=text]:focus, .isomark-form input[type=email]:focus {
   border-color: #e5e5e5; }
+
+.isomark-panel.panel-default {
+  border-color: #1A2840;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0; }
+.isomark-panel > .panel-heading {
+  background-color: #2D456E;
+  border-color: #1A2840;
+  color: #F05A28; }
 
 .enquiry-box {
   width: 85%;

@@ -13,3 +13,19 @@
     border-color: $light_grey;
   }
 }
+
+.isomark-panel {
+  &.panel-default {
+    border-color: $primary_blue;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  & > .panel-heading {
+    background-color: $secondary_blue;
+    border-color: $primary_blue;
+    color: $primary_orange;
+  }
+}
+
+
+

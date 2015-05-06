@@ -63,8 +63,8 @@
 </div>
 
 <div class="form-group">
-    <div class="col-md-9 col-md-offset-3">
-        <button type="submit" class="btn btn-primary">
+    <div class="col-md-6 col-md-offset-3">
+        <button type="submit" class="btn prompt-button form-control">
             {{ $submitText }}
         </button>
     </div>

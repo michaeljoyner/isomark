@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-md-8 col-md-offset-2">
-        <div class="panel panel-default">
+        <div class="isomark-panel panel panel-default">
             <div class="panel-heading">Register New User</div>
             <div class="panel-body">
                 @if (count($errors) > 0)
@@ -57,7 +57,7 @@
 
                     <div class="form-group">
                         <div class="col-md-9 col-md-offset-3">
-                            <button type="submit" class="btn btn-success form-control">
+                            <button type="submit" class="btn prompt-button form-control">
                                 Register User
                             </button>
                         </div>

@@ -12,7 +12,7 @@
         @endif
         <ul>
             @foreach($users as $user)
-                <div class="panel panel-default">
+                <div class="isomark-panel panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">{{ $user->name }}</h3>
                     </div>
@@ -27,7 +27,7 @@
                                 Limited
                             @endif
                         </p>
-                        <a href="/admin/users/edit/{{ $user->id }}" class="btn btn-info pull-right edit-button">
+                        <a href="/admin/users/edit/{{ $user->id }}" class="btn prompt-button pull-right edit-button">
                             <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Edit
                         </a>
                         <button type="button" class="btn btn-danger pull-right" data-usersname="{{ $user->name }}" data-action="/admin/users/{{ $user->id }}" data-toggle="modal" data-target="#confirm-delete-modal">
