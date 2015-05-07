@@ -1,5 +1,8 @@
 .main-navbar {
   height: 50px;
+  @include respond-to(phone) {display: none;}
+  @include respond-to(smalltablet) {display: none;}
+
   ul {
     height: 100%;
     list-style-type: none;

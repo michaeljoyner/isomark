@@ -30,11 +30,30 @@
         <h1><span class="section-title">our clients</span></h1>
 
         <div class="container">
-            <div class="row">
-                <div class="col-md-3 client-box"></div>
-                <div class="col-md-3 client-box"></div>
-                <div class="col-md-3 client-box"></div>
-                <div class="col-md-3 client-box"></div>
+            <div class="row client-logo-row">
+                <div class="col-sm-3 client-box">
+                    @include('svg.clientlogo.rcl_foods')
+                </div>
+                <div class="col-sm-3 client-box">
+                    @include('svg.clientlogo.vector')
+                </div>
+                <div class="col-sm-3 client-box">
+                    @include('svg.clientlogo.levis')
+                </div>
+                <div class="col-sm-3 client-box">
+                    @include('svg.clientlogo.nestle')
+                </div>
+            </div>
+            <div class="row client-logo-row">
+                <div class="col-sm-3 col-sm-offset-1 client-box">
+                    @include('svg.clientlogo.eskom')
+                </div>
+                <div class="col-sm-3 col-sm-offset-1 client-box">
+                    @include('svg.clientlogo.barloworld')
+                </div>
+                <div class="col-sm-3 col-sm-offset-1 client-box">
+                    @include('svg.clientlogo.macro')
+                </div>
             </div>
         </div>
     </section>

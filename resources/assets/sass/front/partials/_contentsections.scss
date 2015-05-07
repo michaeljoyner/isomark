@@ -12,6 +12,8 @@
     color: $primary_blue;
     background: $white;
     padding: 0 2em;
+    @include respond-to(phone) {padding: 0;}
+    @include respond-to(smalltablet) {padding: 0;}
   }
 
   p {

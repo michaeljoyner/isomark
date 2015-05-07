@@ -5,12 +5,25 @@
 
   .search-form {
     width: 300px;
+    @include respond-to(phone) {display: none;}
+    @include respond-to(smalltablet) {display: none;}
+  }
+
+  .glyphicon-menu-hamburger {
+    display: none;
+    font-size: 2em;
+    color: $primary_orange;
+    @include respond-to(phone) {display: inline-block;}
+    @include respond-to(smalltablet) {display: inline-block;}
   }
 }
 
 .contact-scroller {
   width: 60%;
   float: left;
+  @include respond-to(phone) {display: none;}
+  @include respond-to(smalltablet) {display: none;}
+
   .scroller-item {
     color: $secondary_orange;
     opacity: 0;

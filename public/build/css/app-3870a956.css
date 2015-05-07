@@ -5336,10 +5336,32 @@ a, a:visited, a:active, a:hover {
   padding: 8px 2em; }
   .searchbar .search-form {
     width: 300px; }
+    @media only screen and (max-width: 360px) {
+      .searchbar .search-form {
+        display: none; } }
+    @media only screen and (min-width: 361px) and (max-width: 605px) {
+      .searchbar .search-form {
+        display: none; } }
+  .searchbar .glyphicon-menu-hamburger {
+    display: none;
+    font-size: 2em;
+    color: #F05A28; }
+    @media only screen and (max-width: 360px) {
+      .searchbar .glyphicon-menu-hamburger {
+        display: inline-block; } }
+    @media only screen and (min-width: 361px) and (max-width: 605px) {
+      .searchbar .glyphicon-menu-hamburger {
+        display: inline-block; } }
 
 .contact-scroller {
   width: 60%;
   float: left; }
+  @media only screen and (max-width: 360px) {
+    .contact-scroller {
+      display: none; } }
+  @media only screen and (min-width: 361px) and (max-width: 605px) {
+    .contact-scroller {
+      display: none; } }
   .contact-scroller .scroller-item {
     color: #EF7A54;
     opacity: 0;
@@ -5356,6 +5378,12 @@ a, a:visited, a:active, a:hover {
 
 .main-navbar {
   height: 50px; }
+  @media only screen and (max-width: 360px) {
+    .main-navbar {
+      display: none; } }
+  @media only screen and (min-width: 361px) and (max-width: 605px) {
+    .main-navbar {
+      display: none; } }
   .main-navbar ul {
     height: 100%;
     list-style-type: none;
@@ -5398,11 +5426,25 @@ a, a:visited, a:active, a:hover {
   width: 100%;
   margin: 0 auto;
   overflow: hidden; }
+  @media only screen and (max-width: 360px) {
+    #slides {
+      height: 320px; } }
+  @media only screen and (min-width: 361px) and (max-width: 605px) {
+    #slides {
+      height: 320px; } }
 
 .carousel-slide {
   width: 100%;
   height: 550px;
   position: relative; }
+  @media only screen and (max-width: 360px) {
+    .carousel-slide {
+      height: auto;
+      max-height: 320px; } }
+  @media only screen and (min-width: 361px) and (max-width: 605px) {
+    .carousel-slide {
+      height: auto;
+      max-height: 320px; } }
   .carousel-slide img {
     width: 100%; }
   .carousel-slide .slide-text-holder {
@@ -5431,6 +5473,12 @@ a, a:visited, a:active, a:hover {
     color: #1A2840;
     background: #FFFFFF;
     padding: 0 2em; }
+    @media only screen and (max-width: 360px) {
+      .section-container .section-title {
+        padding: 0; } }
+    @media only screen and (min-width: 361px) and (max-width: 605px) {
+      .section-container .section-title {
+        padding: 0; } }
   .section-container p {
     max-width: 800px;
     margin: 1em auto; }
@@ -5722,12 +5770,25 @@ a, a:visited, a:active, a:hover {
   border-left: 1px solid #e5e5e5;
   border-right: 1px solid #e5e5e5; }
 
+.client-logo-row {
+  margin-top: 40px;
+  margin-bottom: 50px; }
+
 .client-box {
-  padding: 50px;
-  background: #808080;
-  height: 150px; }
-  .client-box:hover {
-    background: #EF7A54; }
+  height: 150px;
+  padding: 0 40px; }
+  .client-box svg {
+    max-height: 150px;
+    min-height: 150px; }
+    .client-box svg:not(:hover) path, .client-box svg:not(:hover) rect, .client-box svg:not(:hover) circle, .client-box svg:not(:hover) polygon {
+      fill: #e5e5e5;
+      stroke: #e5e5e5; }
+    .client-box svg:not(:hover) .white {
+      fill: #ffffff;
+      stroke: #ffffff; }
+    .client-box svg:not(:hover) .white-fill {
+      fill: #ffffff;
+      stroke: #e5e5e5; }
 
 .contents-col.affix {
   position: fixed;

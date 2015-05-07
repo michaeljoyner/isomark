@@ -3,12 +3,17 @@
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
+  @include respond-to(phone) {height: 320px;}
+  @include respond-to(smalltablet) {height: 320px;}
+
 }
 
 .carousel-slide {
   width: 100%;
   height: 550px;
   position: relative;
+  @include respond-to(phone) {height:auto; max-height: 320px;}
+  @include respond-to(smalltablet) {height:auto; max-height: 320px;}
 
   img {
     width: 100%;
