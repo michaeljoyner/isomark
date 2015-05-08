@@ -38,6 +38,8 @@
   text-align: center;
   padding-bottom: 2em;
   word-break: keep-all;
+  padding-left: 10px;
+  padding-right: 10px;
 
   p {
     max-width: 700px;
@@ -63,10 +65,14 @@
 .client-box {
   height: 150px;
   padding: 0 40px;
+  @include respond-to(phone) {margin-bottom: 20px;}
+  @include respond-to(smalltablet) {margin-bottom: 20px;}
 
   svg {
     max-height: 150px;
     min-height: 150px;
+    @include respond-to(phone) {max-width: 150px;}
+    @include respond-to(smalltablet) {max-width: 150px;}
 
     &:not(:hover) path, &:not(:hover) rect, &:not(:hover) circle, &:not(:hover) polygon {
       fill: $light_grey;

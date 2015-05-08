@@ -7,6 +7,7 @@
     width: 300px;
     @include respond-to(phone) {display: none;}
     @include respond-to(smalltablet) {display: none;}
+    @include respond-to(largetablet) {display: none;}
   }
 
   .glyphicon-menu-hamburger {
@@ -15,6 +16,7 @@
     color: $primary_orange;
     @include respond-to(phone) {display: inline-block;}
     @include respond-to(smalltablet) {display: inline-block;}
+    @include respond-to(largetablet) {display: inline-block;}
   }
 }
 
@@ -23,6 +25,7 @@
   float: left;
   @include respond-to(phone) {display: none;}
   @include respond-to(smalltablet) {display: none;}
+  @include respond-to(largetablet) {display: none;}
 
   .scroller-item {
     color: $secondary_orange;

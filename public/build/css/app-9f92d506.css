@@ -5342,6 +5342,9 @@ a, a:visited, a:active, a:hover {
     @media only screen and (min-width: 361px) and (max-width: 605px) {
       .searchbar .search-form {
         display: none; } }
+    @media only screen and (min-width: 606px) and (max-width: 900px) {
+      .searchbar .search-form {
+        display: none; } }
   .searchbar .glyphicon-menu-hamburger {
     display: none;
     font-size: 2em;
@@ -5352,6 +5355,9 @@ a, a:visited, a:active, a:hover {
     @media only screen and (min-width: 361px) and (max-width: 605px) {
       .searchbar .glyphicon-menu-hamburger {
         display: inline-block; } }
+    @media only screen and (min-width: 606px) and (max-width: 900px) {
+      .searchbar .glyphicon-menu-hamburger {
+        display: inline-block; } }
 
 .contact-scroller {
   width: 60%;
@@ -5360,6 +5366,9 @@ a, a:visited, a:active, a:hover {
     .contact-scroller {
       display: none; } }
   @media only screen and (min-width: 361px) and (max-width: 605px) {
+    .contact-scroller {
+      display: none; } }
+  @media only screen and (min-width: 606px) and (max-width: 900px) {
     .contact-scroller {
       display: none; } }
   .contact-scroller .scroller-item {
@@ -5382,6 +5391,9 @@ a, a:visited, a:active, a:hover {
     .main-navbar {
       display: none; } }
   @media only screen and (min-width: 361px) and (max-width: 605px) {
+    .main-navbar {
+      display: none; } }
+  @media only screen and (min-width: 606px) and (max-width: 900px) {
     .main-navbar {
       display: none; } }
   .main-navbar ul {
@@ -5413,7 +5425,8 @@ a, a:visited, a:active, a:hover {
     max-height: 0;
     width: 100%;
     transition: max-height .75s;
-    background: #2D456E; }
+    background: #2D456E;
+    font-size: .75em; }
   .main-navbar > ul > li:hover .submenu {
     height: auto;
     max-height: 400px;
@@ -5757,7 +5770,9 @@ a, a:visited, a:active, a:hover {
   font-size: 150%;
   text-align: center;
   padding-bottom: 2em;
-  word-break: keep-all; }
+  word-break: keep-all;
+  padding-left: 10px;
+  padding-right: 10px; }
   .intro p {
     max-width: 700px;
     margin: 0 auto; }
@@ -5777,9 +5792,21 @@ a, a:visited, a:active, a:hover {
 .client-box {
   height: 150px;
   padding: 0 40px; }
+  @media only screen and (max-width: 360px) {
+    .client-box {
+      margin-bottom: 20px; } }
+  @media only screen and (min-width: 361px) and (max-width: 605px) {
+    .client-box {
+      margin-bottom: 20px; } }
   .client-box svg {
     max-height: 150px;
     min-height: 150px; }
+    @media only screen and (max-width: 360px) {
+      .client-box svg {
+        max-width: 150px; } }
+    @media only screen and (min-width: 361px) and (max-width: 605px) {
+      .client-box svg {
+        max-width: 150px; } }
     .client-box svg:not(:hover) path, .client-box svg:not(:hover) rect, .client-box svg:not(:hover) circle, .client-box svg:not(:hover) polygon {
       fill: #e5e5e5;
       stroke: #e5e5e5; }

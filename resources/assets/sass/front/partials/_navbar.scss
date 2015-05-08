@@ -2,6 +2,7 @@
   height: 50px;
   @include respond-to(phone) {display: none;}
   @include respond-to(smalltablet) {display: none;}
+  @include respond-to(largetablet) {display: none;}
 
   ul {
     height: 100%;
@@ -41,6 +42,7 @@
     width: 100%;
     transition: max-height .75s;
     background: $secondary_blue;
+    font-size: .75em;
   }
 
   &>ul>li:hover .submenu {
