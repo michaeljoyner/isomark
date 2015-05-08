@@ -5711,6 +5711,39 @@ a, a:visited, a:active, a:hover {
     font-size: 120%;
     color: #F05A28; }
 
+.slide-nav-menu {
+  font-family: 'Open Sans', Helvetica, Ariel, sans-serif;
+  color: #FFFFFF; }
+  .slide-nav-menu header {
+    padding: 10px; }
+  .slide-nav-menu .close-menu {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    background-color: #F05A28;
+    line-height: 42px;
+    font-size: 32px;
+    text-align: center; }
+  .slide-nav-menu ul {
+    padding: 50px 10px 10px 30px;
+    list-style-image: url(../../images/isomark_bullet.png); }
+    .slide-nav-menu ul li {
+      text-transform: uppercase;
+      font-size: 1.5em;
+      line-height: 1.5; }
+
+.close-prompt {
+  padding-top: 60px; }
+  .close-prompt p {
+    width: 280px;
+    margin: 0 auto;
+    border-top: 1px solid #F05A28;
+    border-bottom: 1px solid #F05A28;
+    padding: 1em 0;
+    text-transform: uppercase;
+    text-align: center; }
+
 .alert-info {
   position: absolute;
   width: 300px;
@@ -5800,7 +5833,8 @@ a, a:visited, a:active, a:hover {
       margin-bottom: 20px; } }
   .client-box svg {
     max-height: 150px;
-    min-height: 150px; }
+    min-height: 150px;
+    width: 100%; }
     @media only screen and (max-width: 360px) {
       .client-box svg {
         max-width: 150px; } }

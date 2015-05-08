@@ -1,5 +1,5 @@
 <div class="searchbar clearfix">
-    <span class="glyphicon glyphicon-menu-hamburger"></span>
+    <span class="glyphicon glyphicon-menu-hamburger slide-menu-toggle"></span>
     <div class="contact-scroller">
         <span class="scroller-item current">TEL: +27 31 345679</span>
         <span class="scroller-item">EMAIL: contact@isomark.com</span>

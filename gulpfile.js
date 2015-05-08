@@ -20,7 +20,8 @@ elixir(function(mix) {
             "contactform.js",
             "contactscroller.js",
             "servicemanager.js",
-            "enquirymanager.js"
+            "enquirymanager.js",
+            "slidemenu.js"
         ], "public/js/app.js", "resources/assets/js")
         .version(["css/app.css", "js/app.js"]);
 });

@@ -32,7 +32,7 @@
 <body>
 @show
     <div class="slide-nav-menu">
-
+        @include('front.partials.slidemenu')
     </div>
     <div class="main-content-wrapper">
 	@yield('content')
@@ -42,6 +42,7 @@
 	<script src="{{ elixir("js/app.js") }}"></script>
     <script>
         contactScroller.init();
+        slideMenu.init();
     </script>
     @yield('bodyscripts')
 </body>

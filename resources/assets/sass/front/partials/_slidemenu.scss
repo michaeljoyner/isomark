@@ -1,0 +1,44 @@
+.slide-nav-menu {
+  font-family: $body_text;
+  color: $white;
+
+  header {
+    padding: 10px;
+  }
+
+  .close-menu {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: $white;
+    background-color: $primary_orange;
+    line-height: 42px;
+    font-size: 32px;
+    text-align: center;
+  }
+
+  ul {
+    padding: 50px 10px 10px 30px;
+    list-style-image: url(../../images/isomark_bullet.png);
+
+    li {
+      text-transform: uppercase;
+      font-size: 1.5em;
+      line-height: 1.5;
+    }
+  }
+}
+
+.close-prompt {
+  padding-top: 60px;
+
+  p {
+    width: 280px;
+    margin: 0 auto;
+    border-top: 1px solid $primary_orange;
+    border-bottom: 1px solid $primary_orange;
+    padding: 1em 0;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
