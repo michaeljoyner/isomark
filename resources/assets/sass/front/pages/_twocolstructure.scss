@@ -1,6 +1,8 @@
 .contents-col.affix {
   position: fixed;
   top: 0;
+  @include respond-to(phone) {position: relative;}
+  @include respond-to(smalltablet) {position: relative;}
 }
 
 .contents-col {
@@ -9,6 +11,9 @@
   width: 20%;
   font-family: $body_text;
   margin-top: 100px;
+  @include respond-to(phone) {position: relative; width: 100%; padding: 10px; margin: 1em 0;}
+  @include respond-to(smalltablet) {position: relative; width: 100%; padding: 10px; margin: 1em 0;}
+  @include respond-to(largetablet) {width: 27%;}
 
   h2 {
     text-transform: uppercase;
@@ -19,6 +24,7 @@
   ul {
     list-style-type: none;
     color: $primary_orange;
+    @include respond-to(largetablet) {padding-left: 10px;}
   }
   
   li {
@@ -35,7 +41,9 @@
   padding-top: 0;
   padding-left: 100px;
   border-left: 1px solid $grey_text;
-
+  @include respond-to(phone) {position: relative; width: 100%; padding: 10px; margin: 1em 0; border: none;}
+  @include respond-to(smalltablet) {position: relative; width: 100%; padding: 10px; margin: 1em 0; border: none;}
+  @include respond-to(largetablet) {padding-left: 50px; width: 70%;}
   h1 {
     color: $primary_blue;
     text-align: center;

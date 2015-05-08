@@ -5820,6 +5820,12 @@ a, a:visited, a:active, a:hover {
 .contents-col.affix {
   position: fixed;
   top: 0; }
+  @media only screen and (max-width: 360px) {
+    .contents-col.affix {
+      position: relative; } }
+  @media only screen and (min-width: 361px) and (max-width: 605px) {
+    .contents-col.affix {
+      position: relative; } }
 
 .contents-col {
   position: relative;
@@ -5827,6 +5833,21 @@ a, a:visited, a:active, a:hover {
   width: 20%;
   font-family: 'Open Sans', Helvetica, Ariel, sans-serif;
   margin-top: 100px; }
+  @media only screen and (max-width: 360px) {
+    .contents-col {
+      position: relative;
+      width: 100%;
+      padding: 10px;
+      margin: 1em 0; } }
+  @media only screen and (min-width: 361px) and (max-width: 605px) {
+    .contents-col {
+      position: relative;
+      width: 100%;
+      padding: 10px;
+      margin: 1em 0; } }
+  @media only screen and (min-width: 606px) and (max-width: 900px) {
+    .contents-col {
+      width: 27%; } }
   .contents-col h2 {
     text-transform: uppercase;
     color: #808080;
@@ -5834,6 +5855,9 @@ a, a:visited, a:active, a:hover {
   .contents-col ul {
     list-style-type: none;
     color: #F05A28; }
+    @media only screen and (min-width: 606px) and (max-width: 900px) {
+      .contents-col ul {
+        padding-left: 10px; } }
   .contents-col li {
     text-transform: capitalize; }
 
@@ -5846,6 +5870,24 @@ a, a:visited, a:active, a:hover {
   padding-top: 0;
   padding-left: 100px;
   border-left: 1px solid #808080; }
+  @media only screen and (max-width: 360px) {
+    .details-col {
+      position: relative;
+      width: 100%;
+      padding: 10px;
+      margin: 1em 0;
+      border: none; } }
+  @media only screen and (min-width: 361px) and (max-width: 605px) {
+    .details-col {
+      position: relative;
+      width: 100%;
+      padding: 10px;
+      margin: 1em 0;
+      border: none; } }
+  @media only screen and (min-width: 606px) and (max-width: 900px) {
+    .details-col {
+      padding-left: 50px;
+      width: 70%; } }
   .details-col h1 {
     color: #1A2840;
     text-align: center;
@@ -5881,6 +5923,14 @@ a, a:visited, a:active, a:hover {
     border: 1px solid #808080;
     padding: 50px 1em;
     transition: .75s; }
+    @media only screen and (max-width: 360px) {
+      .service-icon-container .service-icon-box {
+        margin: 2px;
+        vertical-align: bottom; } }
+    @media only screen and (min-width: 361px) and (max-width: 605px) {
+      .service-icon-container .service-icon-box {
+        margin: 2px;
+        vertical-align: bottom; } }
     .service-icon-container .service-icon-box.dim {
       opacity: 0.5;
       -webkit-transform: scale(.8, .8);
@@ -5901,6 +5951,12 @@ a, a:visited, a:active, a:hover {
       text-transform: uppercase;
       color: #1A2840;
       padding-top: 50px; }
+      @media only screen and (max-width: 360px) {
+        .service-icon-container .service-icon-box h4 {
+          font-size: .75em; } }
+      @media only screen and (min-width: 361px) and (max-width: 605px) {
+        .service-icon-container .service-icon-box h4 {
+          font-size: .75em; } }
     .service-icon-container .service-icon-box:hover h4 {
       color: #F05A28; }
 
@@ -5959,7 +6015,7 @@ a, a:visited, a:active, a:hover {
     position: relative; }
   .course-icons-container .course-icon-box {
     width: 100%;
-    width: 350px;
+    max-width: 350px;
     height: 350px;
     display: inline-block;
     border: 1px solid #808080;

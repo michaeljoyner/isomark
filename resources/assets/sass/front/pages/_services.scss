@@ -23,6 +23,8 @@
     border: 1px solid $grey_text;
     padding: 50px 1em;
     transition: .75s;
+    @include respond-to(phone) {margin: 2px; vertical-align: bottom;}
+    @include respond-to(smalltablet) {margin: 2px; vertical-align: bottom;}
 
     &.dim {
       opacity: 0.5;
@@ -51,6 +53,8 @@
       text-transform: uppercase;
       color: $primary_blue;
       padding-top: 50px;
+      @include respond-to(phone) {font-size: .75em;}
+      @include respond-to(smalltablet) {font-size: .75em;}
     }
 
     &:hover h4 {
