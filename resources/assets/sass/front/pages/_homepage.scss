@@ -71,6 +71,7 @@
   svg {
     max-height: 150px;
     min-height: 150px;
+    width: 100%;
     @include respond-to(phone) {max-width: 150px;}
     @include respond-to(smalltablet) {max-width: 150px;}
 
