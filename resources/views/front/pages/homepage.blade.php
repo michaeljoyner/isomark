@@ -58,7 +58,7 @@
         </div>
     </section>
     <section class="section-container" id="contact">
-        @include('front.partials.homecontactform')
+        @include('front.partials.homecontactform', ['formTitle' => 'Contact Us'])
     </section>
     @include('front.partials.footer')
 @endsection

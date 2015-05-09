@@ -1,6 +1,9 @@
 <?php namespace App\Http\Controllers;
 
 use App\Commands\SendContactMessageCommand;
+use App\Contacts\Address;
+use App\Contacts\Person;
+use App\Contacts\PhoneNumber;
 use App\Courses\CourseRepo;
 use App\Courses\WorkshopRepository;
 use App\Http\Requests;
@@ -46,6 +49,14 @@ class PagesController extends Controller {
     {
         $this->dispatch(new SendContactMessageCommand($request->all()));
         return response()->json('okay');
+    }
+
+    public function contact()
+    {
+        $addresses = Address::all();
+        $people = Person::all();
+        $contactNumbers = PhoneNumber::all();
+        return view('front.pages.contact')->with(compact('addresses', 'people', 'contactNumbers'));
     }
 
 }

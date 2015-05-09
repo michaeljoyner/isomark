@@ -1,0 +1,20 @@
+.front-contact-section {
+  max-width: 800px;
+  font-family: $body_text;
+
+  h2 {
+    text-transform: uppercase;
+    font-family: $body_text;
+    color: $primary_blue;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  p {
+    color: $grey_text;
+  }
+
+  .row div {
+    padding-bottom: 40px;
+  }
+}

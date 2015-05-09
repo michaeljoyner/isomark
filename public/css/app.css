@@ -6116,6 +6116,20 @@ p.courses-intro {
   max-width: 700px;
   margin: 2em auto; }
 
+.front-contact-section {
+  max-width: 800px;
+  font-family: 'Open Sans', Helvetica, Ariel, sans-serif; }
+  .front-contact-section h2 {
+    text-transform: uppercase;
+    font-family: 'Open Sans', Helvetica, Ariel, sans-serif;
+    color: #1A2840;
+    text-align: center;
+    padding-bottom: 40px; }
+  .front-contact-section p {
+    color: #808080; }
+  .front-contact-section .row div {
+    padding-bottom: 40px; }
+
 .workshop-list-table {
   width: 100%;
   max-width: 900px;

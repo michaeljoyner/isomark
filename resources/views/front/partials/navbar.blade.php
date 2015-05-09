@@ -12,6 +12,6 @@
                 <li><a href="/workshops">Workshops</a></li>
             </ul>
         </li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="/contact">Contact Us</a></li>
     </ul>
 </nav>

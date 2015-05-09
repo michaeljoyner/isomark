@@ -14,6 +14,7 @@ Route::get('services', 'PagesController@services');
 Route::get('courses', 'PagesController@courses');
 Route::get('courses/{categorySlug}', 'PagesController@courses');
 Route::get('workshops', 'PagesController@workshops');
+Route::get('contact', 'PagesController@contact');
 
 /*
  * Course Bookings

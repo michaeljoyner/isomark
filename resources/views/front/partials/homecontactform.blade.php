@@ -1,4 +1,4 @@
-<h1><span class="section-title">contact us</span></h1>
+<h1><span class="section-title">{{ $formTitle }}</span></h1>
 <div id="contact-form-box" class="container home-contact-form isomark-form">
     <div class="covering">
         <p id="thanks" class="thanks">Thanks!</p>
