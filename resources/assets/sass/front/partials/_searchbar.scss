@@ -3,6 +3,9 @@
   height: 50px;
   padding: 8px 2em;
   display: none;
+  @include respond-to(phone) {display: block;}
+  @include respond-to(smalltablet) {display: block;}
+  @include respond-to(largetablet) {display: block;}
 
   .search-form {
     width: 300px;

@@ -5340,6 +5340,15 @@ a, a:visited, a:active, a:hover {
   height: 50px;
   padding: 8px 2em;
   display: none; }
+  @media only screen and (max-width: 360px) {
+    .searchbar {
+      display: block; } }
+  @media only screen and (min-width: 361px) and (max-width: 605px) {
+    .searchbar {
+      display: block; } }
+  @media only screen and (min-width: 606px) and (max-width: 900px) {
+    .searchbar {
+      display: block; } }
   .searchbar .search-form {
     width: 300px; }
     @media only screen and (max-width: 360px) {
