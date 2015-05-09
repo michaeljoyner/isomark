@@ -5219,11 +5219,12 @@ a, a:visited, a:active, a:hover {
 
 .slide-nav-menu {
   position: absolute;
-  transition: .5s;
+  transition: .3s;
   width: 300px;
+  width: 100vw;
   min-height: 100%;
-  -webkit-transform: translate3d(-300px, 0, 0);
-          transform: translate3d(-300px, 0, 0);
+  -webkit-transform: translate3d(-100vw, 0, 0);
+          transform: translate3d(-100vw, 0, 0);
   background: #2D456E;
   z-index: 100; }
 
@@ -5670,8 +5671,8 @@ a, a:visited, a:active, a:hover {
   text-decoration: underline; }
 
 .page-title-banner {
+  background-image: url(../../images/page_banner_pattern.png);
   background-color: #333B4D;
-  background-image: url(../../images/isomark_website_bgpattern3.png);
   padding: 50px 0;
   text-align: center;
   margin-bottom: 50px; }
