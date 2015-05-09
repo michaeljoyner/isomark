@@ -5338,7 +5338,8 @@ a, a:visited, a:active, a:hover {
 .searchbar {
   width: 100%;
   height: 50px;
-  padding: 8px 2em; }
+  padding: 8px 2em;
+  display: none; }
   .searchbar .search-form {
     width: 300px; }
     @media only screen and (max-width: 360px) {
@@ -5660,7 +5661,8 @@ a, a:visited, a:active, a:hover {
   text-decoration: underline; }
 
 .page-title-banner {
-  background: #333B4D;
+  background-color: #333B4D;
+  background-image: url(../../images/isomark_website_bgpattern3.png);
   padding: 50px 0;
   text-align: center;
   margin-bottom: 50px; }
