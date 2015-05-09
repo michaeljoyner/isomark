@@ -5219,12 +5219,12 @@ a, a:visited, a:active, a:hover {
 
 .slide-nav-menu {
   position: absolute;
-  transition: 1s;
+  transition: .5s;
   width: 300px;
   min-height: 100%;
   -webkit-transform: translate3d(-300px, 0, 0);
           transform: translate3d(-300px, 0, 0);
-  background: #1A2840;
+  background: #2D456E;
   z-index: 100; }
 
 .slide-nav-menu.show {
@@ -5739,7 +5739,8 @@ a, a:visited, a:active, a:hover {
     .slide-nav-menu ul li {
       text-transform: uppercase;
       font-size: 1.5em;
-      line-height: 1.5; }
+      line-height: 1.5;
+      padding-bottom: 16px; }
 
 .close-prompt {
   padding-top: 60px; }

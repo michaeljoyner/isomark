@@ -15,11 +15,11 @@ a, a:visited, a:active, a:hover {
 
 .slide-nav-menu {
   position: absolute;
-  transition: 1s;
+  transition: .5s;
   width: 300px;
   min-height: 100%;
   transform: translate3d(-300px,0,0);
-  background: $primary_blue;
+  background: $secondary_blue;
   z-index: 100;
 }
 
