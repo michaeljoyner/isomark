@@ -234,6 +234,9 @@ var serviceManager = {
         triggers.current = null;
         $(serviceManager.elems.current).hide();
         serviceManager.elems.current = null;
+        $('html, body').animate({
+            scrollTop: $("#service-icon-container").offset().top - 40
+        }, 500);
     }
 }
 var enquiryManager = {

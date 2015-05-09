@@ -12,7 +12,7 @@
             </p>
         </div>
     </header>
-    <div class="service-icon-container">
+    <div id="service-icon-container" class="service-icon-container">
         <div id="consulting" class="service-icon-box">
             @include('svg.isomark_website-20')
             <h4>Consulting Services</h4>
