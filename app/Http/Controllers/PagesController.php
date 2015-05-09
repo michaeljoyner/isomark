@@ -16,6 +16,11 @@ class PagesController extends Controller {
 		return view('front.pages.homepage');
 	}
 
+    public function about()
+    {
+        return view('front.pages.about');
+    }
+
     public function services()
     {
         return view('front.pages.services');

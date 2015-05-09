@@ -1,0 +1,35 @@
+.about-lead {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: $body_text;
+  color: $grey_text;
+  font-size: 120%;
+}
+
+.accreditations {
+  list-style-image: url(../../images/isomark_bullet.png);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  max-width: 600px;
+  margin: 0 auto;
+
+  li {
+    width: 100%;
+    padding-top: 20px;
+    text-align: left;
+    font-family: $body_text;
+    font-size: 120%;
+    color: $grey_text;
+  }
+}
+
+.about-page-section {
+  p {
+    font-size: 120%;
+  }
+
+  .row {
+    margin-bottom: 50px;
+  }
+}

@@ -57,3 +57,9 @@ a, a:visited, a:active, a:hover {
     margin: 0;
   }
 }
+
+.orange-subheading {
+  font-family: $body_text;
+  color: $primary_orange;
+  text-transform: uppercase;
+}

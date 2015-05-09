@@ -19,6 +19,9 @@
   p {
     max-width: 800px;
     margin: 1em auto;
+    color: $grey_text;
+    font-family: $body_text;
+    padding: 10px;
   }
 
   &:before {

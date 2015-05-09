@@ -68,26 +68,28 @@
   @include respond-to(phone) {margin-bottom: 20px;}
   @include respond-to(smalltablet) {margin-bottom: 20px;}
 
+  &:not(:hover) svg {
+    path, rect, circle,polygon {
+      fill: $light_grey;
+      stroke: $light_grey;
+    }
+
+    .white {
+      fill: $white;
+      stroke: $white;
+    }
+
+    .white-fill {
+      fill: $white;
+      stroke: $light_grey;
+    }
+  }
+
   svg {
     max-height: 150px;
     min-height: 150px;
     width: 100%;
     @include respond-to(phone) {max-width: 150px;}
     @include respond-to(smalltablet) {max-width: 150px;}
-
-    &:not(:hover) path, &:not(:hover) rect, &:not(:hover) circle, &:not(:hover) polygon {
-      fill: $light_grey;
-      stroke: $light_grey;
-    }
-
-    &:not(:hover) .white {
-      fill: #ffffff;
-      stroke: #ffffff;
-    }
-
-    &:not(:hover) .white-fill {
-      fill: #ffffff;
-      stroke: $light_grey;
-    }
   }
 }

@@ -9,6 +9,7 @@ Route::controllers([
  * public/guest routes
  */
 Route::get('/', 'PagesController@home');
+Route::get('about', 'PagesController@about');
 Route::get('services', 'PagesController@services');
 Route::get('courses', 'PagesController@courses');
 Route::get('courses/{categorySlug}', 'PagesController@courses');
