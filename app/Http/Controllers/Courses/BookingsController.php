@@ -71,7 +71,7 @@ class BookingsController extends Controller {
     public function store(CourseBookingRequest $request)
     {
         $this->enquiriesRepository->store($request->all());
-
+        flash()->message('Thanks for your booking. We\'ll be in touch.');
         return redirect('courses');
     }
 

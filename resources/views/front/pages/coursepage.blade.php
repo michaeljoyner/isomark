@@ -61,4 +61,11 @@
         </div>
     </div>
     @include('front.partials.footer')
+    @include('flash::message')
+@endsection
+
+@section('bodyscripts')
+    <script>
+        $('.alert-info').delay(4000).hide('slow');
+    </script>
 @endsection
