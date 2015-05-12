@@ -1,5 +1,16 @@
 @extends('front.base')
 
+@section('seo')
+    @include('front.partials.seotags', [
+    'description' => 'Isomark is an industry leading Health, Safety and Environmental Risk Management Company. We work with you to ensure that your organisation meets the necessary requirements and is properly equipped with the knowledge and resources needed to manage your risk',
+    'keywords' => 'Isomark, SHEQ Risk Management',
+    'title' => 'Isomark - Facilitating Global Standards'])
+    @include('front.partials.ogmeta', [
+    'og_title' => 'Isomark - Facilitating Global Standards',
+    'og_description' => 'Isomark is an industry leading Health, Safety and Environmental Risk Management Company. We work with you to ensure that your organisation meets the necessary requirements and is properly equipped with the knowledge and resources needed to manage your risk',
+    'og_url' => Request::url()])
+@endsection
+
 @section('head')
     <meta property="CSRF-token" content="{{ Session::token() }}"/>
 @endsection

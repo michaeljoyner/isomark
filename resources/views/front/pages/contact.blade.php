@@ -1,5 +1,16 @@
 @extends('front.base')
 
+@section('seo')
+    @include('front.partials.seotags', [
+    'description' => 'Isomark has offices in Pietermaritzburg and in Johannesburg, feel free to contact us or send us a message',
+    'keywords' => 'Isomark, Contact, SHEQ, Risk Management',
+    'title' => 'Contact Isomark for any of your Health, Safety and Environmental Risk Management Needs'])
+    @include('front.partials.ogmeta', [
+    'og_title' => 'Contact Isomark for any of your Health, Safety and Environmental Risk Management Needs',
+    'og_description' => 'Isomark has offices in Pietermaritzburg and in Johannesburg, feel free to contact us or send us a message',
+    'og_url' => Request::url()])
+@endsection
+
 @section('head')
     <meta property="CSRF-token" content="{{ Session::token() }}"/>
 @endsection

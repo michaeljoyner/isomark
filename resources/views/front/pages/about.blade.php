@@ -1,5 +1,16 @@
 @extends('front.base')
 
+@section('seo')
+    @include('front.partials.seotags', [
+    'description' => 'We are Isomark, an industry leading Health, Safety and Environment Risk Management firm. Read our vision, mission and find out about our corporate structure',
+    'keywords' => 'Isomark, Safety, Health and Evironment, Risk Management',
+    'title' => 'About Isomark - a Health, Safety and Environment Risk Management Company'])
+    @include('front.partials.ogmeta', [
+    'og_title' => 'About Isomark',
+    'og_description' => 'We are Isomark, an industry leading Health, Safety and Environment Risk Management firm. Read our vision, mission and find out about our corporate structure',
+    'og_url' => Request::url()])
+@endsection
+
 @section('content')
     @include('front.partials.pageheader', ['pageTitle' => 'About Us'])
         <p class="about-lead">Isomark prides itself on providing the best possible services to our clients, and we also realise that each client has special requirements. Therefore at Isomark we do our utmost to identify with your individual needs and address them to your absolute satisfaction</p>

@@ -1,13 +1,18 @@
 @extends('front.base')
 
+@section('seo')
+    @include('front.partials.seotags', [
+    'description' => 'Isomark offers a comprehensive range of training workshops covering a broad range of Safety, Health and Environmental Risk Management topics',
+    'keywords' => 'Isomark, workshops, training, risk management',
+    'title' => 'Isomark Training Workshops'])
+    @include('front.partials.ogmeta', [
+    'og_title' => 'Isomark Training Workshops',
+    'og_description' => 'Isomark offers a comprehensive range of training workshops covering a broad range of Safety, Health and Environmental Risk Management topics',
+    'og_url' => Request::url()])
+@endsection
+
 @section('content')
-    <header>
-        @include('front.partials.searchbar')
-        @include('front.partials.navbar')
-        <div class="page-title-banner">
-            <span>Isomark Workshops</span>
-        </div>
-    </header>
+    @include('front.partials.pageheader', ['pageTitle' => 'Isomark Workshops'])
     <div class="container workshop-container">
         <div class="row workshop-list-head workshop-row">
             <div class="col-sm-6 workshop-detail">

@@ -1,13 +1,18 @@
 @extends('front.base')
 
+@section('seo')
+    @include('front.partials.seotags', [
+    'description' => 'Isomark offers fully accredited and industry recognised training courses on all subjects of Health, Safety and Environmental Risk Management',
+    'keywords' => 'Isomark, SHEQ training, Risk Management Training',
+    'title' => 'Isomark Training Courses'])
+    @include('front.partials.ogmeta', [
+    'og_title' => 'Isomark Training Courses',
+    'og_description' => 'Isomark offers fully accredited and industry recognised training courses on all subjects of Health, Safety and Environmental Risk Management',
+    'og_url' => Request::url()])
+@endsection
+
 @section('content')
-    <header class="clearfix">
-        @include('front.partials.searchbar')
-        @include('front.partials.navbar')
-        <div class="page-title-banner">
-            <span>Isomark Courses</span>
-        </div>
-    </header>
+    @include('front.partials.pageheader', ['pageTitle' => 'Isomark Courses'])
     <div class="container">
         <p class="courses-intro"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis delectus distinctio eum exercitationem facere minima omnis perspiciatis soluta vel voluptatem? Animi eligendi est labore laborum magnam nam placeat quasi sint.</span><span>Ab ad aliquam beatae consequatur exercitationem facere modi molestias, necessitatibus nemo nulla quod sequi temporibus veniam? Dolore esse iure labore nemo nostrum quia. A beatae itaque numquam repudiandae suscipit tempora?</span><span>Accusamus adipisci asperiores aspernatur enim exercitationem, iure neque nesciunt non omnis optio praesentium quaerat, saepe, sed sequi sunt tempora vero. Ad excepturi fuga modi officia omnis qui rem unde vitae.</span>
         </p>

@@ -1,12 +1,19 @@
 @extends('front.base')
 
+@section('seo')
+    @include('front.partials.seotags', [
+    'description' => 'Isomark offers Health, Safety and Environmental Risk Management services, including consultation services, placement services and training services',
+    'keywords' => 'Isomark, Consulting, SHEQ services',
+    'title' => 'Isomark Services'])
+    @include('front.partials.ogmeta', [
+    'og_title' => 'Isomark Services',
+    'og_description' => 'Isomark offers Health, Safety and Environmental Risk Management services, including consultation services, placement services and training services',
+    'og_url' => Request::url()])
+@endsection
+
 @section('content')
     <header>
-        @include('front.partials.searchbar')
-        @include('front.partials.navbar')
-        <div class="page-title-banner">
-            <span>Isomark Services</span>
-        </div>
+        @include('front.partials.pageheader', ['pageTitle' => 'Isomark Services'])
         <div class="container service-container">
             <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aut commodi eum, expedita explicabo fugiat fugit incidunt iure, laborum laudantium maxime minima nostrum numquam optio praesentium quibusdam ratione vel, voluptatibus!</span><span>Accusamus assumenda aut commodi culpa eligendi, error fuga fugit hic ipsam, iure laboriosam nam neque nulla officiis placeat, possimus qui quisquam quod saepe sit vel velit voluptate voluptatem voluptates voluptatibus?</span><span>Aut autem beatae consectetur deleniti eius enim error explicabo, fugit illum minus possimus quae quaerat quisquam rem sed tenetur voluptate! Earum esse minima recusandae. Aspernatur illum laborum officiis tenetur veniam.</span><span>Distinctio hic impedit optio. Distinctio inventore laborum officiis porro praesentium provident quasi qui quod sint velit? At consectetur id in molestias reiciendis sequi soluta. Accusantium et impedit nesciunt sequi voluptates!</span>
             </p>

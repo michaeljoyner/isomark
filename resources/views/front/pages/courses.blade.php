@@ -1,13 +1,18 @@
 @extends('front.base')
 
+@section('seo')
+    @include('front.partials.seotags', [
+    'description' => 'Isomark offers fully accredited and industry leading training courses on the subject of '.$courses->first()->category->name,
+    'keywords' => 'Isomark, SHEQ Training, '.$courses->first()->category->name,
+    'title' => 'Isomark '.$courses->first()->category->name.' Training Courses'])
+    @include('front.partials.ogmeta', [
+    'og_title' => 'Isomark '.$courses->first()->category->name.' Training Courses',
+    'og_description' => 'Isomark offers fully accredited and industry leading training courses on the subject of '.$courses->first()->category->name,
+    'og_url' => Request::url()])
+@endsection
+
 @section('content')
-    <header>
-        @include('front.partials.searchbar')
-        @include('front.partials.navbar')
-    </header>
-    <div class="page-title-banner">
-        <span>{{ $courses->first()->category->name }}</span>
-    </div>
+    @include('front.partials.pageheader', ['pageTitle' => $courses->first()->category->name])
     <div class="content-wrapper clearfix">
         <div class="contents-col" data-spy="affix" data-offset-top="250" data-offset-bottom="1000">
             <h2>contents</h2>
