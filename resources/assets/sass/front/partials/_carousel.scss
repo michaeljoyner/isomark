@@ -1,5 +1,5 @@
 #slides {
-  height: 600px;
+  max-height: 600px;
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
@@ -10,19 +10,27 @@
 
 .carousel-slide {
   width: 100%;
-  height: 550px;
+  max-height: 600px;
   position: relative;
+  overflow: hidden;
   @include respond-to(phone) {height:auto; max-height: 320px;}
   @include respond-to(smalltablet) {height:auto; max-height: 320px;}
 
   img {
     width: 100%;
+    display: block;
+//    position: absolute;
+//    left: 0;
+//    bottom: -30%;
+    @include respond-to(desktop) {position: relative; left: 0; bottom: 150px;}
   }
 
   .slide-text-holder {
     width: 100%;
-    height: 3em;
-    background-color: rgba(0,0,0,.6);
+//    height: 5em;
+    padding: 20px;
+    font-family: $body_text;
+    background-color: rgba(26,40,64,.6);
     position: absolute;
     bottom: 0;
     z-index: 10;
@@ -34,6 +42,13 @@
       font-size: 2em;
       color: white;
       text-transform: uppercase;
+    }
+
+    .subtext {
+      font-size: 1em;
+      text-transform: uppercase;
+      padding-right: 6em;
+      color: $primary_orange;
     }
   }
 }
