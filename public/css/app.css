@@ -5478,7 +5478,7 @@ a, a:visited, a:active, a:hover {
   .carousel-slide img {
     width: 100%;
     display: block; }
-    @media only screen and (min-width: 901px) {
+    @media only screen and (min-width: 1200px) {
       .carousel-slide img {
         position: relative;
         left: 0;
