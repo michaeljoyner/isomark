@@ -22,7 +22,7 @@
 //    position: absolute;
 //    left: 0;
 //    bottom: -30%;
-    @include respond-to(desktop) {position: relative; left: 0; bottom: 150px;}
+    @include respond-to(widedesktop) {position: relative; left: 0; bottom: 150px;}
   }
 
   .slide-text-holder {
