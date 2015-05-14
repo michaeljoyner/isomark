@@ -39,19 +39,22 @@
     </section>
     <section class="section-container" id="clients">
         <h1><span class="section-title">our clients</span></h1>
-
-        <div class="row">
-            <div class="col-sm-3 client-names">RCL Foods</div>
-            <div class="col-sm-3 client-names">Levi Strauss</div>
-            <div class="col-sm-3 client-names">Barloworld</div>
-            <div class="col-sm-3 client-names">Circo</div>
-        </div>
-        <div class="row">
-            <div class="col-sm-offset-1 col-sm-2 client-names">Vector Logistic Solutions</div>
-            <div class="col-sm-2 client-names">Nestle</div>
-            <div class="col-sm-2 client-names">Macro</div>
-            <div class="col-sm-2 client-names">Abedare Cables</div>
-            <div class="col-sm-2 client-names">Boxmore Plastics</div>
+        <div class="container">
+            <div class="row client-name-row">
+                <div class="col-sm-4 client-names">RCL Foods</div>
+                <div class="col-sm-4 client-names">Levi Strauss</div>
+                <div class="col-sm-4 client-names">Barloworld</div>
+            </div>
+            <div class="row client-name-row">
+                <div class="col-sm-4 client-names">Circo</div>
+                <div class="col-sm-4 client-names">Vector Logistic Solutions</div>
+                <div class="col-sm-4 client-names">Nestle</div>
+            </div>
+            <div class="row client-name-row final-row">
+                <div class="col-sm-4 client-names">Makro</div>
+                <div class="col-sm-4 client-names">Abedare Cables</div>
+                <div class="col-sm-4 client-names">Boxmore Plastics</div>
+            </div>
         </div>
     </section>
     <section class="section-container" id="contact">

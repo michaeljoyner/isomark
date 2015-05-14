@@ -21,7 +21,7 @@
                 <div class="col-sm-6">
                     <a href="/courses/safety-health-and-environment">
                         <div class="course-icon-box">
-                            @include('svg.isomark_website_icons-13')
+                            @include('svg.clientlogo.courses_safety')
                             <h4>Safety, Health and Environment</h4>
                         </div>
                     </a>
@@ -29,7 +29,7 @@
                 <div class="col-sm-6">
                     <a href="/courses/lifting-equipment-training">
                         <div class="course-icon-box">
-                            @include('svg.isomark_website_icons-14')
+                            @include('svg.clientlogo.courses_lifting')
                             <h4>Lifting Equipment</h4>
                         </div>
                     </a>
@@ -39,7 +39,7 @@
                 <div class="col-sm-6">
                     <a href="/courses/soft-skills-programmes">
                         <div class="course-icon-box">
-                            @include('svg.isomark_website_icons-15')
+                            @include('svg.clientlogo.courses_soft')
                             <h4>Soft Skills Programmes</h4>
                         </div>
                     </a>
@@ -47,7 +47,7 @@
                 <div class="col-sm-6">
                     <a href="/courses/skills-bundles">
                         <div class="course-icon-box">
-                            @include('svg.isomark_website_icons-16')
+                            @include('svg.clientlogo.courses_skills')
                             <h4>Skills Bundles</h4>
                         </div>
                     </a>
@@ -57,7 +57,7 @@
                 <div class="col-sm-6">
                     <a href="/workshops">
                         <div class="course-icon-box">
-                            @include('svg.isomark_website-18')
+                            @include('svg.clientlogo.courses_workshops')
                             <h4>Workshops</h4>
                         </div>
                     </a>

@@ -8,6 +8,8 @@
   }
 
   .section-title {
+    font-family: $body_text;
+    font-weight: 600;
     text-transform: uppercase;
     color: $primary_blue;
     background: $white;
@@ -42,7 +44,7 @@
 
 .item-name {
   color: $primary_orange;
-  font-size: 12pt;
+//  font-size: 12pt;
   text-transform: uppercase;
   text-align: left;
   font-family: $body_text;

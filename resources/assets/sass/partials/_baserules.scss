@@ -64,3 +64,24 @@ a, a:visited, a:active, a:hover {
   color: $primary_orange;
   text-transform: uppercase;
 }
+
+.isomark-heading {
+  font-family: $body_text;
+  text-transform: uppercase;
+}
+
+.head-one {
+  font-weight: 600;
+}
+
+.head-two {
+  color: $primary_blue;
+}
+
+.head-three {
+  color: $primary_orange;
+}
+
+.head-four {
+  color: $primary_orange;
+}

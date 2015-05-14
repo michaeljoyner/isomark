@@ -94,12 +94,28 @@
   }
 }
 
+.client-name-row {
+  border-bottom: 1px solid $light_grey;
+}
+
+.client-name-row.final-row {
+  border-bottom: none;
+}
+
 .client-names {
-  font-size: 2em;
+  font-size: 1.5em;
   color: $grey_text;
   font-family: $body_text;
   text-transform: uppercase;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-weight: 800;
+
+  &:not(:last-child) {
+    border-right: 1px solid $light_grey;
+  }
 
   &:hover {
     color: $primary_orange;
