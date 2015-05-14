@@ -93,3 +93,15 @@
     @include respond-to(smalltablet) {max-width: 150px;}
   }
 }
+
+.client-names {
+  font-size: 2em;
+  color: $grey_text;
+  font-family: $body_text;
+  text-transform: uppercase;
+  padding-bottom: 60px;
+
+  &:hover {
+    color: $primary_orange;
+  }
+}

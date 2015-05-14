@@ -40,32 +40,18 @@
     <section class="section-container" id="clients">
         <h1><span class="section-title">our clients</span></h1>
 
-        <div class="container">
-            <div class="row client-logo-row">
-                <div class="col-sm-3 client-box">
-                    @include('svg.clientlogo.rcl_foods')
-                </div>
-                <div class="col-sm-3 client-box">
-                    @include('svg.clientlogo.vector')
-                </div>
-                <div class="col-sm-3 client-box">
-                    @include('svg.clientlogo.levis')
-                </div>
-                <div class="col-sm-3 client-box">
-                    @include('svg.clientlogo.nestle')
-                </div>
-            </div>
-            <div class="row client-logo-row">
-                <div class="col-sm-3 col-sm-offset-1 client-box">
-                    @include('svg.clientlogo.eskom')
-                </div>
-                <div class="col-sm-3 col-sm-offset-1 client-box">
-                    @include('svg.clientlogo.barloworld')
-                </div>
-                <div class="col-sm-3 col-sm-offset-1 client-box">
-                    @include('svg.clientlogo.macro')
-                </div>
-            </div>
+        <div class="row">
+            <div class="col-sm-3 client-names">RCL Foods</div>
+            <div class="col-sm-3 client-names">Levi Strauss</div>
+            <div class="col-sm-3 client-names">Barloworld</div>
+            <div class="col-sm-3 client-names">Circo</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-offset-1 col-sm-2 client-names">Vector Logistic Solutions</div>
+            <div class="col-sm-2 client-names">Nestle</div>
+            <div class="col-sm-2 client-names">Macro</div>
+            <div class="col-sm-2 client-names">Abedare Cables</div>
+            <div class="col-sm-2 client-names">Boxmore Plastics</div>
         </div>
     </section>
     <section class="section-container" id="contact">
@@ -81,7 +67,7 @@
                 accessibility: true,
                 autoplay: true,
                 autoplaySpeed: 7000,
-                arrows: false
+                arrows: true
             });
             contactForm.init();
         });

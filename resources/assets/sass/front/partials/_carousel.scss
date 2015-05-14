@@ -1,5 +1,6 @@
 #slides {
   max-height: 600px;
+  min-height: 300px;
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
@@ -22,7 +23,7 @@
 //    position: absolute;
 //    left: 0;
 //    bottom: -30%;
-    @include respond-to(widedesktop) {position: relative; left: 0; bottom: 150px;}
+//    @include respond-to(widedesktop) {position: relative; left: 0; bottom: 150px;}
   }
 
   .slide-text-holder {
@@ -40,6 +41,7 @@
       text-align: right;
       padding-right: 3em;
       font-size: 2em;
+      font-weight: 600;
       color: white;
       text-transform: uppercase;
     }

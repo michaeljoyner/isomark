@@ -5452,6 +5452,7 @@ a, a:visited, a:active, a:hover {
 
 #slides {
   max-height: 600px;
+  min-height: 300px;
   width: 100%;
   margin: 0 auto;
   overflow: hidden; }
@@ -5478,11 +5479,6 @@ a, a:visited, a:active, a:hover {
   .carousel-slide img {
     width: 100%;
     display: block; }
-    @media only screen and (min-width: 1200px) {
-      .carousel-slide img {
-        position: relative;
-        left: 0;
-        bottom: 150px; } }
   .carousel-slide .slide-text-holder {
     width: 100%;
     padding: 20px;
@@ -5496,6 +5492,7 @@ a, a:visited, a:active, a:hover {
       text-align: right;
       padding-right: 3em;
       font-size: 2em;
+      font-weight: 600;
       color: white;
       text-transform: uppercase; }
     .carousel-slide .slide-text-holder .subtext {
@@ -5539,6 +5536,7 @@ a, a:visited, a:active, a:hover {
 
 .item-name {
   color: #F05A28;
+  font-size: 18pt;
   text-transform: uppercase;
   text-align: center;
   font-family: "Open Sans", Helvetica, Ariel, sans-serif; }
@@ -5887,6 +5885,15 @@ a, a:visited, a:active, a:hover {
     @media only screen and (min-width: 361px) and (max-width: 605px) {
       .client-box svg {
         max-width: 150px; } }
+
+.client-names {
+  font-size: 2em;
+  color: #808080;
+  font-family: "Open Sans", Helvetica, Ariel, sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 60px; }
+  .client-names:hover {
+    color: #F05A28; }
 
 .about-lead {
   max-width: 800px;

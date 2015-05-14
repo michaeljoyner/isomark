@@ -14,9 +14,14 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller {
 
-	public function home()
+	public function home(CourseRepo $courseRepo)
 	{
-		return view('front.pages.homepage');
+        $randomCourses = [];
+        $courses = $courseRepo->all();
+        foreach(range(1,6) as $index) {
+            $randomCourses[] = $courses->random(1);
+        }
+		return view('front.pages.homepage')->with(['courses' => $randomCourses]);
 	}
 
     public function about()
