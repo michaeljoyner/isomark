@@ -5462,6 +5462,54 @@ a, a:visited, a:active, a:hover {
   @media only screen and (min-width: 361px) and (max-width: 605px) {
     #slides {
       height: 320px; } }
+  #slides .slick-prev {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    z-index: 200;
+    width: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    border: none; }
+  #slides .slick-next {
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    z-index: 200;
+    width: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    border: none; }
+  #slides .slick-next::before {
+    content: '>';
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 32px;
+    color: #F05A28;
+    background-color: #FFFFFF;
+    opacity: 0.5;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  #slides .slick-prev::before {
+    content: '<';
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 32px;
+    color: #F05A28;
+    background-color: #FFFFFF;
+    opacity: 0.5;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0; }
 
 .carousel-slide {
   width: 100%;
@@ -5534,14 +5582,20 @@ a, a:visited, a:active, a:hover {
     left: 0;
     z-index: -1; }
 
+.course-row {
+  border-bottom: 1px solid #e5e5e5; }
+
 .item-name {
   color: #F05A28;
-  font-size: 18pt;
+  font-size: 12pt;
   text-transform: uppercase;
-  text-align: center;
-  font-family: "Open Sans", Helvetica, Ariel, sans-serif; }
+  text-align: left;
+  font-family: "Open Sans", Helvetica, Ariel, sans-serif;
+  padding-bottom: 10px;
+  margin-bottom: 0; }
 
-.item-description {
+.course-row .item-description {
+  margin-top: 0;
   color: #808080;
   font-family: "Open Sans", Helvetica, Ariel, sans-serif;
   font-weight: 300;

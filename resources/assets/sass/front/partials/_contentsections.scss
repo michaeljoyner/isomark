@@ -36,15 +36,22 @@
   }
 }
 
-.item-name {
-  color: $primary_orange;
-  font-size: 18pt;
-  text-transform: uppercase;
-  text-align: center;
-  font-family: $body_text;
+.course-row {
+  border-bottom: 1px solid $light_grey;
 }
 
-.item-description {
+.item-name {
+  color: $primary_orange;
+  font-size: 12pt;
+  text-transform: uppercase;
+  text-align: left;
+  font-family: $body_text;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+
+.course-row .item-description {
+  margin-top: 0;
   color: $grey_text;
   font-family: $body_text;
   font-weight: 300;

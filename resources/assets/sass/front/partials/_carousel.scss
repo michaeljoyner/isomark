@@ -7,6 +7,62 @@
   @include respond-to(phone) {height: 320px;}
   @include respond-to(smalltablet) {height: 320px;}
 
+  .slick-prev {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    z-index: 200;
+    width: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    border: none;
+  }
+
+  .slick-next {
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    z-index: 200;
+    width: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    border: none;
+  }
+
+  .slick-next::before {
+    content: '>';
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 32px;
+    color: $primary_orange;
+    background-color: $white;
+    opacity: 0.5;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .slick-prev::before {
+    content: '<';
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 32px;
+    color: $primary_orange;
+    background-color: $white;
+    opacity: 0.5;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
 }
 
 .carousel-slide {
