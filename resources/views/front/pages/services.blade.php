@@ -21,21 +21,21 @@
     </header>
     <div id="service-icon-container" class="service-icon-container">
         <div id="consulting" class="service-icon-box">
-            @include('svg.isomark_website-20')
+            @include('svg.serviceicons.services_consulting')
             <h4>Consulting Services</h4>
         </div>
         <div id="placement" class="service-icon-box">
-            @include('svg.isomark_website-21')
+            @include('svg.serviceicons.services_placement')
             <h4>Placement Services</h4>
         </div>
         <div id="training" class="service-icon-box">
-            @include('svg.isomark_website-22')
+            @include('svg.serviceicons.services_training')
             <h4>Training and Coordination</h4>
         </div>
     </div>
     <div class="service-content-area container">
         <section id="consulting-service">
-            <h2 class="service-title">Consulting Services</h2>
+            <h1 class="service-title">Consulting Services</h1>
             <h3 class="service-section-title">Modular Consulting Option</h3>
             <p>The above option allows an ISOMARK Consultant to implement a Risk Management Program for a pre-determined period, e.g. 6 months or as per client requirements. Should a client wish to ensure legal compliance with the OHS Act only or implement a total Risk Management program, then the client should choose this option.</p>
             <h3 class="service-section-title">Baseline Assessments/Gap Assessments</h3>
@@ -45,7 +45,7 @@
             <button class="btn prompt-button spaced service-clear-button">Clear</button>
         </section>
         <section id="placement-service">
-            <h2 class="service-title">Placement Options</h2>
+            <h1 class="service-title">Placement Options</h1>
             <h3 class="service-section-title">SHE Risk Management Consulting & Placements</h3>
             <p>Isomark is a specialized SHEQ Management company; we ensure full compliance with the Occupational Health and Safety Act 85 of 1993.
                 Isomark will also assist the client in achieving compliance with the NOSA Integrated System and ISO 14001/18001 Systems.  Isomark has developed a bullet proof Integrated Management system that satisfies both the local OHS Act requirements as well as the ISO requirements. Isomark has devised unique methods of assisting our clients to achieve these objectives:</p>
@@ -95,7 +95,7 @@
             <button class="btn prompt-button spaced service-clear-button">Clear</button>
         </section>
         <section id="training-services">
-            <h2 class="service-title">Training and Coordination</h2>
+            <h1 class="service-title">Training and Coordination</h1>
             <p>ISOMARK is able to supply training on a number of Safety courses to suit your needs. We will evaluate your site risks and conduct site -specific training at your premises. ISOMARK offers co-ordination of all client safety training needs as well as tailored courses/workshops. Site specific training on procedures that are linked to our courses is recommended so as to ensure greater understanding of roles and responsibility post training.
                 We also offer a placement function of one of our qualified Facilitators on site to facilitate all SHEQ related training on an ongoing basis as a set monthly fee, irrespective of amount of training conducted each month.</p>
             <button class="btn prompt-button spaced service-clear-button">Clear</button>

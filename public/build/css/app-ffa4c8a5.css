@@ -5573,7 +5573,8 @@ a, a:visited, a:active, a:hover {
     margin-bottom: 50px; }
   .section-container .section-title {
     font-family: "Open Sans", Helvetica, Ariel, sans-serif;
-    font-weight: 600;
+    font-weight: 400;
+    letter-spacing: 2px;
     text-transform: uppercase;
     color: #1A2840;
     background: #FFFFFF;
@@ -5602,6 +5603,8 @@ a, a:visited, a:active, a:hover {
 
 .course-row {
   border-bottom: 1px solid #e5e5e5; }
+  .course-row.final-row {
+    border-bottom: none; }
 
 .item-name {
   color: #F05A28;
@@ -5617,6 +5620,10 @@ a, a:visited, a:active, a:hover {
   font-family: "Open Sans", Helvetica, Ariel, sans-serif;
   font-weight: 300;
   text-align: left; }
+
+.course-box {
+  margin-bottom: 2em;
+  margin-top: 1em; }
 
 .prompt-button {
   color: #FFFFFF;
@@ -5758,13 +5765,13 @@ a, a:visited, a:active, a:hover {
 .page-title-banner {
   background-image: url(../../images/page_banner_pattern.png);
   background-color: #333B4D;
-  padding: 50px 0;
+  padding: 70px 5px;
   text-align: center;
   margin-bottom: 50px; }
   .page-title-banner span {
     display: inline-block;
-    border-bottom: 2px solid #F05A28;
-    border-top: 2px solid #F05A28;
+    border-bottom: 1px solid #F05A28;
+    border-top: 1px solid #F05A28;
     text-transform: uppercase;
     font-family: "Open Sans", Helvetica, Ariel, sans-serif;
     font-weight: 600;
@@ -5867,7 +5874,7 @@ a, a:visited, a:active, a:hover {
 
 .homepage-banner {
   width: 100%;
-  padding: 4em 0 2em;
+  padding: 4em 0 0.5em;
   background: #1A2840; }
   .homepage-banner img {
     width: 80%;
@@ -5878,7 +5885,7 @@ a, a:visited, a:active, a:hover {
     color: #F05A28;
     font-family: "Agenda Italic", Ariel, sans-serif;
     text-align: center;
-    padding: 1em;
+    padding: .25em;
     -webkit-animation: dropIn 0.5s;
             animation: dropIn 0.5s;
     -webkit-animation-delay: 1s;
@@ -5903,7 +5910,8 @@ a, a:visited, a:active, a:hover {
 .intro {
   width: 100%;
   margin: 0 auto;
-  font-family: "Agenda Italic", Ariel, sans-serif;
+  font-family: "Open Sans", Helvetica, Ariel, sans-serif;
+  font-weight: 300;
   background: #1A2840;
   color: #FFFFFF;
   font-size: 150%;
@@ -5965,7 +5973,7 @@ a, a:visited, a:active, a:hover {
 
 .client-names {
   font-size: 1.5em;
-  color: #808080;
+  color: #e4e4e4;
   font-family: "Open Sans", Helvetica, Ariel, sans-serif;
   text-transform: uppercase;
   padding-bottom: 20px;
@@ -5978,10 +5986,14 @@ a, a:visited, a:active, a:hover {
   .client-names:hover {
     color: #F05A28; }
 
+#services svg .svg-orange {
+  stroke: #F05A28; }
+
 .about-lead {
   max-width: 800px;
   margin: 0 auto;
   padding: 10px;
+  padding-bottom: 40px;
   font-family: "Open Sans", Helvetica, Ariel, sans-serif;
   color: #808080;
   font-size: 120%; }
@@ -6005,6 +6017,14 @@ a, a:visited, a:active, a:hover {
 
 .about-page-section .row {
   margin-bottom: 50px; }
+
+.about-page-section .corporate-structure-item {
+  max-width: 350px;
+  margin: 0 auto;
+  text-align: left; }
+  .about-page-section .corporate-structure-item p {
+    margin: 0;
+    padding: 5px 0; }
 
 .contents-col.affix {
   position: fixed;
@@ -6092,6 +6112,9 @@ a, a:visited, a:active, a:hover {
     color: #808080;
     font-weight: 300; }
 
+#services {
+  margin-top: 70px; }
+
 .service-container {
   font-family: "Open Sans", Helvetica, Ariel, sans-serif; }
   .service-container p {
@@ -6153,13 +6176,15 @@ a, a:visited, a:active, a:hover {
   font-family: "Open Sans", Helvetica, Ariel, sans-serif;
   color: #808080;
   position: relative;
-  min-height: 400px; }
+  min-height: 200px; }
   .service-content-area ul li {
     list-style-image: url(../../images/isomark_bullet.png); }
   .service-content-area section {
     max-width: 800px;
     margin: 1em auto;
     display: none; }
+  .service-content-area h1 {
+    color: #1A2840; }
   .service-content-area h2, .service-content-area h3, .service-content-area h4 {
     text-transform: uppercase;
     color: #F05A28; }
@@ -6236,18 +6261,19 @@ p.courses-intro {
   max-width: 700px;
   margin: 2em auto; }
 
-.front-contact-section {
-  max-width: 800px;
-  font-family: "Open Sans", Helvetica, Ariel, sans-serif; }
-  .front-contact-section h2 {
-    text-transform: uppercase;
-    font-family: "Open Sans", Helvetica, Ariel, sans-serif;
-    color: #1A2840;
-    text-align: center;
-    padding-bottom: 40px; }
-  .front-contact-section p {
-    color: #808080; }
-  .front-contact-section .row div {
+.section-container.front-contact-section {
+  font-family: "Open Sans", Helvetica, Ariel, sans-serif;
+  text-align: left; }
+  .section-container.front-contact-section h1 {
+    text-align: center; }
+  .section-container.front-contact-section .contact-item {
+    max-width: 350px;
+    margin: 0 auto; }
+  .section-container.front-contact-section p {
+    color: #808080;
+    padding: 5px 0;
+    margin: 0; }
+  .section-container.front-contact-section .row div {
     padding-bottom: 40px; }
 
 .workshop-list-table {

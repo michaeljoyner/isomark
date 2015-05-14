@@ -1,14 +1,14 @@
 .page-title-banner {
   background-image: url(../../images/page_banner_pattern.png);
   background-color: $washed_blue;
-  padding: 50px 0;
+  padding: 70px 5px;
   text-align: center;
   margin-bottom: 50px;
 
   span {
     display: inline-block;
-    border-bottom: 2px solid $primary_orange;
-    border-top: 2px solid $primary_orange;
+    border-bottom: 1px solid $primary_orange;
+    border-top: 1px solid $primary_orange;
     text-transform: uppercase;
     font-family: $body_text;
     font-weight: 600;

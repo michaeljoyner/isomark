@@ -1,6 +1,6 @@
 .homepage-banner {
   width: 100%;
-  padding: 4em 0 2em;
+  padding: 4em 0 .5em;
   background: $primary_blue;
 
   img {
@@ -14,7 +14,7 @@
     color: $primary_orange;
     font-family: $lead_italic;
     text-align: center;
-    padding: 1em;
+    padding: .25em;
     animation: dropIn 0.5s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
@@ -31,7 +31,8 @@
 .intro {
   width: 100%;
   margin: 0 auto;
-  font-family: $lead_italic;
+  font-family: $body_text;
+  font-weight: 300;
   background: $primary_blue;
   color: $white;
   font-size: 150%;
@@ -104,7 +105,7 @@
 
 .client-names {
   font-size: 1.5em;
-  color: $grey_text;
+  color: $midlight_grey;
   font-family: $body_text;
   text-transform: uppercase;
   padding-bottom: 20px;
@@ -120,4 +121,8 @@
   &:hover {
     color: $primary_orange;
   }
+}
+
+#services svg .svg-orange {
+  stroke: $primary_orange;
 }

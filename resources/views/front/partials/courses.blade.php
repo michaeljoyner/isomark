@@ -9,7 +9,7 @@
                 <p class="item-description">{{ $course->aim }}</p>
             </div>
             @if($index === 2)
-                </div><div class="row course-row">
+                </div><div class="row course-row final-row">
             @endif
         @endforeach
     </div>

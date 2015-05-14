@@ -21,7 +21,7 @@
                 <div class="col-sm-6">
                     <a href="/courses/safety-health-and-environment">
                         <div class="course-icon-box">
-                            @include('svg.clientlogo.courses_safety')
+                            @include('svg.courseicons.courses_safety')
                             <h4>Safety, Health and Environment</h4>
                         </div>
                     </a>
@@ -39,7 +39,7 @@
                 <div class="col-sm-6">
                     <a href="/courses/soft-skills-programmes">
                         <div class="course-icon-box">
-                            @include('svg.clientlogo.courses_soft')
+                            @include('svg.courseicons.courses_soft')
                             <h4>Soft Skills Programmes</h4>
                         </div>
                     </a>
@@ -47,7 +47,7 @@
                 <div class="col-sm-6">
                     <a href="/courses/skills-bundles">
                         <div class="course-icon-box">
-                            @include('svg.clientlogo.courses_skills')
+                            @include('svg.courseicons.courses_skills')
                             <h4>Skills Bundles</h4>
                         </div>
                     </a>
@@ -57,7 +57,7 @@
                 <div class="col-sm-6">
                     <a href="/workshops">
                         <div class="course-icon-box">
-                            @include('svg.clientlogo.courses_workshops')
+                            @include('svg.courseicons.courses_workshops')
                             <h4>Workshops</h4>
                         </div>
                     </a>

@@ -9,7 +9,8 @@
 
   .section-title {
     font-family: $body_text;
-    font-weight: 600;
+    font-weight: 400;
+    letter-spacing: 2px;
     text-transform: uppercase;
     color: $primary_blue;
     background: $white;
@@ -40,6 +41,10 @@
 
 .course-row {
   border-bottom: 1px solid $light_grey;
+
+  &.final-row {
+    border-bottom: none;
+  }
 }
 
 .item-name {
@@ -58,4 +63,9 @@
   font-family: $body_text;
   font-weight: 300;
   text-align: left;
+}
+
+.course-box {
+  margin-bottom: 2em;
+  margin-top: 1em;
 }

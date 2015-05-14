@@ -29,31 +29,38 @@
             <li>Assist the client in providing a safe, healthy working environment for all its employees.</li>
             <li>We are determined not only to compete, but to advance building our market share by offering individuals and companies the best possible service.</li>
         </ul>
-        <p>“No matter how worthy one’s Mission and Vision may be it can only be achieved with the right management and dedicated personnel”.</p>
+        <p>“No matter how worthy one’s Mission and Vision may be it can only be achieved with the right management and dedicated personnel.”</p>
     </section>
     <section class="section-container about-page-section">
         <h1><span class="section-title">Corporate structure</span></h1>
-
-        <div class="row">
-            <div class="col-sm-6">
-                <h4 class="orange-subheading">managing director</h4>
-                <p>Alan Borchardt</p>
-                <p><span class="glyphicon glyphicon-phone"></span> +27 (0)82 572 2270</p>
-                <p><span class="glyphicon glyphicon-envelope"></span> alan@isomark.co.za</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="corporate-structure-item">
+                        <h4 class="orange-subheading">managing director</h4>
+                        <p>Alan Borchardt</p>
+                        <p><span class="glyphicon glyphicon-phone"></span> +27 (0)82 572 2270</p>
+                        <p><span class="glyphicon glyphicon-envelope"></span> alan@isomark.co.za</p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="corporate-structure-item">
+                        <h4 class="orange-subheading">operations manager</h4>
+                        <p>Johan Slabbert</p>
+                        <p><span class="glyphicon glyphicon-phone"></span> +27 (0)73 299 4585</p>
+                        <p><span class="glyphicon glyphicon-envelope"></span> johan@isomark.co.za</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-6">
-                <h4 class="orange-subheading">operations manager</h4>
-                <p>Johan Slabbert</p>
-                <p><span class="glyphicon glyphicon-phone"></span> +27 (0)73 299 4585</p>
-                <p><span class="glyphicon glyphicon-envelope"></span> johan@isomark.co.za</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                <h4 class="orange-subheading">financial manager</h4>
-                <p>Wendy Bouchart</p>
-                <p><span class="glyphicon glyphicon-phone"></span> +27 (0)84 800 8384</p>
-                <p><span class="glyphicon glyphicon-envelope"></span> wendy@isomark.co.za</p>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="corporate-structure-item">
+                        <h4 class="orange-subheading">financial manager</h4>
+                        <p>Wendy Bouchart</p>
+                        <p><span class="glyphicon glyphicon-phone"></span> +27 (0)84 800 8384</p>
+                        <p><span class="glyphicon glyphicon-envelope"></span> wendy@isomark.co.za</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

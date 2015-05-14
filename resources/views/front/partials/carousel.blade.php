@@ -20,7 +20,7 @@
             <img src="{{ asset('images/carousel/HIRA4x2.jpg') }}" alt=""/>
 
             <div class="slide-text-holder">
-                <p>Hazardous Identification Risk Assessment (H.I.R.A)</p>
+                <p>HIRA - Hazardous Identification Risk Assessment</p>
                 <p class="subtext">Training Course Available</p>
             </div>
         </div>

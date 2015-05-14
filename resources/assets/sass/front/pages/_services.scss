@@ -1,3 +1,7 @@
+#services {
+  margin-top: 70px;
+}
+
 .service-container {
   font-family: $body_text;
 
@@ -69,7 +73,7 @@
   font-family: $body_text;
   color: $grey_text;
   position: relative;
-  min-height: 400px;
+  min-height: 200px;
 
   ul li {
     list-style-image: url(../../images/isomark_bullet.png);
@@ -83,6 +87,10 @@
 //    top: 0;
 //    left: 0;
     display: none;
+  }
+
+  h1 {
+    color: $primary_blue;
   }
   h2, h3, h4 {
     text-transform: uppercase;

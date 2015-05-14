@@ -1,17 +1,20 @@
-.front-contact-section {
-  max-width: 800px;
+.section-container.front-contact-section {
   font-family: $body_text;
+  text-align: left;
 
-  h2 {
-    text-transform: uppercase;
-    font-family: $body_text;
-    color: $primary_blue;
+  h1 {
     text-align: center;
-    padding-bottom: 40px;
+  }
+
+  .contact-item {
+    max-width: 350px;
+    margin: 0 auto;
   }
 
   p {
     color: $grey_text;
+    padding: 5px 0;
+    margin: 0;
   }
 
   .row div {
