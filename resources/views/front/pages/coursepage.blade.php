@@ -29,7 +29,7 @@
                 <div class="col-sm-6">
                     <a href="/courses/lifting-equipment-training">
                         <div class="course-icon-box">
-                            @include('svg.clientlogo.courses_lifting')
+                            @include('svg.courseicons.courses_lifting')
                             <h4>Lifting Equipment</h4>
                         </div>
                     </a>
