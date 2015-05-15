@@ -14,12 +14,13 @@
 @section('content')
     @include('front.partials.pageheader', ['pageTitle' => $courses->first()->category->name])
     <div class="content-wrapper clearfix">
-        <div class="contents-col" data-spy="affix" data-offset-top="250" data-offset-bottom="1000">
+        <div class="contents-col" data-spy="affix" data-offset-top="250" data-offset-bottom="800">
             <h2>contents</h2>
             <ul>
                 @foreach($list as $key => $value)
                     <li><a href="#{{$key}}">{{$value}}</a></li>
                 @endforeach
+                <li id="back-to-top">Back to Top</li>
             </ul>
         </div>
         <div class="details-col">
@@ -60,6 +61,12 @@
             $('html, body').animate({
                 scrollTop: $(this.getAttribute('href')).offset().top - 50
             }, 1000);
+        });
+
+        $("#back-to-top").click(function(ev) {
+           $('html, body').animate({
+               scrollTop: 0
+           }, 1000);
         });
     </script>
 @endsection

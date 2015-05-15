@@ -27,6 +27,10 @@
     font-size: 120%;
     position: relative;
 
+    &.active {
+      background-color: $secondary_blue;
+    }
+
     &:hover {
       background: $secondary_blue;
     }
@@ -45,7 +49,7 @@
     font-size: .75em;
   }
 
-  &>ul>li:hover .submenu {
+  &>ul>li:not(.active):hover .submenu {
     height: auto;
     max-height: 400px;
     z-index: 100;
@@ -53,5 +57,33 @@
 
   .submenu>li:hover {
     background-color: $primary_blue;
+  }
+}
+
+.main-navbar.courses-nav {
+  height: 50px;
+  ul li {
+    width: 19.5%;
+    text-align: center;
+    background-color: $secondary_blue;
+    height: 50px;
+    padding: 10px 0;
+    vertical-align: top;
+    line-height: 1.4;
+    font-size: 1em;
+
+    &:hover {
+      color: $secondary_orange;
+    }
+
+    &:not(:last-child) {
+      border-right: 2px solid $primary_blue;
+    }
+  }
+
+  ul {
+    border-bottom: none;
+    height: 50px;
+    background-color: $secondary_blue;
   }
 }

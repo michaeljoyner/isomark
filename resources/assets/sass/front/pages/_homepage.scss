@@ -1,7 +1,10 @@
+.main-home-header {
+  background-color: $primary_blue;
+  background-image: url(../../images/isomark_HP_pattern.png);
+}
 .homepage-banner {
   width: 100%;
-  padding: 4em 0 .5em;
-  background: $primary_blue;
+  padding: 4em 0 2em;
 
   img {
     width: 80%;
@@ -33,7 +36,6 @@
   margin: 0 auto;
   font-family: $body_text;
   font-weight: 300;
-  background: $primary_blue;
   color: $white;
   font-size: 150%;
   text-align: center;

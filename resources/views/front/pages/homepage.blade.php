@@ -16,7 +16,7 @@
 @endsection
 
 @section('content')
-    <header>
+    <header class="main-home-header">
         @include('front.partials.searchbar')
         @include('front.partials.navbar')
         <div class="homepage-banner">
@@ -24,12 +24,13 @@
 
             <h1 class="tagline">facilitating global standards</h1>
         </div>
+        <section class="intro">
+            <p>Isomark prides itself on providing the best possible services to our clients, and we also realise that each
+                client has special requirements. Therefore at Isomark we do our utmost to identify with your individual
+                needs and address them to your absolute satisfaction</p>
+        </section>
     </header>
-    <section class="intro">
-        <p>Isomark prides itself on providing the best possible services to our clients, and we also realise that each
-            client has special requirements. Therefore at Isomark we do our utmost to identify with your individual
-            needs and address them to your absolute satisfaction</p>
-    </section>
+
     @include('front.partials.carousel')
     <section class="section-container" id="services">
         @include('front.partials.services')

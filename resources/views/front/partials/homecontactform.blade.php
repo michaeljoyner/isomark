@@ -1,6 +1,6 @@
 <h1><span class="section-title">{{ $formTitle }}</span></h1>
-<p class="contactus-blurb">Feel free to get in touch with any inquiries and one of our friendly members of staff will get back to you as soon as possible.</p>
 <div id="contact-form-box" class="container home-contact-form isomark-form">
+    <p class="contactus-blurb">Feel free to get in touch with any inquiries and one of our friendly members of staff will get back to you as soon as possible.</p>
     <div class="covering">
         <p id="thanks" class="thanks">Thanks!</p>
         <span class="thanks reset-prompt">Send another message</span>

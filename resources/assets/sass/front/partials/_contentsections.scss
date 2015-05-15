@@ -25,12 +25,13 @@
     color: $grey_text;
     font-family: $body_text;
     padding: 10px;
+    font-weight: 300;
   }
 
   &:before {
     content: '';
     position: absolute;
-    height: 3px;
+    height: 2px;
     width: 100%;
     background: $primary_blue;
     top: 20px;

@@ -5446,6 +5446,8 @@ a, a:visited, a:active, a:hover {
     font-family: "Open Sans", Helvetica, Ariel, sans-serif;
     font-size: 120%;
     position: relative; }
+    .main-navbar > ul > li.active {
+      background-color: #2D456E; }
     .main-navbar > ul > li:hover {
       background: #2D456E; }
   .main-navbar .submenu {
@@ -5459,12 +5461,32 @@ a, a:visited, a:active, a:hover {
     transition: max-height 0.75s;
     background: #2D456E;
     font-size: .75em; }
-  .main-navbar > ul > li:hover .submenu {
+  .main-navbar > ul > li:not(.active):hover .submenu {
     height: auto;
     max-height: 400px;
     z-index: 100; }
   .main-navbar .submenu > li:hover {
     background-color: #1A2840; }
+
+.main-navbar.courses-nav {
+  height: 50px; }
+  .main-navbar.courses-nav ul li {
+    width: 19.5%;
+    text-align: center;
+    background-color: #2D456E;
+    height: 50px;
+    padding: 10px 0;
+    vertical-align: top;
+    line-height: 1.4;
+    font-size: 1em; }
+    .main-navbar.courses-nav ul li:hover {
+      color: #EF7A54; }
+    .main-navbar.courses-nav ul li:not(:last-child) {
+      border-right: 2px solid #1A2840; }
+  .main-navbar.courses-nav ul {
+    border-bottom: none;
+    height: 50px;
+    background-color: #2D456E; }
 
 #slides {
   max-height: 600px;
@@ -5590,11 +5612,12 @@ a, a:visited, a:active, a:hover {
     margin: 1em auto;
     color: #808080;
     font-family: "Open Sans", Helvetica, Ariel, sans-serif;
-    padding: 10px; }
+    padding: 10px;
+    font-weight: 300; }
   .section-container:before {
     content: '';
     position: absolute;
-    height: 3px;
+    height: 2px;
     width: 100%;
     background: #1A2840;
     top: 20px;
@@ -5782,6 +5805,9 @@ a, a:visited, a:active, a:hover {
   max-width: 800px;
   text-align: left;
   position: relative; }
+  .home-contact-form p.contactus-blurb {
+    max-width: 600px;
+    text-align: center; }
   .home-contact-form .row {
     margin-bottom: 25px; }
   .home-contact-form textarea {
@@ -5872,10 +5898,13 @@ a, a:visited, a:active, a:hover {
   background-image: url("../../images/hardhat.jpg");
   background-size: cover; }
 
+.main-home-header {
+  background-color: #1A2840;
+  background-image: url(../../images/isomark_HP_pattern.png); }
+
 .homepage-banner {
   width: 100%;
-  padding: 4em 0 0.5em;
-  background: #1A2840; }
+  padding: 4em 0 2em; }
   .homepage-banner img {
     width: 80%;
     max-width: 700px;
@@ -5912,7 +5941,6 @@ a, a:visited, a:active, a:hover {
   margin: 0 auto;
   font-family: "Open Sans", Helvetica, Ariel, sans-serif;
   font-weight: 300;
-  background: #1A2840;
   color: #FFFFFF;
   font-size: 150%;
   text-align: center;
@@ -5996,11 +6024,12 @@ a, a:visited, a:active, a:hover {
   padding-bottom: 40px;
   font-family: "Open Sans", Helvetica, Ariel, sans-serif;
   color: #808080;
-  font-size: 120%; }
+  font-size: 120%;
+  font-weight: 300; }
 
 .accreditations {
   list-style-image: url(../../images/isomark_bullet.png);
-  padding-top: 50px;
+  padding-top: 10px;
   padding-bottom: 50px;
   max-width: 600px;
   margin: 0 auto; }
@@ -6010,7 +6039,8 @@ a, a:visited, a:active, a:hover {
     text-align: left;
     font-family: "Open Sans", Helvetica, Ariel, sans-serif;
     font-size: 120%;
-    color: #808080; }
+    color: #808080;
+    font-weight: 300; }
 
 .about-page-section p {
   font-size: 120%; }
@@ -6069,6 +6099,16 @@ a, a:visited, a:active, a:hover {
         padding-left: 10px; } }
   .contents-col li {
     text-transform: capitalize; }
+    .contents-col li:hover {
+      color: #1A2840; }
+
+#back-to-top {
+  color: #F05A28;
+  padding-top: 30px;
+  cursor: pointer;
+  text-transform: none; }
+  #back-to-top:hover {
+    color: #1A2840; }
 
 .details-col {
   margin-top: 100px;
@@ -6176,7 +6216,8 @@ a, a:visited, a:active, a:hover {
   font-family: "Open Sans", Helvetica, Ariel, sans-serif;
   color: #808080;
   position: relative;
-  min-height: 200px; }
+  min-height: 200px;
+  font-weight: 300; }
   .service-content-area ul li {
     list-style-image: url(../../images/isomark_bullet.png); }
   .service-content-area section {

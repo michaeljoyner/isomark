@@ -29,6 +29,20 @@
   
   li {
     text-transform: capitalize;
+
+    &:hover {
+      color: $primary_blue;
+    }
+  }
+}
+
+#back-to-top {
+  color: $primary_orange;
+  padding-top: 30px;
+  cursor: pointer;
+  text-transform: none;
+  &:hover {
+    color: $primary_blue;
   }
 }
 

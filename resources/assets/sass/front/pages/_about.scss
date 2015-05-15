@@ -6,11 +6,12 @@
   font-family: $body_text;
   color: $grey_text;
   font-size: 120%;
+  font-weight: 300;
 }
 
 .accreditations {
   list-style-image: url(../../images/isomark_bullet.png);
-  padding-top: 50px;
+  padding-top: 10px;
   padding-bottom: 50px;
   max-width: 600px;
   margin: 0 auto;
@@ -22,6 +23,7 @@
     font-family: $body_text;
     font-size: 120%;
     color: $grey_text;
+    font-weight: 300;
   }
 }
 
