@@ -5279,7 +5279,8 @@ a, a:visited, a:active, a:hover, a:focus {
 
 #mobile-top-button {
   position: fixed;
-  top: 90vh;
+  display: none;
+  top: 85vh;
   right: 16px;
   transition: .5s;
   text-align: center;
@@ -5294,6 +5295,12 @@ a, a:visited, a:active, a:hover, a:focus {
   opacity: 0;
   border-radius: 50%;
   box-shadow: 1px 1px 1px #1A2840; }
+  @media only screen and (max-width: 360px) {
+    #mobile-top-button {
+      display: block; } }
+  @media only screen and (min-width: 361px) and (max-width: 605px) {
+    #mobile-top-button {
+      display: block; } }
 
 .delete-form {
   display: inline-block; }
@@ -6280,6 +6287,7 @@ a, a:visited, a:active, a:hover, a:focus {
   margin-top: 40px; }
 
 .course-detailed {
+  width: 98%;
   font-family: "Open Sans", Helvetica, Ariel, sans-serif;
   margin-top: 50px;
   padding-bottom: 50px;
