@@ -6306,7 +6306,6 @@ a, a:visited, a:active, a:hover, a:focus {
     position: relative; }
   .course-icons-container .course-icon-box {
     width: 100%;
-    max-width: 350px;
     height: 350px;
     display: inline-block;
     border: 1px solid #808080;

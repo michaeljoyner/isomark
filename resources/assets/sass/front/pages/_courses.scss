@@ -35,12 +35,13 @@
   }
   .course-icon-box {
     width: 100%;
-    max-width: 350px;
+//    max-width: 350px;
     height: 350px;
     display: inline-block;
     border: 1px solid $grey_text;
     text-align: center;
     padding-top: 50px;
+
 
     &:hover {
       border-color: $primary_orange;
