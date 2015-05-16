@@ -67,10 +67,10 @@
     <section class="section-container about-page-section">
         <h1><span class="section-title">Accreditation</span></h1>
         <ul class="accreditations">
-            <li>BEE Level 3 Certificate</li>
-            <li>HWSETA Full Accredtitation as an Education and Training Provider</li>
-            <li>T.E.T.A Programme Approval</li>
-            <li>HWSETA Learning Programme Referral</li>
+            <li><a href="{{ asset('docs/BEECERT.pdf') }}" target="_blank">BEE Level 3 Certificate</a></li>
+            <li><a href="{{ asset('docs/hwseta.pdf') }}" target="_blank">HWSETA Full Accredtitation as an Education and Training Provider</a></li>
+            <li><a href="{{ asset('docs/lpr.pdf') }}" target="_blank">T.E.T.A Programme Approval</a></li>
+            <li><a href="{{ asset('docs/teta.pdf') }}" target="_blank">HWSETA Learning Programme Referral</a></li>
         </ul>
     </section>
     <section class="section-container about-page-section">

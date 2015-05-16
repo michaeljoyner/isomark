@@ -1,4 +1,4 @@
-<svg version="1.1" viewBox="0 0 111.1 124.4">
+<svg version="1.1" viewBox="0 0 111.1 124.4" preserveAspectRatio="xMidYMid meet">
 <g id="Layer_1">
 	<g id="safety_x5F_jacket_1_">
 		<path fill="none" stroke="#808080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="

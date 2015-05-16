@@ -44,6 +44,10 @@
 
     &:hover {
       border-color: $primary_orange;
+
+      svg * {
+        stroke: $primary_orange;
+      }
     }
 
     svg {
@@ -61,19 +65,6 @@
 
     &:hover h4 {
       color: $primary_orange;
-    }
-
-
-    &:hover svg .svg-blue {
-      stroke: $primary_blue;
-    }
-
-    &:hover svg .svg-orange {
-      stroke: $primary_orange;
-    }
-
-    &:hover svg .svg-orange-fill {
-      fill: $primary_orange;
     }
   }
 }

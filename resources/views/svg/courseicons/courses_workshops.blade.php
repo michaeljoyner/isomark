@@ -1,4 +1,4 @@
-<svg version="1.1" viewBox="0 0 120.2 124.4>
+<svg version="1.1" viewBox="0 0 120.2 124.4" preserveAspectRatio="xMidYMid meet">
 <g id="Layer_1">
 	<rect x="-102.4" y="-92.1" fill="none" stroke="#E3E3E3" stroke-miterlimit="10" width="325" height="363.6"/>
 	<g>

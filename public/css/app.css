@@ -5211,9 +5211,10 @@ body {
   min-height: 100%;
   position: relative; }
 
-a, a:visited, a:active, a:hover {
+a, a:visited, a:active, a:hover, a:focus {
   text-decoration: none;
-  color: inherit; }
+  color: inherit;
+  outline: none; }
 
 .slide-nav-menu {
   position: absolute;
@@ -5899,8 +5900,7 @@ a, a:visited, a:active, a:hover {
   background-size: cover; }
 
 .main-home-header {
-  background-color: #1A2840;
-  background-image: url(../../images/isomark_HP_pattern.png); }
+  background-color: #1A2840; }
 
 .homepage-banner {
   width: 100%;
@@ -6278,6 +6278,8 @@ a, a:visited, a:active, a:hover {
     padding-top: 50px; }
     .course-icons-container .course-icon-box:hover {
       border-color: #F05A28; }
+      .course-icons-container .course-icon-box:hover svg * {
+        stroke: #F05A28; }
     .course-icons-container .course-icon-box svg {
       max-width: 200px;
       width: 100%;
@@ -6289,12 +6291,6 @@ a, a:visited, a:active, a:hover {
       padding-top: 50px; }
     .course-icons-container .course-icon-box:hover h4 {
       color: #F05A28; }
-    .course-icons-container .course-icon-box:hover svg .svg-blue {
-      stroke: #1A2840; }
-    .course-icons-container .course-icon-box:hover svg .svg-orange {
-      stroke: #F05A28; }
-    .course-icons-container .course-icon-box:hover svg .svg-orange-fill {
-      fill: #F05A28; }
 
 p.courses-intro {
   font-family: "Open Sans", Helvetica, Ariel, sans-serif;

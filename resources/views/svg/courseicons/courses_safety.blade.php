@@ -1,4 +1,4 @@
-<svg version="1.1" viewBox="0 0 111.1 124.4">
+<svg version="1.1" viewBox="0 0 111.1 124.4" preserveAspectRatio="xMidYMid meet">
 <g id="Layer_1">
 	<g id="helmet_x5F_goggles_1_">
 		
