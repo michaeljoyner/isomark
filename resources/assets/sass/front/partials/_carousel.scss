@@ -1,17 +1,16 @@
 #slides {
-  max-height: 600px;
+//  max-height: 600px;
   min-height: 300px;
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  @include respond-to(phone) {height: 320px;}
-  @include respond-to(smalltablet) {height: 320px;}
+//  @include respond-to(phone) {height: 320px;}
+//  @include respond-to(smalltablet) {height: 320px;}
 
   .slick-prev {
     position: absolute;
     left: 30px;
     top: 50%;
-    z-index: 200;
     width: 0;
     margin: 0;
     padding: 0;
@@ -24,7 +23,6 @@
     position: absolute;
     right: 60px;
     top: 50%;
-    z-index: 200;
     width: 0;
     margin: 0;
     padding: 0;
@@ -69,30 +67,27 @@
 
 .carousel-slide {
   width: 100%;
-  max-height: 600px;
+//  max-height: 600px;
   position: relative;
   overflow: hidden;
-  @include respond-to(phone) {height:auto; max-height: 320px;}
-  @include respond-to(smalltablet) {height:auto; max-height: 320px;}
+//  @include respond-to(phone) {height:auto; max-height: 320px;}
+//  @include respond-to(smalltablet) {height:auto; max-height: 320px;}
 
   img {
     width: 100%;
     display: block;
-//    position: absolute;
-//    left: 0;
-//    bottom: -30%;
-//    @include respond-to(widedesktop) {position: relative; left: 0; bottom: 150px;}
   }
 
   .slide-text-holder {
     width: 100%;
-//    height: 5em;
     padding: 20px;
     font-family: $body_text;
     background-color: rgba(26,40,64,.6);
     position: absolute;
     bottom: 0;
     z-index: 10;
+    @include respond-to(phone) {padding-top: 40px; position: relative; height: 120px;}
+    @include respond-to(smalltablet) {padding-top: 40px; position: relative; height: 120px;}
 
     p {
       width: 100%;
@@ -102,6 +97,8 @@
       font-weight: 600;
       color: white;
       text-transform: uppercase;
+      @include respond-to(phone) {padding-right: 2em; font-size: 1em;}
+      @include respond-to(smalltablet) {padding-right: 2em; font-size: 1em;}
     }
 
     .subtext {
@@ -109,6 +106,8 @@
       text-transform: uppercase;
       padding-right: 6em;
       color: $primary_orange;
+      @include respond-to(phone) {padding-right: 2em;}
+      @include respond-to(smalltablet) {padding-right: 2em;}
     }
   }
 }

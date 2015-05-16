@@ -41,6 +41,8 @@
   padding-top: 30px;
   cursor: pointer;
   text-transform: none;
+  @include respond-to(phone) {display: none;}
+  @include respond-to(smalltablet) {display: none;}
   &:hover {
     color: $primary_blue;
   }

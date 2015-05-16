@@ -42,6 +42,8 @@
 
 .course-row {
   border-bottom: 1px solid $light_grey;
+  @include respond-to(phone) {border-bottom: none;}
+  @include respond-to(smalltablet) {border-bottom: none;}
 
   &.final-row {
     border-bottom: none;

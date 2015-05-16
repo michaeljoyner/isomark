@@ -45,12 +45,25 @@
     <div class="main-content-wrapper">
 	@yield('content')
     </div>
-
+    <div id="mobile-top-button">top</div>
 	<!-- Scripts -->
 	<script src="{{ elixir("js/app.js") }}"></script>
     <script>
         contactScroller.init();
         slideMenu.init();
+        $(document).scroll(function() {
+            var y = $(this).scrollTop();
+            if (y > 400) {
+                $('#mobile-top-button').css({opacity: 1});
+            } else {
+                $('#mobile-top-button').css({opacity: 0});
+            }
+        });
+        $('#mobile-top-button').on('click', function() {
+           $('body, html').animate({
+               scrollTop: 0
+           }, 500);
+        });
     </script>
     @yield('bodyscripts')
 </body>

@@ -3,6 +3,7 @@
   height: 50px;
   padding: 8px 2em;
   display: none;
+  background-color: $primary_blue;
   @include respond-to(phone) {display: block;}
   @include respond-to(smalltablet) {display: block;}
   @include respond-to(largetablet) {display: block;}
@@ -18,6 +19,10 @@
     display: none;
     font-size: 2em;
     color: $primary_orange;
+    padding: 14px;
+    margin-top: 12px;
+    background-color: $secondary_blue;
+    border-radius: 50%;
     @include respond-to(phone) {display: inline-block;}
     @include respond-to(smalltablet) {display: inline-block;}
     @include respond-to(largetablet) {display: inline-block;}
