@@ -78,8 +78,6 @@ var contactForm = {
 
     send: function () {
         var elems = contactForm.elems;
-        var fd = new FormData();
-        var req = new XMLHttpRequest();
         if (!contactForm.inputIsValid()) {
             contactForm.showErrors();
             return;
@@ -87,26 +85,21 @@ var contactForm = {
         contactForm.clearErrors();
         elems.sendIcon.className = "glyphicon glyphicon-refresh";
         elems.sendText.innerHTML = "Sending..."
-        fd.append('name', elems.name.value);
-        fd.append('email', elems.email.value);
-        fd.append('enquiry', elems.enquiry.value);
-        fd.append('_token', document.querySelector('meta[property=CSRF-token]').getAttribute('content'));
-        req.open('POST', '/ajax/contact', true);
-        req.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-        req.onreadystatechange = function (ev) {
-            if (req.readyState === 4) {
-                if (req.status === 200) {
-                    console.log(ev.target.response);
-                    contactForm.showSuccess();
-                } else {
-                    contactForm.errors.push('Oops, there seems to have been a problem. Please try again');
-                    contactForm.showErrors();
-                }
+
+        var token = document.querySelector('meta[property=CSRF-token]').getAttribute('content');
+        $.ajax({
+            method: "POST",
+            url: "/ajax/contact",
+            data: {name: elems.name.value, email: elems.email.value, enquiry: elems.enquiry.value, "_token": token}
+        }).done(contactForm.showSuccess)
+            .fail(function(mess) {
+                contactForm.errors.push('Oops, there seems to have been a problem. Please try again');
+                contactForm.showErrors();
+            })
+            .always(function(m) {
                 elems.sendIcon.className = "glyphicon glyphicon-send";
-                elems.sendText.innerHTML = "Send"
-            }
-        }
-        req.send(fd);
+                elems.sendText.innerHTML = "Send";
+            });
     },
 
     showSuccess: function () {
