@@ -16,17 +16,19 @@ a, a:visited, a:active, a:hover, a:focus {
 
 .slide-nav-menu {
   position: absolute;
+  top: 0;
+  left: -310px;
   transition: .3s;
   width: 300px;
-  width: 100vw;
+//  width: 100vw;
   min-height: 100%;
-  transform: translate3d(-100vw,0,0);
+  transform: translate3d(0,0,0);
   background: $secondary_blue;
   z-index: 100;
 }
 
 .slide-nav-menu.show {
-  transform: translate3d(0,0,0);
+  transform: translate3d(310px,0,0);
 }
 
 .page-title {

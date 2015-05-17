@@ -5218,18 +5218,19 @@ a, a:visited, a:active, a:hover, a:focus {
 
 .slide-nav-menu {
   position: absolute;
+  top: 0;
+  left: -310px;
   transition: .3s;
   width: 300px;
-  width: 100vw;
   min-height: 100%;
-  -webkit-transform: translate3d(-100vw, 0, 0);
-          transform: translate3d(-100vw, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   background: #2D456E;
   z-index: 100; }
 
 .slide-nav-menu.show {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0); }
+  -webkit-transform: translate3d(310px, 0, 0);
+          transform: translate3d(310px, 0, 0); }
 
 .page-title {
   color: #1A2840;
@@ -5899,17 +5900,22 @@ a, a:visited, a:active, a:hover, a:focus {
   color: #FFFFFF; }
   .slide-nav-menu header {
     padding: 10px; }
+    .slide-nav-menu header img {
+      width: 150px;
+      height: 40px; }
   .slide-nav-menu .close-menu {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     color: #FFFFFF;
-    background-color: #F05A28;
+    background-color: #EF7A54;
     line-height: 42px;
     font-size: 32px;
+    font-weight: 600;
+    box-shadow: 1px 1px 2px #2D456E;
     text-align: center; }
   .slide-nav-menu ul {
-    padding: 50px 10px 10px 30px;
+    padding: 20px 10px 10px 30px;
     list-style-image: url(../../images/isomark_bullet.png); }
     .slide-nav-menu ul li {
       text-transform: uppercase;
@@ -5918,7 +5924,7 @@ a, a:visited, a:active, a:hover, a:focus {
       padding-bottom: 16px; }
 
 .close-prompt {
-  padding-top: 60px; }
+  padding-top: 20px; }
   .close-prompt p {
     width: 280px;
     margin: 0 auto;

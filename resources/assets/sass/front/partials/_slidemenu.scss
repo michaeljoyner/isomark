@@ -4,6 +4,11 @@
 
   header {
     padding: 10px;
+
+    img {
+      width: 150px;
+      height: 40px;
+    }
   }
 
   .close-menu {
@@ -11,14 +16,16 @@
     height: 50px;
     border-radius: 50%;
     color: $white;
-    background-color: $primary_orange;
+    background-color: $secondary_orange;
     line-height: 42px;
     font-size: 32px;
+    font-weight: 600;
+    box-shadow: 1px 1px 2px $secondary_blue;
     text-align: center;
   }
 
   ul {
-    padding: 50px 10px 10px 30px;
+    padding: 20px 10px 10px 30px;
     list-style-image: url(../../images/isomark_bullet.png);
 
     li {
@@ -31,7 +38,7 @@
 }
 
 .close-prompt {
-  padding-top: 60px;
+  padding-top: 20px;
 
   p {
     width: 280px;
