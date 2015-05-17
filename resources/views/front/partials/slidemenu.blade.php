@@ -1,6 +1,6 @@
 <header class="slide-menu-header clearfix">
     <div class="close-menu slide-menu-toggle pull-right">x</div>
-    <img src="{{ asset('images/isomark_website.png') }}" alt="logo" width="200" height="70"/>
+    <img src="{{ asset('images/carousel/small/isomark_website.png') }}" alt="logo" width="150" height="40"/>
 </header>
 <ul><a href="/">
         <li>Home</li>

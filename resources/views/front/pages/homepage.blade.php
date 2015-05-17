@@ -20,7 +20,7 @@
         @include('front.partials.searchbar')
         @include('front.partials.navbar')
         <div class="homepage-banner">
-            <img src="{{ asset('images/isomark_website.png') }}" alt="logo"/>
+            <img src="{{ asset('images/isomark_logo.png') }}" alt="logo"/>
 
             <h1 class="tagline">facilitating global standards</h1>
         </div>
@@ -74,6 +74,17 @@
                 arrows: true
             });
             contactForm.init();
+            if(window.innerWidth > 400) {
+                $(".carousel-img").each(function (index, el) {
+                    console.log('new img');
+                    var img = new Image();
+                    var elem = this;
+                    img.onload = function () {
+                        elem.src = this.src;
+                    };
+                    img.src = this.getAttribute('data-lrg');
+                });
+            }
         });
     </script>
 @endsection
