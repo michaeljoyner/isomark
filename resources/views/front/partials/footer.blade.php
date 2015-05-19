@@ -50,6 +50,6 @@
             <img src="{{ asset("images/footer_logo.png") }}" alt="logo"/><span class="italic">facilitating global standards</span>
         </div>
         <div class="footer-footer">
-            <p><span class="copyright">&copy; Copyright 2015 | </span><span class="dymantic"><a href="http://dymanticdesign.com">Dymantic Design</a></span></p>
+            <p><span class="copyright">&copy; Copyright 2015 | </span><span class="dymantic"><a href="http://dymanticdesign.com" target="_blank">Dymantic Design</a></span></p>
         </div>
 </footer>

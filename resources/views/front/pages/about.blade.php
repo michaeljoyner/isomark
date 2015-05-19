@@ -13,7 +13,7 @@
 
 @section('content')
     @include('front.partials.pageheader', ['pageTitle' => 'About Us'])
-        <p class="about-lead">Isomark prides itself on providing the best possible services to our clients, and we also realise that each client has special requirements. Therefore at Isomark we do our utmost to identify with your individual needs and address them to your absolute satisfaction</p>
+        <p class="about-lead">ISOMARK prides itself on providing the best possible services to our clients, and we also realise that each client has special requirements. Therefore at ISOMARK we do our utmost to identify with your individual needs and address them to your absolute satisfaction</p>
     <section class="section-container about-page-section">
         <h1><span class="section-title">Our Vision</span></h1>
         <p>“To become the most efficient Risk Management Company, which employs people committed to making a difference, enhancing the future of our clients, by achieving excellence in our field. We lead the way with our enthusiasm, optimism, patience, drive and commitment”.</p>

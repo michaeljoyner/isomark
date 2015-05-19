@@ -37,7 +37,7 @@
     width: 100%;
 
     .dymantic {
-      color: $primary_orange;
+      color: $secondary_orange;
     }
   }
 }
@@ -106,9 +106,10 @@
     }
 
     .course-category-map {
-      color: $primary_orange;
+      color: $secondary_orange;
       font-size: 100%;
       padding-top: 3px;
+      padding-left: 20px;
     }
   }
 }

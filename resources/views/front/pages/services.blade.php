@@ -40,14 +40,14 @@
             <h3 class="service-section-title">Baseline Assessments/Gap Assessments</h3>
             <p>Assessments can be conducted to assess the compliance level of existing Safety, Health and Environment System, be it an ISO System or any other. All Safety, Health and Environment aspects will be assessed according to the Occupational Health and Safety Act 85 of 1993 or company legal register. A detailed report will be supplied to Senior Management detailing improvement and corrective recommendations.</p>
             <h3 class="service-section-title">Isomark Consulting Option</h3>
-            <p>This option allows for an Isomark Consultant to visit the site at pre-determined intervals, e.g. one day per week, to monitor, evaluate and advise on the existing SHE system or full time Isomark safety officer to ensure day-to-day risk management is met.  This option is determined on client needs and risk profile.</p>
+            <p>This option allows for an ISOMARK Consultant to visit the site at pre-determined intervals, e.g. one day per week, to monitor, evaluate and advise on the existing SHE system or full time ISOMARK safety officer to ensure day-to-day risk management is met.  This option is determined on client needs and risk profile.</p>
             <button class="btn prompt-button spaced service-clear-button">Clear</button>
         </section>
         <section id="placement-service">
             <h1 class="service-title">Placement Options</h1>
             <h3 class="service-section-title">SHE Risk Management Consulting & Placements</h3>
-            <p>Isomark is a specialized SHEQ Management company; we ensure full compliance with the Occupational Health and Safety Act 85 of 1993.
-                Isomark will also assist the client in achieving compliance with the NOSA Integrated System and ISO 14001/18001 Systems.  Isomark has developed a bullet proof Integrated Management system that satisfies both the local OHS Act requirements as well as the ISO requirements. Isomark has devised unique methods of assisting our clients to achieve these objectives:</p>
+            <p>ISOMARK is a specialized SHEQ Management company; we ensure full compliance with the Occupational Health and Safety Act 85 of 1993.
+                ISOMARK will also assist the client in achieving compliance with the NOSA Integrated System and ISO 14001/18001 Systems.  ISOMARK has developed a bullet proof Integrated Management system that satisfies both the local OHS Act requirements as well as the ISO requirements. ISOMARK has devised unique methods of assisting our clients to achieve these objectives:</p>
             <h3 class="service-section-title">Safety Officer Placement</h3>
             <p>ISOMARK is able to place one of our qualified Consultants on your site to manage your entire SHEQ Programme. This can be done on a short term contract or long term contract, depending on need. Some of the duties will include:</p>
             <ul>

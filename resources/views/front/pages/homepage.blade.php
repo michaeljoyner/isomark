@@ -20,14 +20,12 @@
         @include('front.partials.searchbar')
         @include('front.partials.navbar')
         <div class="homepage-banner">
-            <img src="{{ asset('images/isomark_logo.png') }}" alt="logo"/>
+            <img src="{{ asset('images/mainlogo.png') }}" alt="logo"/>
 
             <h1 class="tagline">facilitating global standards</h1>
         </div>
         <section class="intro">
-            <p>Isomark prides itself on providing the best possible services to our clients, and we also realise that each
-                client has special requirements. Therefore at Isomark we do our utmost to identify with your individual
-                needs and address them to your absolute satisfaction</p>
+            <p>ISOMARK prides itself on providing the best possible services to our clients, and we also realise that each client has special requirements. Therefore at ISOMARK we do our utmost to identify with your individual needs and address them to your absolute satisfaction</p>
         </section>
     </header>
 
@@ -70,7 +68,7 @@
             $("#slides").slick({
                 accessibility: true,
                 autoplay: true,
-                autoplaySpeed: 7000,
+                autoplaySpeed: 4000,
                 arrows: true
             });
             contactForm.init();
