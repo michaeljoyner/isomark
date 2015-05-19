@@ -110,3 +110,8 @@ a, a:visited, a:active, a:hover, a:focus {
   @include respond-to(phone) {display: block;}
   @include respond-to(smalltablet) {display: block;}
 }
+
+p.page-lead {
+  font-weight: 300;
+  font-size: 110%;
+}

@@ -15,8 +15,7 @@
     <header>
         @include('front.partials.pageheader', ['pageTitle' => 'Isomark Services'])
         <div class="container service-container">
-            <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aut commodi eum, expedita explicabo fugiat fugit incidunt iure, laborum laudantium maxime minima nostrum numquam optio praesentium quibusdam ratione vel, voluptatibus!</span><span>Accusamus assumenda aut commodi culpa eligendi, error fuga fugit hic ipsam, iure laboriosam nam neque nulla officiis placeat, possimus qui quisquam quod saepe sit vel velit voluptate voluptatem voluptates voluptatibus?</span><span>Aut autem beatae consectetur deleniti eius enim error explicabo, fugit illum minus possimus quae quaerat quisquam rem sed tenetur voluptate! Earum esse minima recusandae. Aspernatur illum laborum officiis tenetur veniam.</span><span>Distinctio hic impedit optio. Distinctio inventore laborum officiis porro praesentium provident quasi qui quod sint velit? At consectetur id in molestias reiciendis sequi soluta. Accusantium et impedit nesciunt sequi voluptates!</span>
-            </p>
+            <p class="page-lead">ISOMARK offers industry leading services in the categories of Consultation, Placement and Training. ISOMARK prides itself on being responsive to your specific needs and can tailor its services to meet your requirements. Please click on any of the service icons below to find out more about the quality services that ISOMARK offers.</p>
         </div>
     </header>
     <div id="service-icon-container" class="service-icon-container">

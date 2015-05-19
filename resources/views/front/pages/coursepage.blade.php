@@ -14,8 +14,7 @@
 @section('content')
     @include('front.partials.pageheader', ['pageTitle' => 'Isomark Courses'])
     <div class="container">
-        <p class="courses-intro"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis delectus distinctio eum exercitationem facere minima omnis perspiciatis soluta vel voluptatem? Animi eligendi est labore laborum magnam nam placeat quasi sint.</span><span>Ab ad aliquam beatae consequatur exercitationem facere modi molestias, necessitatibus nemo nulla quod sequi temporibus veniam? Dolore esse iure labore nemo nostrum quia. A beatae itaque numquam repudiandae suscipit tempora?</span><span>Accusamus adipisci asperiores aspernatur enim exercitationem, iure neque nesciunt non omnis optio praesentium quaerat, saepe, sed sequi sunt tempora vero. Ad excepturi fuga modi officia omnis qui rem unde vitae.</span>
-        </p>
+        <p class="courses-intro page-lead">ISOMARK offers numerous accredited training courses as well as tailored workshops. ISOMARK's courses have been categorised into Safety, Health and Environment, Lifting Equipment Training, Soft Skills and Workshops. Furthermore ISOMARK has a collection of Skills Bundles for those who seek further education in this field. Please select an icon below to read further on our courses.</p>
         <div class="course-icons-container">
             <div class="course-icon-row row">
                 <div class="col-sm-6">

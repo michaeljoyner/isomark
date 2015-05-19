@@ -14,6 +14,7 @@
 
 .service-icon-container {
   text-align: center;
+  cursor: pointer;
 
 
   .service-icon-box {
@@ -119,4 +120,18 @@
   text-transform: uppercase;
   color: $primary_orange;
   margin-top: 40px;
+}
+
+.service-box {
+  ul {
+    font-family: $body_text;
+    font-weight: 300;
+    color: $grey_text;
+    padding-left: 1em;
+    text-align: left;
+    list-style-image: none;
+  }
+  &>ul:first-of-type {
+    list-style-image: url(../../images/isomark_bullet.png);
+  }
 }

@@ -1,6 +1,6 @@
 <h1><span class="section-title">courses</span></h1>
 <div class="section-content container">
-    <p>Our services Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque dignissimos doloremque. Debitis, delectus doloribus eaque eveniet excepturi fugiat, in iste magni mollitia nam necessitatibus nostrum officiis placeat quis ut?</p>
+    <p>ISOMARK offers a comprehensive range of fully accredited courses as well as workshops designed to provide the industry required training you may need. ISOMARK's courses include many modules in Safety, Health and Environment, Lifting Equipment Training and Soft Skills. ISOMARK also offers Skill Bundles which include a National Certificate In Occupational Health Safety & Environment.</p>
 
     <div class="row course-row">
         @foreach($courses as $index => $course)
