@@ -61,7 +61,13 @@
                     <div class="col-sm-6">
                         <div class="contact-item">
                             <h4 class="orange-subheading">{{ $number->name }}</h4>
-                            <p><span class="glyphicon glyphicon-phone"></span> {{ $number->number }}</p>
+                            <p>
+                            @if(str_contains(mb_strtolower($number->name), 'fax'))
+                            <span class="glyphicon glyphicon-print"></span>
+                            @else
+                            <span class="glyphicon glyphicon-earphone"></span>
+                            @endif
+                             {{ $number->number }}</p>
                         </div>
                     </div>
                     @if($index > 0 && $index%2 !== 0 && $index !== $contactNumbers->count() - 1)

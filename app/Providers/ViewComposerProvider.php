@@ -1,5 +1,6 @@
 <?php namespace App\Providers;
 
+use App\Contacts\PhoneNumber;
 use App\Courses\Category;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Support\Facades\Auth;
@@ -38,6 +39,13 @@ class ViewComposerProvider extends ServiceProvider {
         {
             $categoryList = $this->getCategoryListWithSlug();
             $view->with(compact('categoryList'));
+        });
+
+        view()->composer('front.partials.footer', function($view)
+        {
+            $categoryList = $this->getCategoryListWithSlug();
+            $contactNumbers = PhoneNumber::orderBy('name', 'desc')->get();
+            $view->with(compact('categoryList', 'contactNumbers'));
         });
 	}
 

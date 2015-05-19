@@ -5,23 +5,56 @@
   padding-bottom: 70px;
   padding-top: 50px;
   font-family: $body_text;
+  position: relative;
 
   .row {
     margin: 0;
+  }
+
+  .footer-signoff {
+    padding-top: 50px;
+
+
+    .italic {
+      font-family: $lead_italic;
+      font-size: 2em;
+      vertical-align: middle;
+    }
+
+    img {
+      width: 80px;
+      vertical-align: middle;
+      padding-right: 30px;
+    }
+  }
+
+
+
+  .footer-footer {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+
+    .dymantic {
+      color: $primary_orange;
+    }
   }
 }
 
 .footer-col {
   padding: 30px;
+  padding-left: 60px;
   padding-top: 0;
-  min-height: 350px;
+  min-height: 410px;
 
-  h1 {
+  h3 {
     font-family: $body_text;
     text-transform: uppercase;
+    color: $primary_orange;
     margin-top: 0;
     margin-bottom: 30px;
-    font-size: 170%;
+//    font-size: 170%;
   }
 
   ul {
@@ -33,7 +66,49 @@
     font-weight: 300;
   }
 
-  &:nth-child(1), &:nth-child(2), &:nth-child(3) {
-    border-right: 1px solid $white;
+  &:nth-child(1), &:nth-child(2) {
+    border-right: 1px solid $secondary_blue;
+  }
+
+  .footer-contacts {
+    p {
+      text-transform: uppercase;
+    }
+    .glyphicon {
+      padding-right: 8px;
+    }
+
+    .contact-number {
+      padding-bottom: 20px;
+    }
+  }
+
+  .footer-accreditations {
+    text-align: left;
+    padding: 0;
+    font-weight: 300;
+
+    li {
+      padding: 5px 0;
+    }
+
+
+  }
+
+  .site-map {
+    text-transform: capitalize;
+    text-align: left;
+    font-weight: 300;
+
+    &>li {
+      padding: 3px 0;
+      font-size: 110%;
+    }
+
+    .course-category-map {
+      color: $primary_orange;
+      font-size: 100%;
+      padding-top: 3px;
+    }
   }
 }

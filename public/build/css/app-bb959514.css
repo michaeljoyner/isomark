@@ -5718,27 +5718,69 @@ a, a:visited, a:active, a:hover, a:focus {
   text-align: center;
   padding-bottom: 70px;
   padding-top: 50px;
-  font-family: "Open Sans", Helvetica, Ariel, sans-serif; }
+  font-family: "Open Sans", Helvetica, Ariel, sans-serif;
+  position: relative; }
   .main-footer .row {
     margin: 0; }
+  .main-footer .footer-signoff {
+    padding-top: 50px; }
+    .main-footer .footer-signoff .italic {
+      font-family: "Agenda Italic", Ariel, sans-serif;
+      font-size: 2em;
+      vertical-align: middle; }
+    .main-footer .footer-signoff img {
+      width: 80px;
+      vertical-align: middle;
+      padding-right: 30px; }
+  .main-footer .footer-footer {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%; }
+    .main-footer .footer-footer .dymantic {
+      color: #F05A28; }
 
 .footer-col {
   padding: 30px;
+  padding-left: 60px;
   padding-top: 0;
-  min-height: 350px; }
-  .footer-col h1 {
+  min-height: 410px; }
+  .footer-col h3 {
     font-family: "Open Sans", Helvetica, Ariel, sans-serif;
     text-transform: uppercase;
+    color: #F05A28;
     margin-top: 0;
-    margin-bottom: 30px;
-    font-size: 170%; }
+    margin-bottom: 30px; }
   .footer-col ul {
     list-style-type: none; }
   .footer-col p {
     text-align: left;
     font-weight: 300; }
-  .footer-col:nth-child(1), .footer-col:nth-child(2), .footer-col:nth-child(3) {
-    border-right: 1px solid #FFFFFF; }
+  .footer-col:nth-child(1), .footer-col:nth-child(2) {
+    border-right: 1px solid #2D456E; }
+  .footer-col .footer-contacts p {
+    text-transform: uppercase; }
+  .footer-col .footer-contacts .glyphicon {
+    padding-right: 8px; }
+  .footer-col .footer-contacts .contact-number {
+    padding-bottom: 20px; }
+  .footer-col .footer-accreditations {
+    text-align: left;
+    padding: 0;
+    font-weight: 300; }
+    .footer-col .footer-accreditations li {
+      padding: 5px 0; }
+  .footer-col .site-map {
+    text-transform: capitalize;
+    text-align: left;
+    font-weight: 300; }
+    .footer-col .site-map > li {
+      padding: 3px 0;
+      font-size: 110%; }
+    .footer-col .site-map .course-category-map {
+      color: #F05A28;
+      font-size: 100%;
+      padding-top: 3px; }
 
 .isomark-form label {
   color: #F05A28;

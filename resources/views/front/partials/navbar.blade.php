@@ -1,6 +1,6 @@
 <nav class="main-navbar">
     <ul>
-        <li @if(Request::path() === "") class="active" @endif><a href="/">Home</a></li>
+        <li @if(Request::path() === "/") class="active" @endif><a href="/">Home</a></li>
         <li @if(Request::path() === "about") class="active" @endif><a href="/about">About</a></li>
         <li @if(Request::path() === "services") class="active" @endif><a href="/services">Services</a></li>
         <li @if(starts_with(Request::path(), "courses") || Request::path() === "workshops") class="active" @endif>
