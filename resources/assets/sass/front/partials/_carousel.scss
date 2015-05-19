@@ -19,6 +19,9 @@
     position: absolute;
     border: none;
     color: transparent;
+    &:focus {
+      outline: none;
+    }
   }
 
   .slick-next {
@@ -33,6 +36,9 @@
     position: absolute;
     border: none;
     color: transparent;
+    &:focus {
+      outline: none;
+    }
   }
 
   .slick-next::before {
