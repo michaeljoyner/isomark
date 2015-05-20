@@ -32,6 +32,18 @@
     font-size: 120%;
     text-align: left;
   }
+  p.hint {
+    text-align: center;
+  }
+
+  .hint {
+    font-size: 90%;
+    color: $secondary_orange;
+  }
+  span.hint {
+    font-size: 80%;
+  }
+
 }
 
 .about-page-section .corporate-structure-item {

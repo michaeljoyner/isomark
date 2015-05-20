@@ -45,7 +45,7 @@
                 <div class="col-sm-4 client-names">Barloworld</div>
             </div>
             <div class="row client-name-row">
-                <div class="col-sm-4 client-names">Circo</div>
+                <div class="col-sm-4 client-names">Ciro</div>
                 <div class="col-sm-4 client-names">Vector Logistic Solutions</div>
                 <div class="col-sm-4 client-names">Nestle</div>
             </div>

@@ -33,51 +33,54 @@
     </section>
     <section class="section-container about-page-section">
         <h1><span class="section-title">Corporate structure</span></h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="corporate-structure-item">
-                        <h4 class="orange-subheading">managing director</h4>
-                        <p>Alan Borchardt</p>
-                        <p><span class="glyphicon glyphicon-phone"></span> +27 (0)82 572 2270</p>
-                        <p><span class="glyphicon glyphicon-envelope"></span> alan@isomark.co.za</p>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="corporate-structure-item">
-                        <h4 class="orange-subheading">operations manager</h4>
-                        <p>Johan Slabbert</p>
-                        <p><span class="glyphicon glyphicon-phone"></span> +27 (0)73 299 4585</p>
-                        <p><span class="glyphicon glyphicon-envelope"></span> johan@isomark.co.za</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="corporate-structure-item">
-                        <h4 class="orange-subheading">financial manager</h4>
-                        <p>Wendy Bouchart</p>
-                        <p><span class="glyphicon glyphicon-phone"></span> +27 (0)84 800 8384</p>
-                        <p><span class="glyphicon glyphicon-envelope"></span> wendy@isomark.co.za</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        {{--<div class="container">--}}
+            {{--<div class="row">--}}
+                {{--<div class="col-sm-6">--}}
+                    {{--<div class="corporate-structure-item">--}}
+                        {{--<h4 class="orange-subheading">managing director</h4>--}}
+                        {{--<p>Alan Borchardt</p>--}}
+                        {{--<p><span class="glyphicon glyphicon-phone"></span> +27 (0)82 572 2270</p>--}}
+                        {{--<p><span class="glyphicon glyphicon-envelope"></span> alan@isomark.co.za</p>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="col-sm-6">--}}
+                    {{--<div class="corporate-structure-item">--}}
+                        {{--<h4 class="orange-subheading">operations manager</h4>--}}
+                        {{--<p>Johan Slabbert</p>--}}
+                        {{--<p><span class="glyphicon glyphicon-phone"></span> +27 (0)73 299 4585</p>--}}
+                        {{--<p><span class="glyphicon glyphicon-envelope"></span> johan@isomark.co.za</p>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+            {{--<div class="row">--}}
+                {{--<div class="col-sm-6">--}}
+                    {{--<div class="corporate-structure-item">--}}
+                        {{--<h4 class="orange-subheading">financial manager</h4>--}}
+                        {{--<p>Wendy Bouchart</p>--}}
+                        {{--<p><span class="glyphicon glyphicon-phone"></span> +27 (0)84 800 8384</p>--}}
+                        {{--<p><span class="glyphicon glyphicon-envelope"></span> wendy@isomark.co.za</p>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        @include('front.partials.corpstructure')
     </section>
     <section class="section-container about-page-section">
         <h1><span class="section-title">Accreditation</span></h1>
+        <p class="hint">Click on the accreditation to view the original certification</p>
         <ul class="accreditations">
-            <li><a href="{{ asset('docs/BEECERT.pdf') }}" target="_blank">BEE Level 3 Certificate</a></li>
-            <li><a href="{{ asset('docs/hwseta.pdf') }}" target="_blank">HWSETA Full Accredtitation as an Education and Training Provider</a></li>
-            <li><a href="{{ asset('docs/lpr.pdf') }}" target="_blank">T.E.T.A Programme Approval</a></li>
-            <li><a href="{{ asset('docs/teta.pdf') }}" target="_blank">HWSETA Learning Programme Referral</a></li>
+            <li><a href="{{ asset('docs/updated/BEEcert.pdf') }}" target="_blank">BEE Level 3 Certificate</a></li>
+            <li><a href="{{ asset('docs/updated/HWSETA.pdf') }}" target="_blank">HWSETA Full Accredtitation as an Education and Training Provider</a></li>
+            <li><a href="{{ asset('docs/updated/TETA.pdf') }}" target="_blank">T.E.T.A Programme Approval</a></li>
+            <li><a href="{{ asset('docs/lpr.pdf') }}" target="_blank">HWSETA Learning Programme Referral</a></li>
+            <li><a href="{{ asset('docs/updated/firstaidDOL.pdf') }}" target="_blank">Department of Labor Accreditation as First Aid Training Provider</a></li>
         </ul>
     </section>
     <section class="section-container about-page-section">
         <h1><span class="section-title">Main line of business</span></h1>
         <ul class="accreditations">
             <li>Consulting Services</li>
-            <li>Placement Services</li>
+            <a href="{{ asset('docs/updated/processflows.pdf') }}" target="_blank"><li>Placement Services <span class="hint">(Click to see our process flow)</span></li></a>
             <li>Training and Coordination</li>
         </ul>
     </section>
