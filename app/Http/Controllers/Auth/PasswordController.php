@@ -71,5 +71,22 @@ class PasswordController extends Controller {
         return Hash::check($request->get('current_password'), $this->auth->user()->password);
     }
 
+    public function postReset(Request $request)
+    {
+        $this->validate($request, array('token' => 'required', 'email' => 'required|email', 'password' => 'required|confirmed'));
+        $credentials = $request->only('email', 'password', 'password_confirmation', 'token');
+        $response = $this->passwords->reset($credentials, function ($user, $password) {
+            $user->password = $password;
+            $user->save();
+            $this->auth->login($user);
+        });
+        switch ($response) {
+            case PasswordBroker::PASSWORD_RESET:
+                return redirect($this->redirectPath());
+            default:
+                return redirect()->back()->withInput($request->only('email'))->withErrors(array('email' => trans($response)));
+        }
+    }
+
 
 }
