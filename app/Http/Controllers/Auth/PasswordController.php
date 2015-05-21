@@ -8,6 +8,7 @@ use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Auth\PasswordBroker;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Http\Request;
 
 class PasswordController extends Controller {
 
