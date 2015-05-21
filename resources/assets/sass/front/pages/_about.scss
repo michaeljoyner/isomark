@@ -24,6 +24,10 @@
     font-size: 120%;
     color: $grey_text;
     font-weight: 300;
+
+    a:hover {
+      color: $primary_orange;
+    }
   }
 }
 

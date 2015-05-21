@@ -80,7 +80,7 @@
         <h1><span class="section-title">Main line of business</span></h1>
         <ul class="accreditations">
             <li>Consulting Services</li>
-            <a href="{{ asset('docs/updated/processflows.pdf') }}" target="_blank"><li>Placement Services <span class="hint">(Click to see our process flow)</span></li></a>
+            <a href="{{ asset('docs/updated/processflow.pdf') }}" target="_blank"><li>Placement Services <span class="hint">(Click to see our process flow)</span></li></a>
             <li>Training and Coordination</li>
         </ul>
     </section>

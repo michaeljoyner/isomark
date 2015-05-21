@@ -37,7 +37,7 @@
         @include('front.partials.courses')
     </section>
     <section class="section-container" id="clients">
-        <h1><span class="section-title">our clients</span></h1>
+        <h1><span class="section-title">a few of our clients</span></h1>
         <div class="container">
             <div class="row client-name-row">
                 <div class="col-sm-4 client-names">RCL Foods</div>

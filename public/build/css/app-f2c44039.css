@@ -5997,6 +5997,7 @@ p.page-lead {
   padding-bottom: 40px; }
   .corp-tier .corp-position {
     display: inline-block;
+    vertical-align: top;
     width: 18%;
     margin: 8px; }
     @media only screen and (max-width: 360px) {
@@ -6010,8 +6011,10 @@ p.page-lead {
     @media only screen and (min-width: 606px) and (max-width: 900px) {
       .corp-tier .corp-position {
         width: 30%; } }
-    .corp-tier .corp-position h4 {
-      color: #F05A28; }
+    .corp-tier .corp-position .corp-title {
+      color: #F05A28;
+      font-weight: 300;
+      text-transform: uppercase; }
     .corp-tier .corp-position p {
       color: #808080;
       text-align: center;
@@ -6154,6 +6157,8 @@ p.page-lead {
     font-size: 120%;
     color: #808080;
     font-weight: 300; }
+    .accreditations li a:hover {
+      color: #F05A28; }
 
 .about-page-section p {
   font-size: 120%;

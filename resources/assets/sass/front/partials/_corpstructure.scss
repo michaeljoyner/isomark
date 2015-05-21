@@ -3,14 +3,17 @@
   padding-bottom: 40px;
   .corp-position {
     display: inline-block;
+    vertical-align: top;
     width: 18%;
     margin: 8px;
     @include respond-to(phone) {display: block; width: 100%;}
     @include respond-to(smalltablet) {display: block; width: 100%;}
     @include respond-to(largetablet) {width: 30%;}
 
-    h4 {
+    .corp-title {
       color: $primary_orange;
+      font-weight: 300;
+      text-transform: uppercase;
     }
 
     p {
