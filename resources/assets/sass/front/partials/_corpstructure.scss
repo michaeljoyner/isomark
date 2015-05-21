@@ -4,7 +4,7 @@
   .corp-position {
     display: inline-block;
     vertical-align: top;
-    width: 18%;
+    width: 27%;
     margin: 8px;
     @include respond-to(phone) {display: block; width: 100%;}
     @include respond-to(smalltablet) {display: block; width: 100%;}
