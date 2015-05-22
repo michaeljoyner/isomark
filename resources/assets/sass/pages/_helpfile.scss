@@ -1,0 +1,44 @@
+.helpfile {
+  font-family: $body_text;
+  color: $grey_text;
+  max-width: 800px;
+  margin: 0 auto;
+  font-weight: 300;
+  padding-bottom: 200px;
+
+  .note {
+    color: $white;
+    padding: 10px;
+    background-color: $secondary_orange;
+    border-radius: 5px;
+    max-width: 750px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  h1 {
+    color: $primary_blue;
+    padding: 30px 0;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    color: $primary_orange;
+    text-transform: uppercase;
+    padding-top: 40px;
+  }
+
+  ol>li {
+    color: $primary_blue;
+    font-size: 120%;
+  }
+
+  ul {
+    list-style-image: url(../../images/isomark_bullet.png);
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: $secondary_orange;
+  }
+}

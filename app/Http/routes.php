@@ -45,6 +45,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function()
     /**
      * user routes
      */
+    Route::get('help', 'UsersController@help');
     Route::get('users', 'UsersController@index');
     Route::get('users/edit/{id}', 'UsersController@showEdit');
     Route::post('users/edit/{id}', 'UsersController@edit');

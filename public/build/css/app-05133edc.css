@@ -6536,4 +6536,36 @@ p.courses-intro {
     height: 100px;
     resize: none; }
 
+.helpfile {
+  font-family: "Open Sans", Helvetica, Ariel, sans-serif;
+  color: #808080;
+  max-width: 800px;
+  margin: 0 auto;
+  font-weight: 300;
+  padding-bottom: 200px; }
+  .helpfile .note {
+    color: #FFFFFF;
+    padding: 10px;
+    background-color: #EF7A54;
+    border-radius: 5px;
+    max-width: 750px;
+    margin: 0 auto;
+    margin-top: 30px; }
+  .helpfile h1 {
+    color: #1A2840;
+    padding: 30px 0;
+    text-transform: uppercase; }
+  .helpfile h3 {
+    color: #F05A28;
+    text-transform: uppercase;
+    padding-top: 40px; }
+  .helpfile ol > li {
+    color: #1A2840;
+    font-size: 120%; }
+  .helpfile ul {
+    list-style-image: url(../../images/isomark_bullet.png); }
+  .helpfile a:hover {
+    text-decoration: underline;
+    color: #EF7A54; }
+
 /*# sourceMappingURL=app.css.map */

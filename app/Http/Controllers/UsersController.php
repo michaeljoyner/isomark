@@ -32,6 +32,11 @@ class UsersController extends Controller {
         $this->middleware('superauth');
     }
 
+    public function help()
+    {
+        return view('admin.helpfile');
+    }
+
     public function index()
     {
         $users = $this->usersRepo->all();
