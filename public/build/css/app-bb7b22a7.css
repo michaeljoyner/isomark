@@ -5308,6 +5308,21 @@ p.page-lead {
   font-size: 110%;
   text-align: left; }
 
+.admin-home-container {
+  margin-top: -70px;
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(circle closest-side, #2D456E 0%, #1A2840 100%);
+  position: relative;
+  z-index: -1; }
+  .admin-home-container img {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    display: block;
+    width: 80%;
+    margin: 0 auto; }
+
 .delete-form {
   display: inline-block; }
 

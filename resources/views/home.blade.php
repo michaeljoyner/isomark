@@ -2,17 +2,17 @@
 
 @section('head')
     <style>
-        body {
-            background-image: url("../../images/cranes.jpg");
-            background-size: cover;
-        }
+        /*body {*/
+            /*background-image: url("../../images/cranes.jpg");*/
+            /*background-size: cover;*/
+        /*}*/
     </style>
 @endsection
 
 @section('content')
 @include('flash::message')
-<div class="container">
-    <img src="{{ asset('images/isomark2.png') }}" alt="logo"/>
+<div class="admin-home-container">
+    <img src="{{ asset('images/mainlogo.png') }}" alt="logo"/>
 </div>
 @endsection
 
