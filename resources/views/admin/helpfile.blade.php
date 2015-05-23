@@ -51,7 +51,7 @@
     <p class="note">Note: A user may not delete themselves and there must always be at least one user with full privileges (to avoid being locked out of the system). The system will enforce this, this is just for your information.</p>
     <h3 id="passwords">Passwords</h3>
     <p>When creating a new user, the current user has to choose a password for them to begin with. They will then be responsible for communicating that password to the new user.</p>
-    <p>All users may reset their password by clicking on the drop down menu on the top right (by the users email address) and selecting &quot;Reset Password&quot;. The user will be taken to the form to change their password.</p>
+    <p>All users may reset their password by clicking on the drop down menu on the top right (by the user's name) and selecting &quot;Reset Password&quot;. The user will be taken to the form to change their password.</p>
     <p>It is highly recommended that a new user changes their password immediately, so that they are the only one who knows the password.</p>
     <h3 id="forgotten-passwords">Forgotten Passwords</h3>
     <p>If a user should forget their password and is unable to login, they may click on the "forgot your password?" link on the login page. They will be redirected to a form to send themselves an email with instructions on resetting their password.</p>
