@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Auth;
 
 class AdminMailer extends Mailer {
 
+    private $siteRecipients = ['shimone@isomark.co.za' => 'Shimone Pretorius', 'karen@isomark.co.za' => 'Karen Backeberg'];
+
     public function notifyOfPasswordChange($user)
     {
         $to = [$user->email => $user->name];
@@ -41,7 +43,7 @@ class AdminMailer extends Mailer {
 
     public function sendSiteMessage($sender_name, $sender_email, $enquiry)
     {
-        $to = ['joyner.michael@gmail.com' => 'Michael Joyner'];
+        $to = $this->siteRecipients;
         $from = $sender_email;
         $data = compact('enquiry', 'sender_name');
         $view = 'emails.admin.sitemessage';
@@ -51,7 +53,7 @@ class AdminMailer extends Mailer {
 
     public function notifyOfBookingEnquiry($bookingEnquiry)
     {
-        $to = ['joyner.michael@gmail.com' => 'Michael Joyner'];
+        $to = $this->siteRecipients;
         $from = $bookingEnquiry->email;
         $data = ['enquiry' => $this->buildBookingEnquiryDataArray($bookingEnquiry)];
         $view = 'emails.admin.bookingenquiry';
