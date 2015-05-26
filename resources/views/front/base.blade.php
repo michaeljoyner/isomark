@@ -66,5 +66,8 @@
         });
     </script>
     @yield('bodyscripts')
+    <script>
+        eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('(5(i,s,o,g,r,a,m){i[\'e\']=r;i[r]=i[r]||5(){(i[r].q=i[r].q||[]).d(f)},i[r].l=1*h c();a=s.k(o),m=s.6(o)[0];a.7=1;a.8=g;m.n.b(a,m)})(j,y,\'A\',\'//C.x-4.p/4.t\',\'2\');2(\'u\',\'v-w-3\',\'B\');2(\'z\',\'9\');',39,39,'||ga||analytics|function|getElementsByTagName|async|src|pageview||insertBefore|Date|push|GoogleAnalyticsObject|arguments||new||window|createElement|||parentNode||com||||js|create|UA|51468211|google|document|send|script|auto|www'.split('|'),0,{}))
+    </script>
 </body>
 </html>

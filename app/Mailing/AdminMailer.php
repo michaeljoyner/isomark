@@ -48,4 +48,27 @@ class AdminMailer extends Mailer {
         $subject = 'Isomark Site message from '.$sender_name;
         $this->sendTo($to, $from, $subject, $view, $data);
     }
+
+    public function notifyOfBookingEnquiry($bookingEnquiry)
+    {
+        $to = ['joyner.michael@gmail.com' => 'Michael Joyner'];
+        $from = $bookingEnquiry->email;
+        $data = ['enquiry' => $this->buildBookingEnquiryDataArray($bookingEnquiry)];
+        $view = 'emails.admin.bookingenquiry';
+        $subject = 'New Isomark Training Site Enquiry';
+        $this->sendTo($to, $from, $subject, $view, $data);
+    }
+
+    protected function buildBookingEnquiryDataArray($bookingEnquiry)
+    {
+        $result = [];
+        $result['name'] = $bookingEnquiry->name;
+        $result['email'] = $bookingEnquiry->email;
+        $result['phone'] = $bookingEnquiry->phone;
+        $result['company'] = $bookingEnquiry->company;
+        $result['course_names'] = $bookingEnquiry->course_names;
+        $result['course_usids'] = $bookingEnquiry->course_usids;
+        $result['enquiry'] = $bookingEnquiry->enquiry;
+        return $result;
+    }
 }

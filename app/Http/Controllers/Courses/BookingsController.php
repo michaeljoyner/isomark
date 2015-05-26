@@ -7,6 +7,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use App\Http\Requests\CourseBookingRequest;
+use App\Mailing\AdminMailer;
 use Illuminate\Http\Request;
 
 class BookingsController extends Controller {
@@ -68,9 +69,10 @@ class BookingsController extends Controller {
         return view('front.pages.bookings')->with(compact('course_names', 'course_usids'));
     }
 
-    public function store(CourseBookingRequest $request)
+    public function store(CourseBookingRequest $request, AdminMailer $adminMailer)
     {
-        $this->enquiriesRepository->store($request->all());
+        $enquiry = $this->enquiriesRepository->store($request->all());
+        $adminMailer->notifyOfBookingEnquiry($enquiry);
         flash()->message('Thanks for your booking. We\'ll be in touch.');
         return redirect('courses');
     }
