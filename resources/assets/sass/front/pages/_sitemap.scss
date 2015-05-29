@@ -1,0 +1,24 @@
+.sitemap-page {
+  max-width: 700px;
+  margin: 0 auto 100px;
+
+  ul {
+    text-transform: uppercase;
+    font-family: $body_text;
+    list-style-type: none;
+  }
+
+  .site-map {
+    color: $primary_blue;
+    font-size: 150%;
+     li {
+       padding-bottom: 8px;
+     }
+  }
+
+  .course-category-map {
+    margin-top: 14px;
+    color: $secondary_orange;
+    font-size: 80%;
+  }
+}

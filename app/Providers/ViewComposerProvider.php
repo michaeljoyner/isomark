@@ -35,7 +35,7 @@ class ViewComposerProvider extends ServiceProvider {
             $view->with(compact('categoryList'));
         });
 
-        view()->composer('front.partials.navbar', function($view)
+        view()->composer(['front.partials.navbar', 'front.pages.sitemap'], function($view)
         {
             $categoryList = $this->getCategoryListWithSlug();
             $view->with(compact('categoryList'));

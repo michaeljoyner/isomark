@@ -64,4 +64,9 @@ class PagesController extends Controller {
         return view('front.pages.contact')->with(compact('addresses', 'people', 'contactNumbers'));
     }
 
+    public function sitemap()
+    {
+        return view('front.pages.sitemap');
+    }
+
 }
