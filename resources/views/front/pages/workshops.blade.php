@@ -9,6 +9,7 @@
     'og_title' => 'Isomark Training Workshops',
     'og_description' => 'Isomark offers a comprehensive range of training workshops covering a broad range of Safety, Health and Environmental Risk Management topics',
     'og_url' => Request::url()])
+    <link rel="canonical" href="http://isomark.co.za/workshops"/>
 @endsection
 
 @section('content')

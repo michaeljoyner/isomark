@@ -9,6 +9,7 @@
     'og_title' => 'Isomark Training Courses',
     'og_description' => 'Isomark offers fully accredited and industry recognised training courses on all subjects of Health, Safety and Environmental Risk Management',
     'og_url' => Request::url()])
+    <link rel="canonical" href="http://isomark.co.za/courses"/>
 @endsection
 
 @section('content')

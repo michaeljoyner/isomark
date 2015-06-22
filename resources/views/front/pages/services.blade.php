@@ -9,6 +9,7 @@
     'og_title' => 'Isomark Services',
     'og_description' => 'Isomark offers Health, Safety and Environmental Risk Management services, including consultation services, placement services and training services',
     'og_url' => Request::url()])
+    <link rel="canonical" href="http://isomark.co.za/services"/>
 @endsection
 
 @section('content')

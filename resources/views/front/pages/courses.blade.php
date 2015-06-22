@@ -9,6 +9,7 @@
     'og_title' => 'Isomark '.$courses->first()->category->name.' Training Courses',
     'og_description' => 'Isomark offers fully accredited and industry leading training courses on the subject of '.$courses->first()->category->name,
     'og_url' => Request::url()])
+    <link rel="canonical" href="{{ Request::url() }}"/>
 @endsection
 
 @section('content')

@@ -9,6 +9,7 @@
     'og_title' => 'Isomark - Facilitating Global Standards',
     'og_description' => 'Isomark is an industry leading Health, Safety and Environmental Risk Management Company. We work with you to ensure that your organisation meets the necessary requirements and is properly equipped with the knowledge and resources needed to manage your risk',
     'og_url' => Request::url()])
+    <link rel="canonical" href="http://isomark.co.za/"/>
 @endsection
 
 @section('head')

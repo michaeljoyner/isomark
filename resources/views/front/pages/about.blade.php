@@ -9,6 +9,7 @@
     'og_title' => 'About Isomark',
     'og_description' => 'We are Isomark, an industry leading Health, Safety and Environment Risk Management firm. Read our vision, mission and find out about our corporate structure',
     'og_url' => Request::url()])
+    <link rel="canonical" href="http://isomark.co.za/about"/>
 @endsection
 
 @section('content')
