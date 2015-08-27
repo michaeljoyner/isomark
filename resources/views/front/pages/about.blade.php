@@ -72,7 +72,7 @@
         <ul class="accreditations">
             <li><a href="{{ asset('docs/updated/BEEcert.pdf') }}" target="_blank">BEE Level 3 Certificate</a></li>
             <li><a href="{{ asset('docs/updated/HWSETA.pdf') }}" target="_blank">HWSETA Full Accredtitation as an Education and Training Provider</a></li>
-            <li><a href="{{ asset('docs/updated/hwsetascope.pdf') }}" target="_blank">HWSETA Extension of Scope Approval</a></li>
+            <li><a href="{{ asset('docs/updated/hwsetascope.pdf') }}" target="_blank">Extension of Scope Approval Qual. 74269</a></li>
             <li><a href="{{ asset('docs/updated/TETA.pdf') }}" target="_blank">T.E.T.A Programme Approval</a></li>
             <li><a href="{{ asset('docs/updated/firstaidDOL.pdf') }}" target="_blank">Department of Labor Accreditation as First Aid Training Provider</a></li>
         </ul>
