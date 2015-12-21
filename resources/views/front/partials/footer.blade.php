@@ -20,7 +20,7 @@
             <div class="col-sm-4 footer-col">
                 <h3>accreditations</h3>
                 <ul class="footer-accreditations">
-                    <li><a href="{{ asset('docs/updated/BEEcert.pdf') }}" target="_blank">BEE Level 3 Certificate</a></li>
+                    <li><a href="{{ asset('docs/updated/BEE_2015_16.pdf') }}" target="_blank">BEE Level 3 Certificate</a></li>
                     <li><a href="{{ asset('docs/updated/HWSETA.pdf') }}" target="_blank">HWSETA Full Accredtitation as an Education and Training Provider</a></li>
                     <li><a href="{{ asset('docs/updated/hwsetascope.pdf') }}" target="_blank">Extension of Scope Approval Qual. 74269</a></li>
                     <li><a href="{{ asset('docs/updated/TETA.pdf') }}" target="_blank">T.E.T.A Programme Approval</a></li>

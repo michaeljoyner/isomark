@@ -34,43 +34,13 @@
     </section>
     <section class="section-container about-page-section">
         <h1><span class="section-title">Corporate structure</span></h1>
-        {{--<div class="container">--}}
-            {{--<div class="row">--}}
-                {{--<div class="col-sm-6">--}}
-                    {{--<div class="corporate-structure-item">--}}
-                        {{--<h4 class="orange-subheading">managing director</h4>--}}
-                        {{--<p>Alan Borchardt</p>--}}
-                        {{--<p><span class="glyphicon glyphicon-phone"></span> +27 (0)82 572 2270</p>--}}
-                        {{--<p><span class="glyphicon glyphicon-envelope"></span> alan@isomark.co.za</p>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-                {{--<div class="col-sm-6">--}}
-                    {{--<div class="corporate-structure-item">--}}
-                        {{--<h4 class="orange-subheading">operations manager</h4>--}}
-                        {{--<p>Johan Slabbert</p>--}}
-                        {{--<p><span class="glyphicon glyphicon-phone"></span> +27 (0)73 299 4585</p>--}}
-                        {{--<p><span class="glyphicon glyphicon-envelope"></span> johan@isomark.co.za</p>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-            {{--<div class="row">--}}
-                {{--<div class="col-sm-6">--}}
-                    {{--<div class="corporate-structure-item">--}}
-                        {{--<h4 class="orange-subheading">financial manager</h4>--}}
-                        {{--<p>Wendy Bouchart</p>--}}
-                        {{--<p><span class="glyphicon glyphicon-phone"></span> +27 (0)84 800 8384</p>--}}
-                        {{--<p><span class="glyphicon glyphicon-envelope"></span> wendy@isomark.co.za</p>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</div>--}}
         @include('front.partials.corpstructure')
     </section>
     <section class="section-container about-page-section">
         <h1><span class="section-title">Accreditation</span></h1>
         <p class="hint">Click on the accreditation to view the original certification</p>
         <ul class="accreditations">
-            <li><a href="{{ asset('docs/updated/BEEcert.pdf') }}" target="_blank">BEE Level 3 Certificate</a></li>
+            <li><a href="{{ asset('docs/updated/BEE_2015_16.pdf') }}" target="_blank">BEE Level 3 Certificate</a></li>
             <li><a href="{{ asset('docs/updated/HWSETA.pdf') }}" target="_blank">HWSETA Full Accredtitation as an Education and Training Provider</a></li>
             <li><a href="{{ asset('docs/updated/hwsetascope.pdf') }}" target="_blank">Extension of Scope Approval Qual. 74269</a></li>
             <li><a href="{{ asset('docs/updated/TETA.pdf') }}" target="_blank">T.E.T.A Programme Approval</a></li>
